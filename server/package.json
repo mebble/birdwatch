@@ -1,0 +1,23 @@
+{
+  "name": "twitter-count-server",
+  "version": "1.0.0",
+  "description": "Netlify lambda functions that fetch data from the twitter api",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mebble/twitter-count.git"
+  },
+  "keywords": [
+    "twitter",
+    "tweet",
+    "engagement",
+    "social"
+  ],
+  "author": "Neil Leeson Syiemlieh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mebble/twitter-count/issues"
+  },
+  "homepage": "https://github.com/mebble/twitter-count#readme"
+}
