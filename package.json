@@ -28,7 +28,10 @@
   "homepage": "https://github.com/mebble/twitter-count#readme",
   "dependencies": {
     "dotenv": "^8.0.0",
+    "http-proxy-middleware": "^0.19.1",
     "netlify-lambda": "^1.4.13",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "twitter": "^1.7.1"
   },
   "devDependencies": {
