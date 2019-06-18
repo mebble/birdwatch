@@ -1,5 +1,5 @@
 document.getElementById('test-btn').addEventListener('click', () => {
-    fetch('/.netlify/functions/foo')
+    fetch('http://localhost:9000/foo')
         .then(res => res.json())
         .then(json => {
             console.log(json);
