@@ -27,14 +27,24 @@ exports.handler = async function(event, context) {
     //         console.log(err);
     //         callback(err);
     //     });
-    const res = await tweets;
-    return {
-        statusCode: 200,
-        body: JSON.stringify(res),
-        headers: {
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
-        }
+    const headers = {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
     };
+    try {
+        const res = await tweets;
+        return {
+            statusCode: 200,
+            body: JSON.stringify(res),
+            headers
+        };
+    } catch (err) {
+        console.log(err);
+        return {
+            statusCode: 500,
+            body: JSON.stringify(err),
+            headers
+        };
+    }
 };
