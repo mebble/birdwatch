@@ -48,22 +48,10 @@ export default class Timeline extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:9000/foo')
+        fetch('http://localhost:9000/getTweetEngagement')
             .then(res => res.json())
-            .then(tweets => {
-                tweets = tweets.reverse();
-                console.log(tweets);
-                const favourites = tweets.map(t => ({
-                    // x: t.id_str,
-                    y: t.favorite_count
-                }));
-                const retweets = tweets.map(t => ({
-                    // x: t.id_str,
-                    y: -t.retweet_count
-                }));
+            .then(({ tweets, favourites, retweets }) => {
                 const categories = tweets.map(({ id_str }) => id_str);
-                console.log(favourites);
-                console.log(retweets);
                 this.setState({
                     dataLoaded: true,
                     chartOptions: {
@@ -79,7 +67,7 @@ export default class Timeline extends Component {
                         }],
                         series: [{
                             name: 'Retweets',
-                            data: retweets
+                            data: retweets.map(x => -Math.abs(x))
                         }, {
                             name: 'Favourites',
                             data: favourites

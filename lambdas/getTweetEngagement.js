@@ -20,18 +20,21 @@ exports.handler = async function(event, context) {
     };
     try {
         const res = await tweets;
-        const trimmed = res.map(({ created_at, id_str, full_text, retweet_count, favorite_count }) => {
-            return {
-                created_at,
-                id_str,
-                full_text,
-                retweet_count,
-                favorite_count
-            };
+        res.sort((t1, t2) => {
+            const d1 = new Date(t1.created_at);
+            const d2 = new Date(t2.created_at);
+            if (d1 < d2) return -1;
+            if (d1 > d2) return 1;
+            return 0;
         });
+        const { lightTweets, favs, rets } = splitFavouritesRetweets(res);
         return {
             statusCode: 200,
-            body: JSON.stringify(trimmed),
+            body: JSON.stringify({
+                tweets: lightTweets,
+                favourites: favs,
+                retweets: rets
+            }),
             headers
         };
     } catch (err) {
@@ -43,3 +46,17 @@ exports.handler = async function(event, context) {
         };
     }
 };
+
+function splitFavouritesRetweets(tweets) {
+    return tweets.reduce(({ lightTweets, favs, rets }, tweet) => {
+        const { created_at, id_str, full_text, retweet_count, favorite_count } = tweet;
+        lightTweets.push({ created_at, id_str, full_text });
+        favs.push(favorite_count);
+        rets.push(retweet_count);
+        return { lightTweets, favs, rets };
+    }, {
+        lightTweets: [],
+        favs: [],
+        rets: []
+    });
+}
