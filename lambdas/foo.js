@@ -12,21 +12,7 @@ const client = new Twitter({
 exports.handler = async function(event, context) {
     // const { screenName } = JSON.parse(event.body);
     // console.log(screenName);
-    // client.get('statuses/user_timeline', { screen_name: screenName, tweet_mode: 'extended' })
-    //     .then(res => {
-    //         callback(null, {
-    //             statusCode: 200,
-    //             body: JSON.stringify(res),
-    //             headers: {
-    //                 'Content-Type': 'application/json'
-    //             }
-    //         });
-    //     })
-    //     .catch(err => {
-    //         console.log('Twitter error!');
-    //         console.log(err);
-    //         callback(err);
-    //     });
+    // await client.get('statuses/user_timeline', { screen_name: screenName, tweet_mode: 'extended' })
     const headers = {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*',
