@@ -2,55 +2,48 @@ import React, { Component } from 'react';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 
+const staticChartOptions = {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: 'Tweet Engagement'
+    },
+    yAxis: {
+        title: {
+            text: null
+        },
+        labels: {
+            formatter: function() {
+                return Math.abs(this.value);
+            }
+        },
+        tickPositioner: function() {
+            const maxDeviation = Math.ceil(Math.max(Math.abs(this.dataMax), Math.abs(this.dataMin)));
+            const halfMaxDeviation = Math.ceil(maxDeviation / 2);
+            return [-maxDeviation, -halfMaxDeviation, 0, halfMaxDeviation, maxDeviation];
+        },
+    },
+
+    plotOptions: {
+        series: {
+            stacking: 'normal'
+        }
+    },
+
+    tooltip: {
+        formatter: function() {
+            return `${this.series.name}: ${Math.abs(this.y)}`;
+        }
+    },
+};
+
 export default class Timeline extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            chartOptions: {
-                chart: {
-                    type: 'bar'
-                },
-
-                title: {
-                    text: 'Tweet Engagement'
-                },
-
-                xAxis: [{
-                    reversed: false
-                }, { // mirror axis on right side
-                    opposite: true,
-                    reversed: false,
-                    linkedTo: 0
-                }],
-
-                yAxis: {
-                    title: {
-                        text: null
-                    },
-                    labels: {
-                        formatter: function() {
-                            return Math.abs(this.value);
-                        }
-                    },
-                    tickPositioner: function() {
-                        const maxDeviation = Math.ceil(Math.max(Math.abs(this.dataMax), Math.abs(this.dataMin)));
-                        const halfMaxDeviation = Math.ceil(maxDeviation / 2);
-                        return [-maxDeviation, -halfMaxDeviation, 0, halfMaxDeviation, maxDeviation];
-                    },
-                },
-
-                plotOptions: {
-                    series: {
-                        stacking: 'normal'
-                    }
-                },
-
-                tooltip: {
-                    formatter: function () {
-                        return `${this.series.name}: ${Math.abs(this.y)}`;
-                    }
-                },
-            }
+            dataLoaded: false,
+            chartOptions: null
         };
     }
 
@@ -72,10 +65,16 @@ export default class Timeline extends Component {
                 console.log(favourites);
                 console.log(retweets);
                 this.setState({
+                    dataLoaded: true,
                     chartOptions: {
+                        ...staticChartOptions,
                         xAxis: [{
+                            reversed: false,
                             categories: categories,
-                        }, {
+                        }, {  // mirror axis on the right side
+                            opposite: true,
+                            reversed: false,
+                            linkedTo: 0,
                             categories: categories,
                         }],
                         series: [{
@@ -105,7 +104,8 @@ export default class Timeline extends Component {
     // }
 
     render() {
-        const { chartOptions } = this.state;
+        const { dataLoaded, chartOptions } = this.state;
+        if (!dataLoaded) return <div>Loading the data...</div>;
         return (
             <HighchartsReact
                 highcharts={Highcharts}
