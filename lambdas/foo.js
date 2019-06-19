@@ -20,9 +20,18 @@ exports.handler = async function(event, context) {
     };
     try {
         const res = await tweets;
+        const trimmed = res.map(({ created_at, id_str, full_text, retweet_count, favorite_count }) => {
+            return {
+                created_at,
+                id_str,
+                full_text,
+                retweet_count,
+                favorite_count
+            };
+        });
         return {
             statusCode: 200,
-            body: JSON.stringify(res),
+            body: JSON.stringify(trimmed),
             headers
         };
     } catch (err) {

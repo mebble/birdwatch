@@ -6,7 +6,7 @@ class App extends Component {
         this.state = {
             loaded: false,
             error: null
-        }
+        };
     }
 
     componentDidMount() {
@@ -16,22 +16,22 @@ class App extends Component {
                 console.log(json)
                 this.setState({
                     loaded: true
-                })
+                });
             })
             .catch(err => {
                 console.log(err)
                 this.setState({
                     error: err
                 })
-            })
+            });
     }
 
     render() {
-        const { loaded, error } = this.state
-        if (error) return <div>Error!</div>
-        if (loaded) return <div>Loaded!</div>
-        return <div>Loading...</div>
+        const { loaded, error } = this.state;
+        if (error) return <div>Error!</div>;
+        if (loaded) return <div>Loaded!</div>;
+        return <div>Loading...</div>;
     }
 }
 
-export default App
+export default App;
