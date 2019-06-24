@@ -1,49 +1,15 @@
 import React, { Component } from 'react';
-import Highcharts from 'highcharts';
-import HighchartsReact from 'highcharts-react-official';
-
-const staticChartOptions = {
-    chart: {
-        type: 'bar'
-    },
-    title: {
-        text: 'Tweet Engagement'
-    },
-    yAxis: {
-        title: {
-            text: null
-        },
-        labels: {
-            formatter: function() {
-                return Math.abs(this.value);
-            }
-        },
-        tickPositioner: function() {
-            const maxDeviation = Math.ceil(Math.max(Math.abs(this.dataMax), Math.abs(this.dataMin)));
-            const halfMaxDeviation = Math.ceil(maxDeviation / 2);
-            return [-maxDeviation, -halfMaxDeviation, 0, halfMaxDeviation, maxDeviation];
-        },
-    },
-
-    plotOptions: {
-        series: {
-            stacking: 'normal'
-        }
-    },
-
-    tooltip: {
-        formatter: function() {
-            return `${this.series.name}: ${Math.abs(this.y)}`;
-        }
-    },
-};
+// import * as d3 from 'd3';
 
 export default class Timeline extends Component {
     constructor(props) {
         super(props);
         this.state = {
             dataLoaded: false,
-            chartOptions: null
+            dataLoadErr: null,
+            tweets: [],
+            favourites: [],
+            retweets: []
         };
     }
 
@@ -54,31 +20,15 @@ export default class Timeline extends Component {
                 const categories = tweets.map(({ id_str }) => id_str);
                 this.setState({
                     dataLoaded: true,
-                    chartOptions: {
-                        ...staticChartOptions,
-                        xAxis: [{
-                            reversed: false,
-                            categories: categories,
-                        }, {  // mirror axis on the right side
-                            opposite: true,
-                            reversed: false,
-                            linkedTo: 0,
-                            categories: categories,
-                        }],
-                        series: [{
-                            name: 'Retweets',
-                            data: retweets.map(x => -Math.abs(x))
-                        }, {
-                            name: 'Favourites',
-                            data: favourites
-                        }]
-                    },
+                    tweets,
+                    favourites,
+                    retweets
                 });
             })
             .catch(err => {
                 console.log(err)
                 this.setState({
-                    error: err
+                    dataLoadErr: err
                 })
             });
     }
@@ -92,13 +42,16 @@ export default class Timeline extends Component {
     // }
 
     render() {
-        const { dataLoaded, chartOptions } = this.state;
+        const { dataLoaded, dataLoadErr } = this.state;
+        const { tweets, favourites, retweets } = this.state;
+        if (dataLoadErr) return <div>Error loading the data!!</div>;
         if (!dataLoaded) return <div>Loading the data...</div>;
         return (
-            <HighchartsReact
-                highcharts={Highcharts}
-                options={chartOptions}
-            />
+            <div style={{display: 'flex'}}>
+                <ul>{tweets.map((t, i) => <li key={i}>{t.full_text}</li>)}</ul>
+                <ul>{favourites.map((f, i) => <li key={i}>{f}</li>)}</ul>
+                <ul>{retweets.map((r, i) => <li key={i}>{r}</li>)}</ul>
+            </div>
         );
     }
 }
