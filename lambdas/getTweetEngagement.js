@@ -12,13 +12,22 @@ const client = new Twitter({
 exports.handler = async function(event, context) {
     // const { screenName } = JSON.parse(event.body);
     // console.log(screenName);
-    // await client.get('statuses/user_timeline', { screen_name: screenName, tweet_mode: 'extended' })
     const headers = {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
     };
     try {
+        // const options = {
+        //     screen_name: 's8n',
+        //     tweet_mode: 'extended',
+        //     count: 200,
+        //     trim_user: true,
+        //     exclude_replies: true,
+        //     include_rts: false,
+        // };
+        // const res = await client.get('statuses/user_timeline', options);
+        // console.log(res);
         const res = await tweets;
         res.sort((t1, t2) => {
             const d1 = new Date(t1.created_at);
@@ -35,6 +44,7 @@ exports.handler = async function(event, context) {
                 favourites: favs,
                 retweets: rets
             }),
+            // body: JSON.stringify(res),
             headers
         };
     } catch (err) {

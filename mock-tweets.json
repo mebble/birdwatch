@@ -1,1260 +1,50 @@
 [
     {
-        "created_at": "Mon Jun 17 11:39:32 +0000 2019",
-        "id": 1140584759648649200,
-        "id_str": "1140584759648649217",
-        "full_text": "@femperi right on!",
-        "truncated": false,
-        "display_text_range": [
-            9,
-            18
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [
-                {
-                    "screen_name": "femperi",
-                    "name": "Casey B 🏳️\u200d🌈",
-                    "id": 766317986798002200,
-                    "id_str": "766317986798002176",
-                    "indices": [
-                        0,
-                        8
-                    ]
-                }
-            ],
-            "urls": []
-        },
-        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
-        "in_reply_to_status_id": 1140584449765191700,
-        "in_reply_to_status_id_str": "1140584449765191680",
-        "in_reply_to_user_id": 766317986798002200,
-        "in_reply_to_user_id_str": "766317986798002176",
-        "in_reply_to_screen_name": "femperi",
-        "user": {
-            "id": 1047644343874465800,
-            "id_str": "1047644343874465792",
-            "name": "Katerina Borodina",
-            "screen_name": "kathyra_",
-            "location": "Sydney, New South Wales",
-            "description": "Infosec, gamedev, diWHY projects and bad jokes. Come for the tech talk, stay to watch my gradual descent into insanity. @dukope wannabe",
-            "url": "https://t.co/ruZZ4SoLSJ",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/ruZZ4SoLSJ",
-                            "expanded_url": "https://www.explainhownow.com",
-                            "display_url": "explainhownow.com",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 2767,
-            "friends_count": 105,
-            "listed_count": 31,
-            "created_at": "Thu Oct 04 00:27:30 +0000 2018",
-            "favourites_count": 2020,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": false,
-            "verified": false,
-            "statuses_count": 823,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "000000",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1047644343874465792/1559978036",
-            "profile_link_color": "BC6170",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "000000",
-            "profile_text_color": "000000",
-            "profile_use_background_image": false,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": null,
-            "follow_request_sent": null,
-            "notifications": null,
-            "translator_type": "none"
-        },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 0,
-        "favorite_count": 0,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Mon Jun 17 09:23:25 +0000 2019",
-        "id": 1140550505413746700,
-        "id_str": "1140550505413746688",
-        "full_text": "waiting for my content to reach r/programmerhumor a second time so that i can comment \"this bitch again?\"",
+        "created_at": "Sun Jun 23 00:25:10 +0000 2019",
+        "id": 1142589379199811600,
+        "id_str": "1142589379199811585",
+        "full_text": "Life is a simulation",
         "truncated": false,
         "display_text_range": [
             0,
-            105
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
-        },
-        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 1047644343874465800,
-            "id_str": "1047644343874465792",
-            "name": "Katerina Borodina",
-            "screen_name": "kathyra_",
-            "location": "Sydney, New South Wales",
-            "description": "Infosec, gamedev, diWHY projects and bad jokes. Come for the tech talk, stay to watch my gradual descent into insanity. @dukope wannabe",
-            "url": "https://t.co/ruZZ4SoLSJ",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/ruZZ4SoLSJ",
-                            "expanded_url": "https://www.explainhownow.com",
-                            "display_url": "explainhownow.com",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 2767,
-            "friends_count": 105,
-            "listed_count": 31,
-            "created_at": "Thu Oct 04 00:27:30 +0000 2018",
-            "favourites_count": 2020,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": false,
-            "verified": false,
-            "statuses_count": 823,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "000000",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1047644343874465792/1559978036",
-            "profile_link_color": "BC6170",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "000000",
-            "profile_text_color": "000000",
-            "profile_use_background_image": false,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": null,
-            "follow_request_sent": null,
-            "notifications": null,
-            "translator_type": "none"
-        },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 0,
-        "favorite_count": 10,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Mon Jun 17 08:58:42 +0000 2019",
-        "id": 1140544286276014100,
-        "id_str": "1140544286276014080",
-        "full_text": "@anortef Perfect, I'm saving this thanks",
-        "truncated": false,
-        "display_text_range": [
-            9,
-            40
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [
-                {
-                    "screen_name": "anortef",
-                    "name": "Adrián Norte",
-                    "id": 282988529,
-                    "id_str": "282988529",
-                    "indices": [
-                        0,
-                        8
-                    ]
-                }
-            ],
-            "urls": []
-        },
-        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
-        "in_reply_to_status_id": 1140543489140125700,
-        "in_reply_to_status_id_str": "1140543489140125697",
-        "in_reply_to_user_id": 282988529,
-        "in_reply_to_user_id_str": "282988529",
-        "in_reply_to_screen_name": "anortef",
-        "user": {
-            "id": 1047644343874465800,
-            "id_str": "1047644343874465792",
-            "name": "Katerina Borodina",
-            "screen_name": "kathyra_",
-            "location": "Sydney, New South Wales",
-            "description": "Infosec, gamedev, diWHY projects and bad jokes. Come for the tech talk, stay to watch my gradual descent into insanity. @dukope wannabe",
-            "url": "https://t.co/ruZZ4SoLSJ",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/ruZZ4SoLSJ",
-                            "expanded_url": "https://www.explainhownow.com",
-                            "display_url": "explainhownow.com",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 2767,
-            "friends_count": 105,
-            "listed_count": 31,
-            "created_at": "Thu Oct 04 00:27:30 +0000 2018",
-            "favourites_count": 2020,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": false,
-            "verified": false,
-            "statuses_count": 823,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "000000",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1047644343874465792/1559978036",
-            "profile_link_color": "BC6170",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "000000",
-            "profile_text_color": "000000",
-            "profile_use_background_image": false,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": null,
-            "follow_request_sent": null,
-            "notifications": null,
-            "translator_type": "none"
-        },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 0,
-        "favorite_count": 0,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Mon Jun 17 08:47:50 +0000 2019",
-        "id": 1140541551250006000,
-        "id_str": "1140541551250006016",
-        "full_text": "@anortef LOL perfect analogy. It's... impressive.\n\nSomeone on reddit commented \"wtf javascript is so easy\", and someone else replied \"it's a female\". \n\nThe irony of someone calling me a stupid woman while being too dumb to get an obvious joke!",
-        "truncated": false,
-        "display_text_range": [
-            9,
-            243
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [
-                {
-                    "screen_name": "anortef",
-                    "name": "Adrián Norte",
-                    "id": 282988529,
-                    "id_str": "282988529",
-                    "indices": [
-                        0,
-                        8
-                    ]
-                }
-            ],
-            "urls": []
-        },
-        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
-        "in_reply_to_status_id": 1140540850474065900,
-        "in_reply_to_status_id_str": "1140540850474065921",
-        "in_reply_to_user_id": 282988529,
-        "in_reply_to_user_id_str": "282988529",
-        "in_reply_to_screen_name": "anortef",
-        "user": {
-            "id": 1047644343874465800,
-            "id_str": "1047644343874465792",
-            "name": "Katerina Borodina",
-            "screen_name": "kathyra_",
-            "location": "Sydney, New South Wales",
-            "description": "Infosec, gamedev, diWHY projects and bad jokes. Come for the tech talk, stay to watch my gradual descent into insanity. @dukope wannabe",
-            "url": "https://t.co/ruZZ4SoLSJ",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/ruZZ4SoLSJ",
-                            "expanded_url": "https://www.explainhownow.com",
-                            "display_url": "explainhownow.com",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 2767,
-            "friends_count": 105,
-            "listed_count": 31,
-            "created_at": "Thu Oct 04 00:27:30 +0000 2018",
-            "favourites_count": 2020,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": false,
-            "verified": false,
-            "statuses_count": 823,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "000000",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1047644343874465792/1559978036",
-            "profile_link_color": "BC6170",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "000000",
-            "profile_text_color": "000000",
-            "profile_use_background_image": false,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": null,
-            "follow_request_sent": null,
-            "notifications": null,
-            "translator_type": "none"
-        },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 0,
-        "favorite_count": 0,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Mon Jun 17 08:43:19 +0000 2019",
-        "id": 1140540415617065000,
-        "id_str": "1140540415617064960",
-        "full_text": "@anortef Omg this is the first time I've seen the manboobs edited in. I love it",
-        "truncated": false,
-        "display_text_range": [
-            9,
-            79
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [
-                {
-                    "screen_name": "anortef",
-                    "name": "Adrián Norte",
-                    "id": 282988529,
-                    "id_str": "282988529",
-                    "indices": [
-                        0,
-                        8
-                    ]
-                }
-            ],
-            "urls": []
-        },
-        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
-        "in_reply_to_status_id": 1140540174293774300,
-        "in_reply_to_status_id_str": "1140540174293774336",
-        "in_reply_to_user_id": 282988529,
-        "in_reply_to_user_id_str": "282988529",
-        "in_reply_to_screen_name": "anortef",
-        "user": {
-            "id": 1047644343874465800,
-            "id_str": "1047644343874465792",
-            "name": "Katerina Borodina",
-            "screen_name": "kathyra_",
-            "location": "Sydney, New South Wales",
-            "description": "Infosec, gamedev, diWHY projects and bad jokes. Come for the tech talk, stay to watch my gradual descent into insanity. @dukope wannabe",
-            "url": "https://t.co/ruZZ4SoLSJ",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/ruZZ4SoLSJ",
-                            "expanded_url": "https://www.explainhownow.com",
-                            "display_url": "explainhownow.com",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 2767,
-            "friends_count": 105,
-            "listed_count": 31,
-            "created_at": "Thu Oct 04 00:27:30 +0000 2018",
-            "favourites_count": 2020,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": false,
-            "verified": false,
-            "statuses_count": 823,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "000000",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1047644343874465792/1559978036",
-            "profile_link_color": "BC6170",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "000000",
-            "profile_text_color": "000000",
-            "profile_use_background_image": false,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": null,
-            "follow_request_sent": null,
-            "notifications": null,
-            "translator_type": "none"
-        },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 0,
-        "favorite_count": 0,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Mon Jun 17 08:40:05 +0000 2019",
-        "id": 1140539598734385200,
-        "id_str": "1140539598734385152",
-        "full_text": "@anortef Nice!! That's awesome!",
-        "truncated": false,
-        "display_text_range": [
-            9,
-            31
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [
-                {
-                    "screen_name": "anortef",
-                    "name": "Adrián Norte",
-                    "id": 282988529,
-                    "id_str": "282988529",
-                    "indices": [
-                        0,
-                        8
-                    ]
-                }
-            ],
-            "urls": []
-        },
-        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
-        "in_reply_to_status_id": 1140539114950991900,
-        "in_reply_to_status_id_str": "1140539114950991872",
-        "in_reply_to_user_id": 282988529,
-        "in_reply_to_user_id_str": "282988529",
-        "in_reply_to_screen_name": "anortef",
-        "user": {
-            "id": 1047644343874465800,
-            "id_str": "1047644343874465792",
-            "name": "Katerina Borodina",
-            "screen_name": "kathyra_",
-            "location": "Sydney, New South Wales",
-            "description": "Infosec, gamedev, diWHY projects and bad jokes. Come for the tech talk, stay to watch my gradual descent into insanity. @dukope wannabe",
-            "url": "https://t.co/ruZZ4SoLSJ",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/ruZZ4SoLSJ",
-                            "expanded_url": "https://www.explainhownow.com",
-                            "display_url": "explainhownow.com",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 2767,
-            "friends_count": 105,
-            "listed_count": 31,
-            "created_at": "Thu Oct 04 00:27:30 +0000 2018",
-            "favourites_count": 2020,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": false,
-            "verified": false,
-            "statuses_count": 823,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "000000",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1047644343874465792/1559978036",
-            "profile_link_color": "BC6170",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "000000",
-            "profile_text_color": "000000",
-            "profile_use_background_image": false,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": null,
-            "follow_request_sent": null,
-            "notifications": null,
-            "translator_type": "none"
-        },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 0,
-        "favorite_count": 0,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Mon Jun 17 08:37:53 +0000 2019",
-        "id": 1140539046822735900,
-        "id_str": "1140539046822735872",
-        "full_text": "@kcalvinalvinn @danhwang88 @winem_ Sounds about right! I was pulling an all nighter on a project once and kept wondering why some logic wasn't executing. I had a return statement right before the line I was trying to test...",
-        "truncated": false,
-        "display_text_range": [
-            35,
-            224
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [
-                {
-                    "screen_name": "kcalvinalvinn",
-                    "name": "Calvin Kim",
-                    "id": 2862380682,
-                    "id_str": "2862380682",
-                    "indices": [
-                        0,
-                        14
-                    ]
-                },
-                {
-                    "screen_name": "danhwang88",
-                    "name": "Daniel Hwang",
-                    "id": 331819692,
-                    "id_str": "331819692",
-                    "indices": [
-                        15,
-                        26
-                    ]
-                },
-                {
-                    "screen_name": "winem_",
-                    "name": "Marcel Weinberg",
-                    "id": 473043684,
-                    "id_str": "473043684",
-                    "indices": [
-                        27,
-                        34
-                    ]
-                }
-            ],
-            "urls": []
-        },
-        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
-        "in_reply_to_status_id": 1140538347347034100,
-        "in_reply_to_status_id_str": "1140538347347034112",
-        "in_reply_to_user_id": 2862380682,
-        "in_reply_to_user_id_str": "2862380682",
-        "in_reply_to_screen_name": "kcalvinalvinn",
-        "user": {
-            "id": 1047644343874465800,
-            "id_str": "1047644343874465792",
-            "name": "Katerina Borodina",
-            "screen_name": "kathyra_",
-            "location": "Sydney, New South Wales",
-            "description": "Infosec, gamedev, diWHY projects and bad jokes. Come for the tech talk, stay to watch my gradual descent into insanity. @dukope wannabe",
-            "url": "https://t.co/ruZZ4SoLSJ",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/ruZZ4SoLSJ",
-                            "expanded_url": "https://www.explainhownow.com",
-                            "display_url": "explainhownow.com",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 2767,
-            "friends_count": 105,
-            "listed_count": 31,
-            "created_at": "Thu Oct 04 00:27:30 +0000 2018",
-            "favourites_count": 2020,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": false,
-            "verified": false,
-            "statuses_count": 823,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "000000",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1047644343874465792/1559978036",
-            "profile_link_color": "BC6170",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "000000",
-            "profile_text_color": "000000",
-            "profile_use_background_image": false,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": null,
-            "follow_request_sent": null,
-            "notifications": null,
-            "translator_type": "none"
-        },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 0,
-        "favorite_count": 1,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Mon Jun 17 08:25:23 +0000 2019",
-        "id": 1140535900008411100,
-        "id_str": "1140535900008411136",
-        "full_text": "I got over 50 people telling me what to do over my javascript \"what the fuck\" joke. I make jokes on the internet for attention, that's my thing. It doesn't harm me, but it's wasted a collective 50 people's time and I feel bad. save your cheeto dust for the WASD keys instead",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            274
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
-        },
-        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
-        "in_reply_to_status_id": 1140532588626399200,
-        "in_reply_to_status_id_str": "1140532588626399232",
-        "in_reply_to_user_id": 1047644343874465800,
-        "in_reply_to_user_id_str": "1047644343874465792",
-        "in_reply_to_screen_name": "kathyra_",
-        "user": {
-            "id": 1047644343874465800,
-            "id_str": "1047644343874465792",
-            "name": "Katerina Borodina",
-            "screen_name": "kathyra_",
-            "location": "Sydney, New South Wales",
-            "description": "Infosec, gamedev, diWHY projects and bad jokes. Come for the tech talk, stay to watch my gradual descent into insanity. @dukope wannabe",
-            "url": "https://t.co/ruZZ4SoLSJ",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/ruZZ4SoLSJ",
-                            "expanded_url": "https://www.explainhownow.com",
-                            "display_url": "explainhownow.com",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 2767,
-            "friends_count": 105,
-            "listed_count": 31,
-            "created_at": "Thu Oct 04 00:27:30 +0000 2018",
-            "favourites_count": 2020,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": false,
-            "verified": false,
-            "statuses_count": 823,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "000000",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1047644343874465792/1559978036",
-            "profile_link_color": "BC6170",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "000000",
-            "profile_text_color": "000000",
-            "profile_use_background_image": false,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": null,
-            "follow_request_sent": null,
-            "notifications": null,
-            "translator_type": "none"
-        },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 0,
-        "favorite_count": 15,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Mon Jun 17 08:19:55 +0000 2019",
-        "id": 1140534524138311700,
-        "id_str": "1140534524138311680",
-        "full_text": "@caspervonb Ah crap.",
-        "truncated": false,
-        "display_text_range": [
-            12,
             20
         ],
         "entities": {
             "hashtags": [],
             "symbols": [],
-            "user_mentions": [
-                {
-                    "screen_name": "caspervonb",
-                    "name": "Casper Beyer 🧐",
-                    "id": 110017148,
-                    "id_str": "110017148",
-                    "indices": [
-                        0,
-                        11
-                    ]
-                }
-            ],
-            "urls": []
-        },
-        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
-        "in_reply_to_status_id": 1140534366918987800,
-        "in_reply_to_status_id_str": "1140534366918987776",
-        "in_reply_to_user_id": 110017148,
-        "in_reply_to_user_id_str": "110017148",
-        "in_reply_to_screen_name": "caspervonb",
-        "user": {
-            "id": 1047644343874465800,
-            "id_str": "1047644343874465792",
-            "name": "Katerina Borodina",
-            "screen_name": "kathyra_",
-            "location": "Sydney, New South Wales",
-            "description": "Infosec, gamedev, diWHY projects and bad jokes. Come for the tech talk, stay to watch my gradual descent into insanity. @dukope wannabe",
-            "url": "https://t.co/ruZZ4SoLSJ",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/ruZZ4SoLSJ",
-                            "expanded_url": "https://www.explainhownow.com",
-                            "display_url": "explainhownow.com",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 2767,
-            "friends_count": 105,
-            "listed_count": 31,
-            "created_at": "Thu Oct 04 00:27:30 +0000 2018",
-            "favourites_count": 2020,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": false,
-            "verified": false,
-            "statuses_count": 823,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "000000",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1047644343874465792/1559978036",
-            "profile_link_color": "BC6170",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "000000",
-            "profile_text_color": "000000",
-            "profile_use_background_image": false,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": null,
-            "follow_request_sent": null,
-            "notifications": null,
-            "translator_type": "none"
-        },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 0,
-        "favorite_count": 4,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Mon Jun 17 08:12:13 +0000 2019",
-        "id": 1140532588626399200,
-        "id_str": "1140532588626399232",
-        "full_text": "psa: if someone's not asking for advice, don't offer them advice. it's patronizing, and you're wasting everyone's time. thanks",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            126
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
             "user_mentions": [],
             "urls": []
         },
-        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
         "in_reply_to_status_id": null,
         "in_reply_to_status_id_str": null,
         "in_reply_to_user_id": null,
         "in_reply_to_user_id_str": null,
         "in_reply_to_screen_name": null,
         "user": {
-            "id": 1047644343874465800,
-            "id_str": "1047644343874465792",
-            "name": "Katerina Borodina",
-            "screen_name": "kathyra_",
-            "location": "Sydney, New South Wales",
-            "description": "Infosec, gamedev, diWHY projects and bad jokes. Come for the tech talk, stay to watch my gradual descent into insanity. @dukope wannabe",
-            "url": "https://t.co/ruZZ4SoLSJ",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/ruZZ4SoLSJ",
-                            "expanded_url": "https://www.explainhownow.com",
-                            "display_url": "explainhownow.com",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 2767,
-            "friends_count": 105,
-            "listed_count": 31,
-            "created_at": "Thu Oct 04 00:27:30 +0000 2018",
-            "favourites_count": 2020,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": false,
-            "verified": false,
-            "statuses_count": 823,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "000000",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1047644343874465792/1559978036",
-            "profile_link_color": "BC6170",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "000000",
-            "profile_text_color": "000000",
-            "profile_use_background_image": false,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": null,
-            "follow_request_sent": null,
-            "notifications": null,
-            "translator_type": "none"
+            "id": 13615722,
+            "id_str": "13615722"
         },
         "geo": null,
         "coordinates": null,
         "place": null,
         "contributors": null,
         "is_quote_status": false,
-        "retweet_count": 2,
-        "favorite_count": 16,
+        "retweet_count": 2668,
+        "favorite_count": 14624,
         "favorited": false,
         "retweeted": false,
         "lang": "en"
     },
     {
-        "created_at": "Mon Jun 17 07:50:09 +0000 2019",
-        "id": 1140527032423424000,
-        "id_str": "1140527032423424000",
-        "full_text": "@tonyneedsfood I don't see it IRL, but it's pretty much *everywhere* on Reddit.",
-        "truncated": false,
-        "display_text_range": [
-            15,
-            79
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [
-                {
-                    "screen_name": "tonyneedsfood",
-                    "name": "Tony",
-                    "id": 731748991960944600,
-                    "id_str": "731748991960944640",
-                    "indices": [
-                        0,
-                        14
-                    ]
-                }
-            ],
-            "urls": []
-        },
-        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
-        "in_reply_to_status_id": 1140526780081532900,
-        "in_reply_to_status_id_str": "1140526780081532928",
-        "in_reply_to_user_id": 731748991960944600,
-        "in_reply_to_user_id_str": "731748991960944640",
-        "in_reply_to_screen_name": "tonyneedsfood",
-        "user": {
-            "id": 1047644343874465800,
-            "id_str": "1047644343874465792",
-            "name": "Katerina Borodina",
-            "screen_name": "kathyra_",
-            "location": "Sydney, New South Wales",
-            "description": "Infosec, gamedev, diWHY projects and bad jokes. Come for the tech talk, stay to watch my gradual descent into insanity. @dukope wannabe",
-            "url": "https://t.co/ruZZ4SoLSJ",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/ruZZ4SoLSJ",
-                            "expanded_url": "https://www.explainhownow.com",
-                            "display_url": "explainhownow.com",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 2767,
-            "friends_count": 105,
-            "listed_count": 31,
-            "created_at": "Thu Oct 04 00:27:30 +0000 2018",
-            "favourites_count": 2020,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": false,
-            "verified": false,
-            "statuses_count": 823,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "000000",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1047644343874465792/1559978036",
-            "profile_link_color": "BC6170",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "000000",
-            "profile_text_color": "000000",
-            "profile_use_background_image": false,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": null,
-            "follow_request_sent": null,
-            "notifications": null,
-            "translator_type": "none"
-        },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 0,
-        "favorite_count": 0,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Mon Jun 17 07:40:58 +0000 2019",
-        "id": 1140524722754482200,
-        "id_str": "1140524722754482176",
-        "full_text": "@kcalvinalvinn I'd say artists are the only wholesome ones... but traditional artists have shat on me for doing digital, so lmao",
-        "truncated": false,
-        "display_text_range": [
-            15,
-            128
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [
-                {
-                    "screen_name": "kcalvinalvinn",
-                    "name": "Calvin Kim",
-                    "id": 2862380682,
-                    "id_str": "2862380682",
-                    "indices": [
-                        0,
-                        14
-                    ]
-                }
-            ],
-            "urls": []
-        },
-        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
-        "in_reply_to_status_id": 1140524421360177200,
-        "in_reply_to_status_id_str": "1140524421360177153",
-        "in_reply_to_user_id": 2862380682,
-        "in_reply_to_user_id_str": "2862380682",
-        "in_reply_to_screen_name": "kcalvinalvinn",
-        "user": {
-            "id": 1047644343874465800,
-            "id_str": "1047644343874465792",
-            "name": "Katerina Borodina",
-            "screen_name": "kathyra_",
-            "location": "Sydney, New South Wales",
-            "description": "Infosec, gamedev, diWHY projects and bad jokes. Come for the tech talk, stay to watch my gradual descent into insanity. @dukope wannabe",
-            "url": "https://t.co/ruZZ4SoLSJ",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/ruZZ4SoLSJ",
-                            "expanded_url": "https://www.explainhownow.com",
-                            "display_url": "explainhownow.com",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 2767,
-            "friends_count": 105,
-            "listed_count": 31,
-            "created_at": "Thu Oct 04 00:27:30 +0000 2018",
-            "favourites_count": 2020,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": false,
-            "verified": false,
-            "statuses_count": 823,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "000000",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1047644343874465792/1559978036",
-            "profile_link_color": "BC6170",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "000000",
-            "profile_text_color": "000000",
-            "profile_use_background_image": false,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": null,
-            "follow_request_sent": null,
-            "notifications": null,
-            "translator_type": "none"
-        },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 0,
-        "favorite_count": 0,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Mon Jun 17 07:30:35 +0000 2019",
-        "id": 1140522111707914200,
-        "id_str": "1140522111707914240",
-        "full_text": "\"who cares\" is the correct response then. thanks for participating everyone.",
+        "created_at": "Sat Jun 22 20:35:32 +0000 2019",
+        "id": 1142531589693460500,
+        "id_str": "1142531589693460481",
+        "full_text": "We still have cute animals in Hell, the only difference is they have multiple heads. Which just means more to pet.",
         "truncated": false,
         "display_text_range": [
             0,
-            76
+            114
         ],
         "entities": {
             "hashtags": [],
@@ -1262,802 +52,1531 @@
             "user_mentions": [],
             "urls": []
         },
-        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
-        "in_reply_to_status_id": 1140158222768017400,
-        "in_reply_to_status_id_str": "1140158222768017408",
-        "in_reply_to_user_id": 1047644343874465800,
-        "in_reply_to_user_id_str": "1047644343874465792",
-        "in_reply_to_screen_name": "kathyra_",
-        "user": {
-            "id": 1047644343874465800,
-            "id_str": "1047644343874465792",
-            "name": "Katerina Borodina",
-            "screen_name": "kathyra_",
-            "location": "Sydney, New South Wales",
-            "description": "Infosec, gamedev, diWHY projects and bad jokes. Come for the tech talk, stay to watch my gradual descent into insanity. @dukope wannabe",
-            "url": "https://t.co/ruZZ4SoLSJ",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/ruZZ4SoLSJ",
-                            "expanded_url": "https://www.explainhownow.com",
-                            "display_url": "explainhownow.com",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 2767,
-            "friends_count": 105,
-            "listed_count": 31,
-            "created_at": "Thu Oct 04 00:27:30 +0000 2018",
-            "favourites_count": 2020,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": false,
-            "verified": false,
-            "statuses_count": 823,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "000000",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1047644343874465792/1559978036",
-            "profile_link_color": "BC6170",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "000000",
-            "profile_text_color": "000000",
-            "profile_use_background_image": false,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": null,
-            "follow_request_sent": null,
-            "notifications": null,
-            "translator_type": "none"
-        },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 0,
-        "favorite_count": 1,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Mon Jun 17 07:19:08 +0000 2019",
-        "id": 1140519226471407600,
-        "id_str": "1140519226471407617",
-        "full_text": "Artists:\n\"I use watercolors!\"\n\"That's cool! I oil paint.\"\n\nMusicians:\n\"I play guitar.\"\n\"Sick! I'm a drummer, we should play together sometime.\"\n\nProgrammers:\n\"I use React.\"\n\"ANGULAR IS THE BEST AND I WILL FUCKING FIGHT YOU. WHERE DO YOU LIVE? I'M COMING FOR YOU\"",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            262
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
-        },
-        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
         "in_reply_to_status_id": null,
         "in_reply_to_status_id_str": null,
         "in_reply_to_user_id": null,
         "in_reply_to_user_id_str": null,
         "in_reply_to_screen_name": null,
         "user": {
-            "id": 1047644343874465800,
-            "id_str": "1047644343874465792",
-            "name": "Katerina Borodina",
-            "screen_name": "kathyra_",
-            "location": "Sydney, New South Wales",
-            "description": "Infosec, gamedev, diWHY projects and bad jokes. Come for the tech talk, stay to watch my gradual descent into insanity. @dukope wannabe",
-            "url": "https://t.co/ruZZ4SoLSJ",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/ruZZ4SoLSJ",
-                            "expanded_url": "https://www.explainhownow.com",
-                            "display_url": "explainhownow.com",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 2767,
-            "friends_count": 105,
-            "listed_count": 31,
-            "created_at": "Thu Oct 04 00:27:30 +0000 2018",
-            "favourites_count": 2020,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": false,
-            "verified": false,
-            "statuses_count": 823,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "000000",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1047644343874465792/1559978036",
-            "profile_link_color": "BC6170",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "000000",
-            "profile_text_color": "000000",
-            "profile_use_background_image": false,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": null,
-            "follow_request_sent": null,
-            "notifications": null,
-            "translator_type": "none"
+            "id": 13615722,
+            "id_str": "13615722"
         },
         "geo": null,
         "coordinates": null,
         "place": null,
         "contributors": null,
         "is_quote_status": false,
-        "retweet_count": 15,
-        "favorite_count": 84,
+        "retweet_count": 3587,
+        "favorite_count": 26142,
         "favorited": false,
         "retweeted": false,
         "lang": "en"
     },
     {
-        "created_at": "Mon Jun 17 07:14:31 +0000 2019",
-        "id": 1140518065223786500,
-        "id_str": "1140518065223786496",
-        "full_text": "@winem_ @kcalvinalvinn @danhwang88 EW EW EW EW EWWWW",
+        "created_at": "Sat Jun 22 16:11:53 +0000 2019",
+        "id": 1142465239474196500,
+        "id_str": "1142465239474196480",
+        "full_text": "Hail\n  🌹🌹\n🌹    🌹\n🌹\n    🌹\n       🌹\n🌹     🌹\n     🌹\n     \n      🌹\n  🌹  🌹\n🌹      🌹\n🌹 🌹 🌹\n🌹       🌹\n\n🌹🌹🌹\n     🌹\n     🌹\n     🌹\n\n      🌹\n  🌹  🌹\n🌹      🌹\n🌹 🌹 🌹\n🌹       🌹\n\n🌹         🌹\n🌹🌹    🌹\n🌹    🌹🌹\n🌹         🌹",
         "truncated": false,
         "display_text_range": [
-            35,
-            52
+            0,
+            202
         ],
         "entities": {
             "hashtags": [],
             "symbols": [],
-            "user_mentions": [
-                {
-                    "screen_name": "winem_",
-                    "name": "Marcel Weinberg",
-                    "id": 473043684,
-                    "id_str": "473043684",
-                    "indices": [
-                        0,
-                        7
-                    ]
-                },
-                {
-                    "screen_name": "kcalvinalvinn",
-                    "name": "Calvin Kim",
-                    "id": 2862380682,
-                    "id_str": "2862380682",
-                    "indices": [
-                        8,
-                        22
-                    ]
-                },
-                {
-                    "screen_name": "danhwang88",
-                    "name": "Daniel Hwang",
-                    "id": 331819692,
-                    "id_str": "331819692",
-                    "indices": [
-                        23,
-                        34
-                    ]
-                }
-            ],
+            "user_mentions": [],
             "urls": []
         },
-        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
-        "in_reply_to_status_id": 1140517461894340600,
-        "in_reply_to_status_id_str": "1140517461894340610",
-        "in_reply_to_user_id": 473043684,
-        "in_reply_to_user_id_str": "473043684",
-        "in_reply_to_screen_name": "winem_",
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
         "user": {
-            "id": 1047644343874465800,
-            "id_str": "1047644343874465792",
-            "name": "Katerina Borodina",
-            "screen_name": "kathyra_",
-            "location": "Sydney, New South Wales",
-            "description": "Infosec, gamedev, diWHY projects and bad jokes. Come for the tech talk, stay to watch my gradual descent into insanity. @dukope wannabe",
-            "url": "https://t.co/ruZZ4SoLSJ",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/ruZZ4SoLSJ",
-                            "expanded_url": "https://www.explainhownow.com",
-                            "display_url": "explainhownow.com",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 2767,
-            "friends_count": 105,
-            "listed_count": 31,
-            "created_at": "Thu Oct 04 00:27:30 +0000 2018",
-            "favourites_count": 2020,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": false,
-            "verified": false,
-            "statuses_count": 823,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "000000",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1047644343874465792/1559978036",
-            "profile_link_color": "BC6170",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "000000",
-            "profile_text_color": "000000",
-            "profile_use_background_image": false,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": null,
-            "follow_request_sent": null,
-            "notifications": null,
-            "translator_type": "none"
+            "id": 13615722,
+            "id_str": "13615722"
         },
         "geo": null,
         "coordinates": null,
         "place": null,
         "contributors": null,
         "is_quote_status": false,
-        "retweet_count": 0,
-        "favorite_count": 0,
+        "retweet_count": 11713,
+        "favorite_count": 62060,
         "favorited": false,
         "retweeted": false,
-        "lang": "tl"
+        "lang": "en"
     },
     {
-        "created_at": "Mon Jun 17 07:00:10 +0000 2019",
-        "id": 1140514455647731700,
-        "id_str": "1140514455647731712",
-        "full_text": "@idanyliuk day 3 still lost please send help",
+        "created_at": "Sat Jun 22 12:39:21 +0000 2019",
+        "id": 1142411752430325800,
+        "id_str": "1142411752430325760",
+        "full_text": "You’ve all been in Hell since 2012",
         "truncated": false,
         "display_text_range": [
-            11,
+            0,
+            34
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 6728,
+        "favorite_count": 46794,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sat Jun 22 00:22:49 +0000 2019",
+        "id": 1142226397856968700,
+        "id_str": "1142226397856968704",
+        "full_text": "I enjoy watching everyones fuck ups",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            35
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 2524,
+        "favorite_count": 23648,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Fri Jun 21 20:31:36 +0000 2019",
+        "id": 1142168211049406500,
+        "id_str": "1142168211049406464",
+        "full_text": "Me : h-\n\nEveryone : https://t.co/xlM0cuWOzE",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            19
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [],
+            "media": [
+                {
+                    "id": 1142168201758957600,
+                    "id_str": "1142168201758957575",
+                    "indices": [
+                        20,
+                        43
+                    ],
+                    "media_url": "http://pbs.twimg.com/tweet_video_thumb/D9nL7ZOW4AcdQye.jpg",
+                    "media_url_https": "https://pbs.twimg.com/tweet_video_thumb/D9nL7ZOW4AcdQye.jpg",
+                    "url": "https://t.co/xlM0cuWOzE",
+                    "display_url": "pic.twitter.com/xlM0cuWOzE",
+                    "expanded_url": "https://twitter.com/s8n/status/1142168211049406464/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "small": {
+                            "w": 500,
+                            "h": 210,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "large": {
+                            "w": 500,
+                            "h": 210,
+                            "resize": "fit"
+                        },
+                        "medium": {
+                            "w": 500,
+                            "h": 210,
+                            "resize": "fit"
+                        }
+                    }
+                }
+            ]
+        },
+        "extended_entities": {
+            "media": [
+                {
+                    "id": 1142168201758957600,
+                    "id_str": "1142168201758957575",
+                    "indices": [
+                        20,
+                        43
+                    ],
+                    "media_url": "http://pbs.twimg.com/tweet_video_thumb/D9nL7ZOW4AcdQye.jpg",
+                    "media_url_https": "https://pbs.twimg.com/tweet_video_thumb/D9nL7ZOW4AcdQye.jpg",
+                    "url": "https://t.co/xlM0cuWOzE",
+                    "display_url": "pic.twitter.com/xlM0cuWOzE",
+                    "expanded_url": "https://twitter.com/s8n/status/1142168211049406464/photo/1",
+                    "type": "animated_gif",
+                    "sizes": {
+                        "small": {
+                            "w": 500,
+                            "h": 210,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "large": {
+                            "w": 500,
+                            "h": 210,
+                            "resize": "fit"
+                        },
+                        "medium": {
+                            "w": 500,
+                            "h": 210,
+                            "resize": "fit"
+                        }
+                    },
+                    "video_info": {
+                        "aspect_ratio": [
+                            50,
+                            21
+                        ],
+                        "variants": [
+                            {
+                                "bitrate": 0,
+                                "content_type": "video/mp4",
+                                "url": "https://video.twimg.com/tweet_video/D9nL7ZOW4AcdQye.mp4"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1834,
+        "favorite_count": 20199,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Fri Jun 21 18:11:15 +0000 2019",
+        "id": 1142132890437922800,
+        "id_str": "1142132890437922817",
+        "full_text": "If animals could talk they’d tell you to shut the fuck up",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            57
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 9978,
+        "favorite_count": 49666,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Fri Jun 21 14:54:45 +0000 2019",
+        "id": 1142083439409205200,
+        "id_str": "1142083439409205248",
+        "full_text": "Stop saying “mood” when I’m torturing you it’s really off-putting.",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            66
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 5273,
+        "favorite_count": 38879,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Fri Jun 21 12:01:48 +0000 2019",
+        "id": 1142039913174581200,
+        "id_str": "1142039913174581248",
+        "full_text": "Come to Hell, we have unlimited chicken nuggets.",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            48
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 7423,
+        "favorite_count": 47761,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Thu Jun 20 22:09:51 +0000 2019",
+        "id": 1141830549264392200,
+        "id_str": "1141830549264392197",
+        "full_text": "Is everything okay up there?",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            28
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 3233,
+        "favorite_count": 35342,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Thu Jun 20 20:57:06 +0000 2019",
+        "id": 1141812240091365400,
+        "id_str": "1141812240091365380",
+        "full_text": "Go get your satan merch here 😈\n\n—&gt; https://t.co/XJDLz4YCdm https://t.co/yrlbEcpki1",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            61
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [
+                {
+                    "url": "https://t.co/XJDLz4YCdm",
+                    "expanded_url": "http://s8nstore.com",
+                    "display_url": "s8nstore.com",
+                    "indices": [
+                        38,
+                        61
+                    ]
+                }
+            ],
+            "media": [
+                {
+                    "id": 1141812233032413200,
+                    "id_str": "1141812233032413184",
+                    "indices": [
+                        62,
+                        85
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/D9iILSYXsAA6QGb.jpg",
+                    "media_url_https": "https://pbs.twimg.com/media/D9iILSYXsAA6QGb.jpg",
+                    "url": "https://t.co/yrlbEcpki1",
+                    "display_url": "pic.twitter.com/yrlbEcpki1",
+                    "expanded_url": "https://twitter.com/s8n/status/1141812240091365380/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "medium": {
+                            "w": 733,
+                            "h": 1200,
+                            "resize": "fit"
+                        },
+                        "small": {
+                            "w": 416,
+                            "h": 680,
+                            "resize": "fit"
+                        },
+                        "large": {
+                            "w": 1073,
+                            "h": 1756,
+                            "resize": "fit"
+                        }
+                    }
+                }
+            ]
+        },
+        "extended_entities": {
+            "media": [
+                {
+                    "id": 1141812233032413200,
+                    "id_str": "1141812233032413184",
+                    "indices": [
+                        62,
+                        85
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/D9iILSYXsAA6QGb.jpg",
+                    "media_url_https": "https://pbs.twimg.com/media/D9iILSYXsAA6QGb.jpg",
+                    "url": "https://t.co/yrlbEcpki1",
+                    "display_url": "pic.twitter.com/yrlbEcpki1",
+                    "expanded_url": "https://twitter.com/s8n/status/1141812240091365380/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "medium": {
+                            "w": 733,
+                            "h": 1200,
+                            "resize": "fit"
+                        },
+                        "small": {
+                            "w": 416,
+                            "h": 680,
+                            "resize": "fit"
+                        },
+                        "large": {
+                            "w": 1073,
+                            "h": 1756,
+                            "resize": "fit"
+                        }
+                    }
+                },
+                {
+                    "id": 1141812233023963100,
+                    "id_str": "1141812233023963141",
+                    "indices": [
+                        62,
+                        85
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/D9iILSWWwAUpBMS.jpg",
+                    "media_url_https": "https://pbs.twimg.com/media/D9iILSWWwAUpBMS.jpg",
+                    "url": "https://t.co/yrlbEcpki1",
+                    "display_url": "pic.twitter.com/yrlbEcpki1",
+                    "expanded_url": "https://twitter.com/s8n/status/1141812240091365380/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "medium": {
+                            "w": 850,
+                            "h": 1200,
+                            "resize": "fit"
+                        },
+                        "small": {
+                            "w": 481,
+                            "h": 680,
+                            "resize": "fit"
+                        },
+                        "large": {
+                            "w": 1450,
+                            "h": 2048,
+                            "resize": "fit"
+                        }
+                    }
+                }
+            ]
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 187,
+        "favorite_count": 4155,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Thu Jun 20 18:45:31 +0000 2019",
+        "id": 1141779126598144000,
+        "id_str": "1141779126598144002",
+        "full_text": "Come to Hell I’ll let you pet Cerberus",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            38
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 5540,
+        "favorite_count": 39862,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Thu Jun 20 15:38:08 +0000 2019",
+        "id": 1141731968712892400,
+        "id_str": "1141731968712892416",
+        "full_text": "I put the ‘Hell’ in ‘Hello’",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            27
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 4503,
+        "favorite_count": 31381,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Thu Jun 20 12:13:49 +0000 2019",
+        "id": 1141680550928887800,
+        "id_str": "1141680550928887810",
+        "full_text": "I miss the good old days when whipping someone was classed as torture instead of fun",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            84
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 2164,
+        "favorite_count": 24603,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Thu Jun 20 00:45:23 +0000 2019",
+        "id": 1141507301897117700,
+        "id_str": "1141507301897117696",
+        "full_text": "If you think your life sucks then it probably does you boring fucker.",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            69
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 7003,
+        "favorite_count": 41528,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Wed Jun 19 22:11:07 +0000 2019",
+        "id": 1141468480769843200,
+        "id_str": "1141468480769843201",
+        "full_text": "Twitter won’t verify me because they know I’d be too powerful",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            61
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 3233,
+        "favorite_count": 42434,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Wed Jun 19 19:07:19 +0000 2019",
+        "id": 1141422222487281700,
+        "id_str": "1141422222487281665",
+        "full_text": "Prior to popular belief. \n\nShut the fuck up.",
+        "truncated": false,
+        "display_text_range": [
+            0,
             44
         ],
         "entities": {
             "hashtags": [],
             "symbols": [],
-            "user_mentions": [
-                {
-                    "screen_name": "idanyliuk",
-                    "name": "Ivan Daniluk",
-                    "id": 57005130,
-                    "id_str": "57005130",
-                    "indices": [
-                        0,
-                        10
-                    ]
-                }
-            ],
-            "urls": []
-        },
-        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
-        "in_reply_to_status_id": 1140177875758440400,
-        "in_reply_to_status_id_str": "1140177875758440448",
-        "in_reply_to_user_id": 57005130,
-        "in_reply_to_user_id_str": "57005130",
-        "in_reply_to_screen_name": "idanyliuk",
-        "user": {
-            "id": 1047644343874465800,
-            "id_str": "1047644343874465792",
-            "name": "Katerina Borodina",
-            "screen_name": "kathyra_",
-            "location": "Sydney, New South Wales",
-            "description": "Infosec, gamedev, diWHY projects and bad jokes. Come for the tech talk, stay to watch my gradual descent into insanity. @dukope wannabe",
-            "url": "https://t.co/ruZZ4SoLSJ",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/ruZZ4SoLSJ",
-                            "expanded_url": "https://www.explainhownow.com",
-                            "display_url": "explainhownow.com",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 2767,
-            "friends_count": 105,
-            "listed_count": 31,
-            "created_at": "Thu Oct 04 00:27:30 +0000 2018",
-            "favourites_count": 2020,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": false,
-            "verified": false,
-            "statuses_count": 823,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "000000",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1047644343874465792/1559978036",
-            "profile_link_color": "BC6170",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "000000",
-            "profile_text_color": "000000",
-            "profile_use_background_image": false,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": null,
-            "follow_request_sent": null,
-            "notifications": null,
-            "translator_type": "none"
-        },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 1,
-        "favorite_count": 28,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Mon Jun 17 06:52:01 +0000 2019",
-        "id": 1140512405467721700,
-        "id_str": "1140512405467721728",
-        "full_text": "@slyduda Normally I love vector art, but I'm trying out pixels this time! It's my first time doing pixel art so it's pretty fun",
-        "truncated": false,
-        "display_text_range": [
-            9,
-            127
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [
-                {
-                    "screen_name": "slyduda",
-                    "name": "Sylvester Duda",
-                    "id": 2184575798,
-                    "id_str": "2184575798",
-                    "indices": [
-                        0,
-                        8
-                    ]
-                }
-            ],
-            "urls": []
-        },
-        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
-        "in_reply_to_status_id": 1140512027191808000,
-        "in_reply_to_status_id_str": "1140512027191808001",
-        "in_reply_to_user_id": 2184575798,
-        "in_reply_to_user_id_str": "2184575798",
-        "in_reply_to_screen_name": "slyduda",
-        "user": {
-            "id": 1047644343874465800,
-            "id_str": "1047644343874465792",
-            "name": "Katerina Borodina",
-            "screen_name": "kathyra_",
-            "location": "Sydney, New South Wales",
-            "description": "Infosec, gamedev, diWHY projects and bad jokes. Come for the tech talk, stay to watch my gradual descent into insanity. @dukope wannabe",
-            "url": "https://t.co/ruZZ4SoLSJ",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/ruZZ4SoLSJ",
-                            "expanded_url": "https://www.explainhownow.com",
-                            "display_url": "explainhownow.com",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 2767,
-            "friends_count": 105,
-            "listed_count": 31,
-            "created_at": "Thu Oct 04 00:27:30 +0000 2018",
-            "favourites_count": 2020,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": false,
-            "verified": false,
-            "statuses_count": 823,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "000000",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1047644343874465792/1559978036",
-            "profile_link_color": "BC6170",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "000000",
-            "profile_text_color": "000000",
-            "profile_use_background_image": false,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": null,
-            "follow_request_sent": null,
-            "notifications": null,
-            "translator_type": "none"
-        },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 0,
-        "favorite_count": 1,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Mon Jun 17 02:11:26 +0000 2019",
-        "id": 1140441792388538400,
-        "id_str": "1140441792388538368",
-        "full_text": "Good news I haven't dated any of my TAs",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            39
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
             "user_mentions": [],
             "urls": []
         },
-        "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
-        "in_reply_to_status_id": 1140148163073826800,
-        "in_reply_to_status_id_str": "1140148163073826818",
-        "in_reply_to_user_id": 1047644343874465800,
-        "in_reply_to_user_id_str": "1047644343874465792",
-        "in_reply_to_screen_name": "kathyra_",
-        "user": {
-            "id": 1047644343874465800,
-            "id_str": "1047644343874465792",
-            "name": "Katerina Borodina",
-            "screen_name": "kathyra_",
-            "location": "Sydney, New South Wales",
-            "description": "Infosec, gamedev, diWHY projects and bad jokes. Come for the tech talk, stay to watch my gradual descent into insanity. @dukope wannabe",
-            "url": "https://t.co/ruZZ4SoLSJ",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/ruZZ4SoLSJ",
-                            "expanded_url": "https://www.explainhownow.com",
-                            "display_url": "explainhownow.com",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 2767,
-            "friends_count": 105,
-            "listed_count": 31,
-            "created_at": "Thu Oct 04 00:27:30 +0000 2018",
-            "favourites_count": 2020,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": false,
-            "verified": false,
-            "statuses_count": 823,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "000000",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1047644343874465792/1559978036",
-            "profile_link_color": "BC6170",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "000000",
-            "profile_text_color": "000000",
-            "profile_use_background_image": false,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": null,
-            "follow_request_sent": null,
-            "notifications": null,
-            "translator_type": "none"
-        },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 0,
-        "favorite_count": 14,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Mon Jun 17 00:58:55 +0000 2019",
-        "id": 1140423545698132000,
-        "id_str": "1140423545698131968",
-        "full_text": "@supsuphannah I mean, she already went, so...",
-        "truncated": false,
-        "display_text_range": [
-            14,
-            45
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [
-                {
-                    "screen_name": "supsuphannah",
-                    "name": "🔪 hantai 🔪",
-                    "id": 481154349,
-                    "id_str": "481154349",
-                    "indices": [
-                        0,
-                        13
-                    ]
-                }
-            ],
-            "urls": []
-        },
-        "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
-        "in_reply_to_status_id": 1140421113203179500,
-        "in_reply_to_status_id_str": "1140421113203179520",
-        "in_reply_to_user_id": 481154349,
-        "in_reply_to_user_id_str": "481154349",
-        "in_reply_to_screen_name": "supsuphannah",
-        "user": {
-            "id": 1047644343874465800,
-            "id_str": "1047644343874465792",
-            "name": "Katerina Borodina",
-            "screen_name": "kathyra_",
-            "location": "Sydney, New South Wales",
-            "description": "Infosec, gamedev, diWHY projects and bad jokes. Come for the tech talk, stay to watch my gradual descent into insanity. @dukope wannabe",
-            "url": "https://t.co/ruZZ4SoLSJ",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/ruZZ4SoLSJ",
-                            "expanded_url": "https://www.explainhownow.com",
-                            "display_url": "explainhownow.com",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 2767,
-            "friends_count": 105,
-            "listed_count": 31,
-            "created_at": "Thu Oct 04 00:27:30 +0000 2018",
-            "favourites_count": 2020,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": false,
-            "verified": false,
-            "statuses_count": 823,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "000000",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1047644343874465792/1559978036",
-            "profile_link_color": "BC6170",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "000000",
-            "profile_text_color": "000000",
-            "profile_use_background_image": false,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": null,
-            "follow_request_sent": null,
-            "notifications": null,
-            "translator_type": "none"
-        },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 0,
-        "favorite_count": 5,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Sun Jun 16 23:15:14 +0000 2019",
-        "id": 1140397452710690800,
-        "id_str": "1140397452710690816",
-        "full_text": "With the advancement of medicine, millennials might end up being the last generation to die.\n\nThere's a chance that until the end of humanity, we'll be known as the generation that was broke, made shitty memes and died.",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            219
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
-        },
-        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
         "in_reply_to_status_id": null,
         "in_reply_to_status_id_str": null,
         "in_reply_to_user_id": null,
         "in_reply_to_user_id_str": null,
         "in_reply_to_screen_name": null,
         "user": {
-            "id": 1047644343874465800,
-            "id_str": "1047644343874465792",
-            "name": "Katerina Borodina",
-            "screen_name": "kathyra_",
-            "location": "Sydney, New South Wales",
-            "description": "Infosec, gamedev, diWHY projects and bad jokes. Come for the tech talk, stay to watch my gradual descent into insanity. @dukope wannabe",
-            "url": "https://t.co/ruZZ4SoLSJ",
-            "entities": {
-                "url": {
-                    "urls": [
-                        {
-                            "url": "https://t.co/ruZZ4SoLSJ",
-                            "expanded_url": "https://www.explainhownow.com",
-                            "display_url": "explainhownow.com",
-                            "indices": [
-                                0,
-                                23
-                            ]
-                        }
-                    ]
-                },
-                "description": {
-                    "urls": []
-                }
-            },
-            "protected": false,
-            "followers_count": 2767,
-            "friends_count": 105,
-            "listed_count": 31,
-            "created_at": "Thu Oct 04 00:27:30 +0000 2018",
-            "favourites_count": 2020,
-            "utc_offset": null,
-            "time_zone": null,
-            "geo_enabled": false,
-            "verified": false,
-            "statuses_count": 823,
-            "lang": null,
-            "contributors_enabled": false,
-            "is_translator": false,
-            "is_translation_enabled": false,
-            "profile_background_color": "000000",
-            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
-            "profile_background_tile": false,
-            "profile_image_url": "http://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1137526901826760704/pKpfZ9gV_normal.png",
-            "profile_banner_url": "https://pbs.twimg.com/profile_banners/1047644343874465792/1559978036",
-            "profile_link_color": "BC6170",
-            "profile_sidebar_border_color": "000000",
-            "profile_sidebar_fill_color": "000000",
-            "profile_text_color": "000000",
-            "profile_use_background_image": false,
-            "has_extended_profile": false,
-            "default_profile": false,
-            "default_profile_image": false,
-            "following": null,
-            "follow_request_sent": null,
-            "notifications": null,
-            "translator_type": "none"
+            "id": 13615722,
+            "id_str": "13615722"
         },
         "geo": null,
         "coordinates": null,
         "place": null,
         "contributors": null,
         "is_quote_status": false,
-        "retweet_count": 0,
-        "favorite_count": 17,
+        "retweet_count": 3428,
+        "favorite_count": 23980,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Wed Jun 19 14:40:48 +0000 2019",
+        "id": 1141355154903654400,
+        "id_str": "1141355154903654400",
+        "full_text": "Demons hide under your bed so they can play with your pets while you’re asleep.",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            79
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 5271,
+        "favorite_count": 39218,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Wed Jun 19 12:12:47 +0000 2019",
+        "id": 1141317904845213700,
+        "id_str": "1141317904845213702",
+        "full_text": "Sinning is good for your health",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            31
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 4560,
+        "favorite_count": 25296,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Tue Jun 18 22:23:00 +0000 2019",
+        "id": 1141109080507015200,
+        "id_str": "1141109080507015168",
+        "full_text": "Hell has the best pizza",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            23
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 3568,
+        "favorite_count": 34619,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Tue Jun 18 18:44:16 +0000 2019",
+        "id": 1141054035992227800,
+        "id_str": "1141054035992227840",
+        "full_text": "Just put a padlock through Jesus’s holes in his hands while he was praying",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            74
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1683,
+        "favorite_count": 19232,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Tue Jun 18 15:07:08 +0000 2019",
+        "id": 1140999391626563600,
+        "id_str": "1140999391626563590",
+        "full_text": "Please come to Hell im lonely",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            29
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 7470,
+        "favorite_count": 47192,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Tue Jun 18 11:53:51 +0000 2019",
+        "id": 1140950751394639900,
+        "id_str": "1140950751394639872",
+        "full_text": "Dear humanity,\n\nWhat the fuck is wrong with you.",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            48
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 47960,
+        "favorite_count": 142394,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Tue Jun 18 00:17:01 +0000 2019",
+        "id": 1140775387099799600,
+        "id_str": "1140775387099799552",
+        "full_text": "I have an announcement to make...\n\nFuck you.",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            44
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 18195,
+        "favorite_count": 73133,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Mon Jun 17 21:57:39 +0000 2019",
+        "id": 1140740313780277200,
+        "id_str": "1140740313780277254",
+        "full_text": "Who do I have to sacrifice to get verified around here",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            54
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 3458,
+        "favorite_count": 45399,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Mon Jun 17 19:51:10 +0000 2019",
+        "id": 1140708485098876900,
+        "id_str": "1140708485098876928",
+        "full_text": "Guess imma die https://t.co/3vHrfZXxyN",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            14
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [
+                {
+                    "url": "https://t.co/3vHrfZXxyN",
+                    "expanded_url": "https://twitter.com/ladbible/status/1140259493105807361",
+                    "display_url": "twitter.com/ladbible/statu…",
+                    "indices": [
+                        15,
+                        38
+                    ]
+                }
+            ]
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": true,
+        "quoted_status_id": 1140259493105807400,
+        "quoted_status_id_str": "1140259493105807361",
+        "quoted_status_permalink": {
+            "url": "https://t.co/3vHrfZXxyN",
+            "expanded": "https://twitter.com/ladbible/status/1140259493105807361",
+            "display": "twitter.com/ladbible/statu…"
+        },
+        "quoted_status": {
+            "created_at": "Sun Jun 16 14:07:02 +0000 2019",
+            "id": 1140259493105807400,
+            "id_str": "1140259493105807361",
+            "full_text": "Amazon is selling a bracelet that shocks you if you eat too much fast food https://t.co/YPvoCDf8h5 https://t.co/y75L1wl599",
+            "truncated": false,
+            "display_text_range": [
+                0,
+                98
+            ],
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/YPvoCDf8h5",
+                        "expanded_url": "http://www.ladbible.com/news/technology-amazon-is-selling-a-bracelet-that-will-stop-you-eating-fast-food-20190616?source=twitter",
+                        "display_url": "ladbible.com/news/technolog…",
+                        "indices": [
+                            75,
+                            98
+                        ]
+                    }
+                ],
+                "media": [
+                    {
+                        "id": 1140257390253740000,
+                        "id_str": "1140257390253740034",
+                        "indices": [
+                            99,
+                            122
+                        ],
+                        "media_url": "http://pbs.twimg.com/media/D9MCDhqWkAIb35Y.jpg",
+                        "media_url_https": "https://pbs.twimg.com/media/D9MCDhqWkAIb35Y.jpg",
+                        "url": "https://t.co/y75L1wl599",
+                        "display_url": "pic.twitter.com/y75L1wl599",
+                        "expanded_url": "https://twitter.com/ladbible/status/1140259493105807361/photo/1",
+                        "type": "photo",
+                        "sizes": {
+                            "small": {
+                                "w": 680,
+                                "h": 356,
+                                "resize": "fit"
+                            },
+                            "large": {
+                                "w": 952,
+                                "h": 498,
+                                "resize": "fit"
+                            },
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            },
+                            "medium": {
+                                "w": 952,
+                                "h": 498,
+                                "resize": "fit"
+                            }
+                        }
+                    }
+                ]
+            },
+            "extended_entities": {
+                "media": [
+                    {
+                        "id": 1140257390253740000,
+                        "id_str": "1140257390253740034",
+                        "indices": [
+                            99,
+                            122
+                        ],
+                        "media_url": "http://pbs.twimg.com/media/D9MCDhqWkAIb35Y.jpg",
+                        "media_url_https": "https://pbs.twimg.com/media/D9MCDhqWkAIb35Y.jpg",
+                        "url": "https://t.co/y75L1wl599",
+                        "display_url": "pic.twitter.com/y75L1wl599",
+                        "expanded_url": "https://twitter.com/ladbible/status/1140259493105807361/photo/1",
+                        "type": "photo",
+                        "sizes": {
+                            "small": {
+                                "w": 680,
+                                "h": 356,
+                                "resize": "fit"
+                            },
+                            "large": {
+                                "w": 952,
+                                "h": 498,
+                                "resize": "fit"
+                            },
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            },
+                            "medium": {
+                                "w": 952,
+                                "h": 498,
+                                "resize": "fit"
+                            }
+                        }
+                    }
+                ]
+            },
+            "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 331311644,
+                "id_str": "331311644"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 2227,
+            "favorite_count": 7998,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        "retweet_count": 2439,
+        "favorite_count": 19271,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Mon Jun 17 17:09:27 +0000 2019",
+        "id": 1140667785133076500,
+        "id_str": "1140667785133076484",
+        "full_text": "Stop being idiots, don’t make me come up there.",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            47
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 4060,
+        "favorite_count": 30704,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Mon Jun 17 12:27:49 +0000 2019",
+        "id": 1140596911776424000,
+        "id_str": "1140596911776423937",
+        "full_text": "Who cares, we’re all going to Hell.",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            35
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 7231,
+        "favorite_count": 35384,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Mon Jun 17 00:49:56 +0000 2019",
+        "id": 1140421282732924900,
+        "id_str": "1140421282732924930",
+        "full_text": "Stop killing the planet because you won’t be getting another one.",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            65
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 10991,
+        "favorite_count": 50662,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sun Jun 16 22:03:18 +0000 2019",
+        "id": 1140379350115803100,
+        "id_str": "1140379350115803136",
+        "full_text": "Happy Fathers Day to all the dads out there",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            43
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 890,
+        "favorite_count": 17184,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sun Jun 16 18:40:18 +0000 2019",
+        "id": 1140328260766765000,
+        "id_str": "1140328260766765059",
+        "full_text": "The reason short girls are evil is because they’re closer to Hell.",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            66
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 10255,
+        "favorite_count": 55260,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sun Jun 16 15:03:15 +0000 2019",
+        "id": 1140273637594947600,
+        "id_str": "1140273637594947587",
+        "full_text": "Tried visiting God for Father’s Day and he kicked me out again lmao",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            67
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 8081,
+        "favorite_count": 57808,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sun Jun 16 12:08:37 +0000 2019",
+        "id": 1140229693070860300,
+        "id_str": "1140229693070860288",
+        "full_text": "Get out of church you traitors",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            30
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 2118,
+        "favorite_count": 22519,
         "favorited": false,
         "retweeted": false,
         "lang": "en"
