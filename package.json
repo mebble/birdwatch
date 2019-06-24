@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/mebble/twitter-count#readme",
   "dependencies": {
+    "d3": "^5.9.2",
     "dotenv": "^8.0.0",
     "netlify-lambda": "^1.4.13",
     "react": "^16.8.6",
