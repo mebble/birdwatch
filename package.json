@@ -4,7 +4,7 @@
   "description": "Netlify lambda functions that return a user's tweet engagements",
   "main": "index.js",
   "scripts": {
-    "lambda-serve": "netlify-lambda serve lambdas -t 30",
+    "lambda-serve": "netlify-lambda serve lambdas --timeout 120",
     "lambda-build": "netlify-lambda build lambdas",
     "client-serve": "parcel client/index.html",
     "client-build": "parcel build client/index.html --no-source-maps",

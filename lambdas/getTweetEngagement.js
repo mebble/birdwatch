@@ -18,17 +18,16 @@ exports.handler = async function(event, context) {
         'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
     };
     try {
-        // const options = {
-        //     screen_name: 's8n',
-        //     tweet_mode: 'extended',
-        //     count: 200,
-        //     trim_user: true,
-        //     exclude_replies: true,
-        //     include_rts: false,
-        // };
-        // const res = await client.get('statuses/user_timeline', options);
-        // console.log(res);
-        const res = await tweets;
+        const options = {
+            screen_name: 's8n',
+            tweet_mode: 'extended',
+            count: 50,
+            trim_user: true,
+            exclude_replies: false,
+            include_rts: false,
+        };
+        const res = await client.get('statuses/user_timeline', options);
+        // const res = await tweets;
         res.sort((t1, t2) => {
             const d1 = new Date(t1.created_at);
             const d2 = new Date(t2.created_at);
@@ -36,11 +35,11 @@ exports.handler = async function(event, context) {
             if (d1 > d2) return 1;
             return 0;
         });
-        const { lightTweets, favs, rets } = splitFavouritesRetweets(res);
+        const { trimmedTweets, favs, rets } = splitFavouritesRetweets(res);
         return {
             statusCode: 200,
             body: JSON.stringify({
-                tweets: lightTweets,
+                tweets: trimmedTweets,
                 favourites: favs,
                 retweets: rets
             }),
@@ -58,14 +57,22 @@ exports.handler = async function(event, context) {
 };
 
 function splitFavouritesRetweets(tweets) {
-    return tweets.reduce(({ lightTweets, favs, rets }, tweet) => {
-        const { created_at, id_str, full_text, retweet_count, favorite_count } = tweet;
-        lightTweets.push({ created_at, id_str, full_text });
-        favs.push(favorite_count);
-        rets.push(retweet_count);
-        return { lightTweets, favs, rets };
+    return tweets.reduce(({ trimmedTweets, favs, rets }, tweet) => {
+        const { created_at, id_str, full_text, retweet_count, favorite_count, in_reply_to_status_id_str } = tweet;
+        trimmedTweets.push({ created_at, id_str, text: full_text });
+        favs.push({
+            id_str: 'f' + id_str,
+            in_reply_to_status_id_str,
+            count: favorite_count
+        });
+        rets.push({
+            id_str: 'r' + id_str,
+            in_reply_to_status_id_str,
+            count: retweet_count
+        });
+        return { trimmedTweets, favs, rets };
     }, {
-        lightTweets: [],
+        trimmedTweets: [],
         favs: [],
         rets: []
     });
