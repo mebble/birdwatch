@@ -1,4 +1,4 @@
-.Timeline div {
+/* .Timeline div {
   background-color: #00f;
   color: white;
   font: 10px sans-serif;
@@ -6,4 +6,14 @@
   margin-top: 5px;
   margin-bottom: 5px;
   text-align: right;
+} */
+
+.Timeline rect {
+  fill: steelblue;
+}
+
+.Timeline text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
 }

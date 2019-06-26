@@ -8,7 +8,7 @@ const enterDuration = 500;
 const barHeight = 20;
 const chartWidth = 420;
 const x = scaleLinear()
-    .range([0, chartWidth]);
+    .range([10, chartWidth]);
 
 export default class Timeline extends Component {
     constructor(props) {
@@ -60,22 +60,63 @@ export default class Timeline extends Component {
     updateChart(data) {
         x.domain([0, max(data, d => d.count)])
         const bars = select(this.chart.current)
-            .style('height', `${barHeight * data.length}px`)
-            .selectAll('div')
-            .data(data, (d, i) => d.id_str);
-        bars.enter()
-            .append('div')
-            .style('width', '0px')
-            .transition()
-            .delay(exitDuration)
-            .duration(enterDuration)
-            .style('width', d => `${x(d.count)}px`)
-            .text(d => d.count)
+                .attr('height', barHeight * data.length)
+            .selectAll('g')
+                .data(data, (d, i) => d.id_str)
+                .attr('transform', (d, i) => `translate(0, ${i * barHeight})`)
+        const foo = bars.enter()
+            .append('g')
+                .attr('transform', (d, i) => `translate(0, ${i * barHeight})`);
+        foo.append('rect')
+            .attr('width', d => x(d.count))
+            .attr("height", barHeight - 1);
+        foo.append('text')
+            .attr('x', d => x(d.count) - 3)
+            .attr('y', barHeight / 2)
+            .attr('dy', '.35em')
+            .text(d => d.count);
         bars.exit()
-            .transition()
-            .duration(exitDuration)
-            .style('width', '0px')
             .remove()
+
+        /* ************
+        x.domain([0, d3.max(data, function (d) { return d.value; })]);
+
+        chart.attr("height", barHeight * data.length);
+
+        var bar = chart.selectAll("g")
+            .data(data)
+            .enter().append("g")
+            .attr("transform", function (d, i) { return "translate(0," + i * barHeight + ")"; });
+
+        bar.append("rect")
+            .attr("width", function (d) { return x(d.value); })
+            .attr("height", barHeight - 1);
+
+        bar.append("text")
+            .attr("x", function (d) { return x(d.value) - 3; })
+            .attr("y", barHeight / 2)
+            .attr("dy", ".35em")
+            .text(function (d) { return d.value; });
+        */
+
+        // x.domain([0, max(data, d => d.count)])
+        // const bars = select(this.chart.current)
+        //     .style('height', `${barHeight * data.length}px`)
+        //     .selectAll('div')
+        //     .data(data, (d, i) => d.id_str);
+        // bars.enter()
+        //     .append('div')
+        //     .style('width', '0px')
+        //     .transition()
+        //     .delay(exitDuration)
+        //     .duration(enterDuration)
+        //     .style('width', d => `${x(d.count)}px`)
+        //     .text(d => d.count)
+        // bars.exit()
+        //     .transition()
+        //     .duration(exitDuration)
+        //     .style('width', '0px')
+        //     .remove()
     }
 
     render() {
@@ -84,7 +125,7 @@ export default class Timeline extends Component {
         if (dataLoadErr) return <div>Error loading the data!!</div>;
         if (!dataLoaded) return <div>Loading the data...</div>;
         return (
-            <div ref={this.chart} className="Timeline"></div>
+            <svg ref={this.chart} className="Timeline"></svg>
         );
     }
 }
