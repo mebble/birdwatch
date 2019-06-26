@@ -1,1584 +1,758 @@
-[
-    {
-        "created_at": "Sun Jun 23 00:25:10 +0000 2019",
-        "id": 1142589379199811600,
-        "id_str": "1142589379199811585",
-        "full_text": "Life is a simulation",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            20
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+{
+    "tweets": [
+        {
+            "created_at": "Sat Jun 22 15:54:22 +0000 2019",
+            "id_str": "1142460830115618822",
+            "text": "@SiIlymel @julianakilrose https://t.co/Pr2R7obxrF"
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Sat Jun 22 16:11:53 +0000 2019",
+            "id_str": "1142465239474196480",
+            "text": "Hail\n  🌹🌹\n🌹    🌹\n🌹\n    🌹\n       🌹\n🌹     🌹\n     🌹\n     \n      🌹\n  🌹  🌹\n🌹      🌹\n🌹 🌹 🌹\n🌹       🌹\n\n🌹🌹🌹\n     🌹\n     🌹\n     🌹\n\n      🌹\n  🌹  🌹\n🌹      🌹\n🌹 🌹 🌹\n🌹       🌹\n\n🌹         🌹\n🌹🌹    🌹\n🌹    🌹🌹\n🌹         🌹"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 2668,
-        "favorite_count": 14624,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Sat Jun 22 20:35:32 +0000 2019",
-        "id": 1142531589693460500,
-        "id_str": "1142531589693460481",
-        "full_text": "We still have cute animals in Hell, the only difference is they have multiple heads. Which just means more to pet.",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            114
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Sat Jun 22 20:35:32 +0000 2019",
+            "id_str": "1142531589693460481",
+            "text": "We still have cute animals in Hell, the only difference is they have multiple heads. Which just means more to pet."
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Sun Jun 23 00:25:10 +0000 2019",
+            "id_str": "1142589379199811585",
+            "text": "Life is a simulation"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 3587,
-        "favorite_count": 26142,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Sat Jun 22 16:11:53 +0000 2019",
-        "id": 1142465239474196500,
-        "id_str": "1142465239474196480",
-        "full_text": "Hail\n  🌹🌹\n🌹    🌹\n🌹\n    🌹\n       🌹\n🌹     🌹\n     🌹\n     \n      🌹\n  🌹  🌹\n🌹      🌹\n🌹 🌹 🌹\n🌹       🌹\n\n🌹🌹🌹\n     🌹\n     🌹\n     🌹\n\n      🌹\n  🌹  🌹\n🌹      🌹\n🌹 🌹 🌹\n🌹       🌹\n\n🌹         🌹\n🌹🌹    🌹\n🌹    🌹🌹\n🌹         🌹",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            202
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Sun Jun 23 11:43:41 +0000 2019",
+            "id_str": "1142760131177996289",
+            "text": "Get out of church you traitors"
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Sun Jun 23 15:00:44 +0000 2019",
+            "id_str": "1142809721814048768",
+            "text": "Aliens lock their doors when they fly past Earth"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 11713,
-        "favorite_count": 62060,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Sat Jun 22 12:39:21 +0000 2019",
-        "id": 1142411752430325800,
-        "id_str": "1142411752430325760",
-        "full_text": "You’ve all been in Hell since 2012",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            34
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Sun Jun 23 19:13:04 +0000 2019",
+            "id_str": "1142873223098449920",
+            "text": "The monsters under your bed can hear you crying, are you okay?"
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Sun Jun 23 22:01:24 +0000 2019",
+            "id_str": "1142915584432193536",
+            "text": "@elonmusk OCCUPY HELL"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 6728,
-        "favorite_count": 46794,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Sat Jun 22 00:22:49 +0000 2019",
-        "id": 1142226397856968700,
-        "id_str": "1142226397856968704",
-        "full_text": "I enjoy watching everyones fuck ups",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            35
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Sun Jun 23 22:28:35 +0000 2019",
+            "id_str": "1142922425153331201",
+            "text": "God says his own name during sex"
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Sun Jun 23 22:28:50 +0000 2019",
+            "id_str": "1142922488151793676",
+            "text": "@SiIlymel Blocked"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 2524,
-        "favorite_count": 23648,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Fri Jun 21 20:31:36 +0000 2019",
-        "id": 1142168211049406500,
-        "id_str": "1142168211049406464",
-        "full_text": "Me : h-\n\nEveryone : https://t.co/xlM0cuWOzE",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            19
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": [],
-            "media": [
-                {
-                    "id": 1142168201758957600,
-                    "id_str": "1142168201758957575",
-                    "indices": [
-                        20,
-                        43
-                    ],
-                    "media_url": "http://pbs.twimg.com/tweet_video_thumb/D9nL7ZOW4AcdQye.jpg",
-                    "media_url_https": "https://pbs.twimg.com/tweet_video_thumb/D9nL7ZOW4AcdQye.jpg",
-                    "url": "https://t.co/xlM0cuWOzE",
-                    "display_url": "pic.twitter.com/xlM0cuWOzE",
-                    "expanded_url": "https://twitter.com/s8n/status/1142168211049406464/photo/1",
-                    "type": "photo",
-                    "sizes": {
-                        "small": {
-                            "w": 500,
-                            "h": 210,
-                            "resize": "fit"
-                        },
-                        "thumb": {
-                            "w": 150,
-                            "h": 150,
-                            "resize": "crop"
-                        },
-                        "large": {
-                            "w": 500,
-                            "h": 210,
-                            "resize": "fit"
-                        },
-                        "medium": {
-                            "w": 500,
-                            "h": 210,
-                            "resize": "fit"
-                        }
-                    }
-                }
-            ]
+        {
+            "created_at": "Sun Jun 23 22:31:05 +0000 2019",
+            "id_str": "1142923055867600897",
+            "text": "@SiIlymel https://t.co/qy5glnDCke"
         },
-        "extended_entities": {
-            "media": [
-                {
-                    "id": 1142168201758957600,
-                    "id_str": "1142168201758957575",
-                    "indices": [
-                        20,
-                        43
-                    ],
-                    "media_url": "http://pbs.twimg.com/tweet_video_thumb/D9nL7ZOW4AcdQye.jpg",
-                    "media_url_https": "https://pbs.twimg.com/tweet_video_thumb/D9nL7ZOW4AcdQye.jpg",
-                    "url": "https://t.co/xlM0cuWOzE",
-                    "display_url": "pic.twitter.com/xlM0cuWOzE",
-                    "expanded_url": "https://twitter.com/s8n/status/1142168211049406464/photo/1",
-                    "type": "animated_gif",
-                    "sizes": {
-                        "small": {
-                            "w": 500,
-                            "h": 210,
-                            "resize": "fit"
-                        },
-                        "thumb": {
-                            "w": 150,
-                            "h": 150,
-                            "resize": "crop"
-                        },
-                        "large": {
-                            "w": 500,
-                            "h": 210,
-                            "resize": "fit"
-                        },
-                        "medium": {
-                            "w": 500,
-                            "h": 210,
-                            "resize": "fit"
-                        }
-                    },
-                    "video_info": {
-                        "aspect_ratio": [
-                            50,
-                            21
-                        ],
-                        "variants": [
-                            {
-                                "bitrate": 0,
-                                "content_type": "video/mp4",
-                                "url": "https://video.twimg.com/tweet_video/D9nL7ZOW4AcdQye.mp4"
-                            }
-                        ]
-                    }
-                }
-            ]
+        {
+            "created_at": "Sun Jun 23 22:37:15 +0000 2019",
+            "id_str": "1142924608334696448",
+            "text": "@SiIlymel I know"
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Sun Jun 23 22:39:11 +0000 2019",
+            "id_str": "1142925094966218753",
+            "text": "@SiIlymel That’s what u say after"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 1834,
-        "favorite_count": 20199,
-        "favorited": false,
-        "retweeted": false,
-        "possibly_sensitive": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Fri Jun 21 18:11:15 +0000 2019",
-        "id": 1142132890437922800,
-        "id_str": "1142132890437922817",
-        "full_text": "If animals could talk they’d tell you to shut the fuck up",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            57
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Sun Jun 23 22:40:04 +0000 2019",
+            "id_str": "1142925315955724293",
+            "text": "@SiIlymel Wtf"
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Sun Jun 23 22:40:33 +0000 2019",
+            "id_str": "1142925436323803137",
+            "text": "@SiIlymel @Ultra15151 I have notific..."
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 9978,
-        "favorite_count": 49666,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Fri Jun 21 14:54:45 +0000 2019",
-        "id": 1142083439409205200,
-        "id_str": "1142083439409205248",
-        "full_text": "Stop saying “mood” when I’m torturing you it’s really off-putting.",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            66
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Sun Jun 23 22:42:28 +0000 2019",
+            "id_str": "1142925918912073729",
+            "text": "@Ultra15151 @SiIlymel For king sernas honour I shall!!"
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Sun Jun 23 22:42:58 +0000 2019",
+            "id_str": "1142926046607609858",
+            "text": "There’s a special place in Hell for people that cheat"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 5273,
-        "favorite_count": 38879,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Fri Jun 21 12:01:48 +0000 2019",
-        "id": 1142039913174581200,
-        "id_str": "1142039913174581248",
-        "full_text": "Come to Hell, we have unlimited chicken nuggets.",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            48
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Sun Jun 23 23:47:41 +0000 2019",
+            "id_str": "1142942333580787712",
+            "text": "@SiIlymel Your throw! I’m Tryna sleep"
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Sun Jun 23 23:51:55 +0000 2019",
+            "id_str": "1142943397046575105",
+            "text": "@SiIlymel Why??"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 7423,
-        "favorite_count": 47761,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Thu Jun 20 22:09:51 +0000 2019",
-        "id": 1141830549264392200,
-        "id_str": "1141830549264392197",
-        "full_text": "Is everything okay up there?",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            28
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Mon Jun 24 08:34:43 +0000 2019",
+            "id_str": "1143074965497012224",
+            "text": "@Classify https://t.co/ledhnjP1LD"
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Mon Jun 24 08:46:16 +0000 2019",
+            "id_str": "1143077870232899584",
+            "text": "@sivemorten @nopeifyaltalt Do me"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 3233,
-        "favorite_count": 35342,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Thu Jun 20 20:57:06 +0000 2019",
-        "id": 1141812240091365400,
-        "id_str": "1141812240091365380",
-        "full_text": "Go get your satan merch here 😈\n\n—&gt; https://t.co/XJDLz4YCdm https://t.co/yrlbEcpki1",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            61
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": [
-                {
-                    "url": "https://t.co/XJDLz4YCdm",
-                    "expanded_url": "http://s8nstore.com",
-                    "display_url": "s8nstore.com",
-                    "indices": [
-                        38,
-                        61
-                    ]
-                }
-            ],
-            "media": [
-                {
-                    "id": 1141812233032413200,
-                    "id_str": "1141812233032413184",
-                    "indices": [
-                        62,
-                        85
-                    ],
-                    "media_url": "http://pbs.twimg.com/media/D9iILSYXsAA6QGb.jpg",
-                    "media_url_https": "https://pbs.twimg.com/media/D9iILSYXsAA6QGb.jpg",
-                    "url": "https://t.co/yrlbEcpki1",
-                    "display_url": "pic.twitter.com/yrlbEcpki1",
-                    "expanded_url": "https://twitter.com/s8n/status/1141812240091365380/photo/1",
-                    "type": "photo",
-                    "sizes": {
-                        "thumb": {
-                            "w": 150,
-                            "h": 150,
-                            "resize": "crop"
-                        },
-                        "medium": {
-                            "w": 733,
-                            "h": 1200,
-                            "resize": "fit"
-                        },
-                        "small": {
-                            "w": 416,
-                            "h": 680,
-                            "resize": "fit"
-                        },
-                        "large": {
-                            "w": 1073,
-                            "h": 1756,
-                            "resize": "fit"
-                        }
-                    }
-                }
-            ]
+        {
+            "created_at": "Mon Jun 24 09:19:19 +0000 2019",
+            "id_str": "1143086190167560193",
+            "text": "@Froste https://t.co/gVYkmi0eRh"
         },
-        "extended_entities": {
-            "media": [
-                {
-                    "id": 1141812233032413200,
-                    "id_str": "1141812233032413184",
-                    "indices": [
-                        62,
-                        85
-                    ],
-                    "media_url": "http://pbs.twimg.com/media/D9iILSYXsAA6QGb.jpg",
-                    "media_url_https": "https://pbs.twimg.com/media/D9iILSYXsAA6QGb.jpg",
-                    "url": "https://t.co/yrlbEcpki1",
-                    "display_url": "pic.twitter.com/yrlbEcpki1",
-                    "expanded_url": "https://twitter.com/s8n/status/1141812240091365380/photo/1",
-                    "type": "photo",
-                    "sizes": {
-                        "thumb": {
-                            "w": 150,
-                            "h": 150,
-                            "resize": "crop"
-                        },
-                        "medium": {
-                            "w": 733,
-                            "h": 1200,
-                            "resize": "fit"
-                        },
-                        "small": {
-                            "w": 416,
-                            "h": 680,
-                            "resize": "fit"
-                        },
-                        "large": {
-                            "w": 1073,
-                            "h": 1756,
-                            "resize": "fit"
-                        }
-                    }
-                },
-                {
-                    "id": 1141812233023963100,
-                    "id_str": "1141812233023963141",
-                    "indices": [
-                        62,
-                        85
-                    ],
-                    "media_url": "http://pbs.twimg.com/media/D9iILSWWwAUpBMS.jpg",
-                    "media_url_https": "https://pbs.twimg.com/media/D9iILSWWwAUpBMS.jpg",
-                    "url": "https://t.co/yrlbEcpki1",
-                    "display_url": "pic.twitter.com/yrlbEcpki1",
-                    "expanded_url": "https://twitter.com/s8n/status/1141812240091365380/photo/1",
-                    "type": "photo",
-                    "sizes": {
-                        "thumb": {
-                            "w": 150,
-                            "h": 150,
-                            "resize": "crop"
-                        },
-                        "medium": {
-                            "w": 850,
-                            "h": 1200,
-                            "resize": "fit"
-                        },
-                        "small": {
-                            "w": 481,
-                            "h": 680,
-                            "resize": "fit"
-                        },
-                        "large": {
-                            "w": 1450,
-                            "h": 2048,
-                            "resize": "fit"
-                        }
-                    }
-                }
-            ]
+        {
+            "created_at": "Mon Jun 24 09:20:30 +0000 2019",
+            "id_str": "1143086487635988480",
+            "text": "@Froste Back to your roots to the froste tweets we hate and love"
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Mon Jun 24 12:08:36 +0000 2019",
+            "id_str": "1143128791675539456",
+            "text": "Now that Gods day is over, its back to sinning."
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 187,
-        "favorite_count": 4155,
-        "favorited": false,
-        "retweeted": false,
-        "possibly_sensitive": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Thu Jun 20 18:45:31 +0000 2019",
-        "id": 1141779126598144000,
-        "id_str": "1141779126598144002",
-        "full_text": "Come to Hell I’ll let you pet Cerberus",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            38
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Mon Jun 24 15:19:38 +0000 2019",
+            "id_str": "1143176865378684928",
+            "text": "@DiGiorno @Not_Aubreyyy 🧐"
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Mon Jun 24 15:24:53 +0000 2019",
+            "id_str": "1143178184642441216",
+            "text": "@DiGiorno @Not_Aubreyyy Haha hey"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 5540,
-        "favorite_count": 39862,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Thu Jun 20 15:38:08 +0000 2019",
-        "id": 1141731968712892400,
-        "id_str": "1141731968712892416",
-        "full_text": "I put the ‘Hell’ in ‘Hello’",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            27
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Mon Jun 24 15:30:48 +0000 2019",
+            "id_str": "1143179676115972096",
+            "text": "The real reason God kicked me out of Heaven is because I beat him in a 1v1 on rust"
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Mon Jun 24 18:08:01 +0000 2019",
+            "id_str": "1143219238280355846",
+            "text": "@FameGaming Love YOU"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 4503,
-        "favorite_count": 31381,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Thu Jun 20 12:13:49 +0000 2019",
-        "id": 1141680550928887800,
-        "id_str": "1141680550928887810",
-        "full_text": "I miss the good old days when whipping someone was classed as torture instead of fun",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            84
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Mon Jun 24 18:33:15 +0000 2019",
+            "id_str": "1143225590356557824",
+            "text": "Twitter : h-\n\nMe : please verify me"
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Mon Jun 24 18:36:35 +0000 2019",
+            "id_str": "1143226428927987712",
+            "text": "@Jack_Septic_Eye https://t.co/isMrekKPda"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 2164,
-        "favorite_count": 24603,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Thu Jun 20 00:45:23 +0000 2019",
-        "id": 1141507301897117700,
-        "id_str": "1141507301897117696",
-        "full_text": "If you think your life sucks then it probably does you boring fucker.",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            69
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Mon Jun 24 19:59:01 +0000 2019",
+            "id_str": "1143247173838155777",
+            "text": "You haven’t been to Hell until you see this @ATLiensOfficial music video https://t.co/AnNpdGUZL1"
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Mon Jun 24 22:47:51 +0000 2019",
+            "id_str": "1143289663333048320",
+            "text": "That epic gamer moment when you sacrifice your mother to Satan"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 7003,
-        "favorite_count": 41528,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Wed Jun 19 22:11:07 +0000 2019",
-        "id": 1141468480769843200,
-        "id_str": "1141468480769843201",
-        "full_text": "Twitter won’t verify me because they know I’d be too powerful",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            61
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Mon Jun 24 22:48:25 +0000 2019",
+            "id_str": "1143289805129826304",
+            "text": "@aaaaaaaaaaancel No"
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Mon Jun 24 23:12:51 +0000 2019",
+            "id_str": "1143295955158097921",
+            "text": "@Jack_Septic_Eye https://t.co/GJT4YB1PnL"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 3233,
-        "favorite_count": 42434,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Wed Jun 19 19:07:19 +0000 2019",
-        "id": 1141422222487281700,
-        "id_str": "1141422222487281665",
-        "full_text": "Prior to popular belief. \n\nShut the fuck up.",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            44
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Mon Jun 24 23:19:46 +0000 2019",
+            "id_str": "1143297694158532608",
+            "text": "@CaucasianJames Wrong acc pal"
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Mon Jun 24 23:29:23 +0000 2019",
+            "id_str": "1143300113202405381",
+            "text": "@CaucasianJames Oms big fan, of James. not you Miranda 👿"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 3428,
-        "favorite_count": 23980,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Wed Jun 19 14:40:48 +0000 2019",
-        "id": 1141355154903654400,
-        "id_str": "1141355154903654400",
-        "full_text": "Demons hide under your bed so they can play with your pets while you’re asleep.",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            79
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Tue Jun 25 12:25:57 +0000 2019",
+            "id_str": "1143495544876294144",
+            "text": "Can someone rule over Hell for a while? I need a vacation."
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Tue Jun 25 12:30:38 +0000 2019",
+            "id_str": "1143496722494185473",
+            "text": "@catsu Catsu the new king of Hell"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 5271,
-        "favorite_count": 39218,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Wed Jun 19 12:12:47 +0000 2019",
-        "id": 1141317904845213700,
-        "id_str": "1141317904845213702",
-        "full_text": "Sinning is good for your health",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            31
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Tue Jun 25 12:46:04 +0000 2019",
+            "id_str": "1143500606692368384",
+            "text": "@inciakcasu Yes"
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Tue Jun 25 13:02:34 +0000 2019",
+            "id_str": "1143504759179087873",
+            "text": "@s8nspam Don’t ask me how I know what ass tastes like"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 4560,
-        "favorite_count": 25296,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Tue Jun 18 22:23:00 +0000 2019",
-        "id": 1141109080507015200,
-        "id_str": "1141109080507015168",
-        "full_text": "Hell has the best pizza",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            23
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Tue Jun 25 13:16:46 +0000 2019",
+            "id_str": "1143508333195878401",
+            "text": "@SiIlymel @atJAHSEH @s8nspam Can confirm"
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Tue Jun 25 13:26:10 +0000 2019",
+            "id_str": "1143510698003185664",
+            "text": "@MyFavsTrash get on my level"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 3568,
-        "favorite_count": 34619,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Tue Jun 18 18:44:16 +0000 2019",
-        "id": 1141054035992227800,
-        "id_str": "1141054035992227840",
-        "full_text": "Just put a padlock through Jesus’s holes in his hands while he was praying",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            74
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Tue Jun 25 15:05:42 +0000 2019",
+            "id_str": "1143535747808579585",
+            "text": "Come to Hell before World War III starts"
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Tue Jun 25 17:59:01 +0000 2019",
+            "id_str": "1143579363608342528",
+            "text": "@BrittanyVenti Get a grip"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 1683,
-        "favorite_count": 19232,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Tue Jun 18 15:07:08 +0000 2019",
-        "id": 1140999391626563600,
-        "id_str": "1140999391626563590",
-        "full_text": "Please come to Hell im lonely",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            29
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Tue Jun 25 18:13:03 +0000 2019",
+            "id_str": "1143582896017629186",
+            "text": "no one:\n\nliterally no one:\n\nnot a single soul:\n\nme: God is kind of a dick"
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Tue Jun 25 19:28:43 +0000 2019",
+            "id_str": "1143601936677122053",
+            "text": "@steak_umm If u must"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 7470,
-        "favorite_count": 47192,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Tue Jun 18 11:53:51 +0000 2019",
-        "id": 1140950751394639900,
-        "id_str": "1140950751394639872",
-        "full_text": "Dear humanity,\n\nWhat the fuck is wrong with you.",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            48
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Tue Jun 25 21:59:50 +0000 2019",
+            "id_str": "1143639968608395265",
+            "text": "I don’t tell people to ‘go to Hell’ because it’s where I work and I’d rather not see them everyday for eternity."
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Tue Jun 25 22:42:26 +0000 2019",
+            "id_str": "1143650688364363776",
+            "text": "Rip king 🖤 https://t.co/Vo0KdDnEQi"
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 47960,
-        "favorite_count": 142394,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Tue Jun 18 00:17:01 +0000 2019",
-        "id": 1140775387099799600,
-        "id_str": "1140775387099799552",
-        "full_text": "I have an announcement to make...\n\nFuck you.",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            44
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "created_at": "Wed Jun 26 01:36:06 +0000 2019",
+            "id_str": "1143694391061688325",
+            "text": "Someone out there loves you, it’s not me. I hate you all, but someone loves you."
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "created_at": "Wed Jun 26 01:55:39 +0000 2019",
+            "id_str": "1143699312536371200",
+            "text": "@SiIlymel When I said all I meant everyone but you"
+        }
+    ],
+    "favourites": [
+        {
+            "id_str": "f1142460830115618822",
+            "in_reply_to_status_id_str": "1142460582219657218",
+            "count": 25
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 18195,
-        "favorite_count": 73133,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Mon Jun 17 21:57:39 +0000 2019",
-        "id": 1140740313780277200,
-        "id_str": "1140740313780277254",
-        "full_text": "Who do I have to sacrifice to get verified around here",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            54
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
-        },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
-        },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 3458,
-        "favorite_count": 45399,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Mon Jun 17 19:51:10 +0000 2019",
-        "id": 1140708485098876900,
-        "id_str": "1140708485098876928",
-        "full_text": "Guess imma die https://t.co/3vHrfZXxyN",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            14
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": [
-                {
-                    "url": "https://t.co/3vHrfZXxyN",
-                    "expanded_url": "https://twitter.com/ladbible/status/1140259493105807361",
-                    "display_url": "twitter.com/ladbible/statu…",
-                    "indices": [
-                        15,
-                        38
-                    ]
-                }
-            ]
-        },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
-        },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": true,
-        "quoted_status_id": 1140259493105807400,
-        "quoted_status_id_str": "1140259493105807361",
-        "quoted_status_permalink": {
-            "url": "https://t.co/3vHrfZXxyN",
-            "expanded": "https://twitter.com/ladbible/status/1140259493105807361",
-            "display": "twitter.com/ladbible/statu…"
-        },
-        "quoted_status": {
-            "created_at": "Sun Jun 16 14:07:02 +0000 2019",
-            "id": 1140259493105807400,
-            "id_str": "1140259493105807361",
-            "full_text": "Amazon is selling a bracelet that shocks you if you eat too much fast food https://t.co/YPvoCDf8h5 https://t.co/y75L1wl599",
-            "truncated": false,
-            "display_text_range": [
-                0,
-                98
-            ],
-            "entities": {
-                "hashtags": [],
-                "symbols": [],
-                "user_mentions": [],
-                "urls": [
-                    {
-                        "url": "https://t.co/YPvoCDf8h5",
-                        "expanded_url": "http://www.ladbible.com/news/technology-amazon-is-selling-a-bracelet-that-will-stop-you-eating-fast-food-20190616?source=twitter",
-                        "display_url": "ladbible.com/news/technolog…",
-                        "indices": [
-                            75,
-                            98
-                        ]
-                    }
-                ],
-                "media": [
-                    {
-                        "id": 1140257390253740000,
-                        "id_str": "1140257390253740034",
-                        "indices": [
-                            99,
-                            122
-                        ],
-                        "media_url": "http://pbs.twimg.com/media/D9MCDhqWkAIb35Y.jpg",
-                        "media_url_https": "https://pbs.twimg.com/media/D9MCDhqWkAIb35Y.jpg",
-                        "url": "https://t.co/y75L1wl599",
-                        "display_url": "pic.twitter.com/y75L1wl599",
-                        "expanded_url": "https://twitter.com/ladbible/status/1140259493105807361/photo/1",
-                        "type": "photo",
-                        "sizes": {
-                            "small": {
-                                "w": 680,
-                                "h": 356,
-                                "resize": "fit"
-                            },
-                            "large": {
-                                "w": 952,
-                                "h": 498,
-                                "resize": "fit"
-                            },
-                            "thumb": {
-                                "w": 150,
-                                "h": 150,
-                                "resize": "crop"
-                            },
-                            "medium": {
-                                "w": 952,
-                                "h": 498,
-                                "resize": "fit"
-                            }
-                        }
-                    }
-                ]
-            },
-            "extended_entities": {
-                "media": [
-                    {
-                        "id": 1140257390253740000,
-                        "id_str": "1140257390253740034",
-                        "indices": [
-                            99,
-                            122
-                        ],
-                        "media_url": "http://pbs.twimg.com/media/D9MCDhqWkAIb35Y.jpg",
-                        "media_url_https": "https://pbs.twimg.com/media/D9MCDhqWkAIb35Y.jpg",
-                        "url": "https://t.co/y75L1wl599",
-                        "display_url": "pic.twitter.com/y75L1wl599",
-                        "expanded_url": "https://twitter.com/ladbible/status/1140259493105807361/photo/1",
-                        "type": "photo",
-                        "sizes": {
-                            "small": {
-                                "w": 680,
-                                "h": 356,
-                                "resize": "fit"
-                            },
-                            "large": {
-                                "w": 952,
-                                "h": 498,
-                                "resize": "fit"
-                            },
-                            "thumb": {
-                                "w": 150,
-                                "h": 150,
-                                "resize": "crop"
-                            },
-                            "medium": {
-                                "w": 952,
-                                "h": 498,
-                                "resize": "fit"
-                            }
-                        }
-                    }
-                ]
-            },
-            "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
-            "in_reply_to_status_id": null,
+        {
+            "id_str": "f1142465239474196480",
             "in_reply_to_status_id_str": null,
-            "in_reply_to_user_id": null,
-            "in_reply_to_user_id_str": null,
-            "in_reply_to_screen_name": null,
-            "user": {
-                "id": 331311644,
-                "id_str": "331311644"
-            },
-            "geo": null,
-            "coordinates": null,
-            "place": null,
-            "contributors": null,
-            "is_quote_status": false,
-            "retweet_count": 2227,
-            "favorite_count": 7998,
-            "favorited": false,
-            "retweeted": false,
-            "possibly_sensitive": false,
-            "lang": "en"
+            "count": 82294
         },
-        "retweet_count": 2439,
-        "favorite_count": 19271,
-        "favorited": false,
-        "retweeted": false,
-        "possibly_sensitive": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Mon Jun 17 17:09:27 +0000 2019",
-        "id": 1140667785133076500,
-        "id_str": "1140667785133076484",
-        "full_text": "Stop being idiots, don’t make me come up there.",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            47
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "id_str": "f1142531589693460481",
+            "in_reply_to_status_id_str": null,
+            "count": 40454
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "id_str": "f1142589379199811585",
+            "in_reply_to_status_id_str": null,
+            "count": 28963
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 4060,
-        "favorite_count": 30704,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Mon Jun 17 12:27:49 +0000 2019",
-        "id": 1140596911776424000,
-        "id_str": "1140596911776423937",
-        "full_text": "Who cares, we’re all going to Hell.",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            35
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "id_str": "f1142760131177996289",
+            "in_reply_to_status_id_str": null,
+            "count": 22961
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "id_str": "f1142809721814048768",
+            "in_reply_to_status_id_str": null,
+            "count": 34225
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 7231,
-        "favorite_count": 35384,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Mon Jun 17 00:49:56 +0000 2019",
-        "id": 1140421282732924900,
-        "id_str": "1140421282732924930",
-        "full_text": "Stop killing the planet because you won’t be getting another one.",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            65
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "id_str": "f1142873223098449920",
+            "in_reply_to_status_id_str": null,
+            "count": 91497
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "id_str": "f1142915584432193536",
+            "in_reply_to_status_id_str": "1142904294196178944",
+            "count": 12220
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 10991,
-        "favorite_count": 50662,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Sun Jun 16 22:03:18 +0000 2019",
-        "id": 1140379350115803100,
-        "id_str": "1140379350115803136",
-        "full_text": "Happy Fathers Day to all the dads out there",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            43
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "id_str": "f1142922425153331201",
+            "in_reply_to_status_id_str": null,
+            "count": 26723
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "id_str": "f1142922488151793676",
+            "in_reply_to_status_id_str": "1142922441058115586",
+            "count": 17
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 890,
-        "favorite_count": 17184,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Sun Jun 16 18:40:18 +0000 2019",
-        "id": 1140328260766765000,
-        "id_str": "1140328260766765059",
-        "full_text": "The reason short girls are evil is because they’re closer to Hell.",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            66
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "id_str": "f1142923055867600897",
+            "in_reply_to_status_id_str": "1142922652492976131",
+            "count": 16
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "id_str": "f1142924608334696448",
+            "in_reply_to_status_id_str": "1142924426930982912",
+            "count": 18
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 10255,
-        "favorite_count": 55260,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Sun Jun 16 15:03:15 +0000 2019",
-        "id": 1140273637594947600,
-        "id_str": "1140273637594947587",
-        "full_text": "Tried visiting God for Father’s Day and he kicked me out again lmao",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            67
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "id_str": "f1142925094966218753",
+            "in_reply_to_status_id_str": "1142924988607074306",
+            "count": 11
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "id_str": "f1142925315955724293",
+            "in_reply_to_status_id_str": "1142925262952288256",
+            "count": 17
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 8081,
-        "favorite_count": 57808,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    },
-    {
-        "created_at": "Sun Jun 16 12:08:37 +0000 2019",
-        "id": 1140229693070860300,
-        "id_str": "1140229693070860288",
-        "full_text": "Get out of church you traitors",
-        "truncated": false,
-        "display_text_range": [
-            0,
-            30
-        ],
-        "entities": {
-            "hashtags": [],
-            "symbols": [],
-            "user_mentions": [],
-            "urls": []
+        {
+            "id_str": "f1142925436323803137",
+            "in_reply_to_status_id_str": "1142925321404067841",
+            "count": 20
         },
-        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
-        "in_reply_to_status_id": null,
-        "in_reply_to_status_id_str": null,
-        "in_reply_to_user_id": null,
-        "in_reply_to_user_id_str": null,
-        "in_reply_to_screen_name": null,
-        "user": {
-            "id": 13615722,
-            "id_str": "13615722"
+        {
+            "id_str": "f1142925918912073729",
+            "in_reply_to_status_id_str": "1142925824909369344",
+            "count": 26
         },
-        "geo": null,
-        "coordinates": null,
-        "place": null,
-        "contributors": null,
-        "is_quote_status": false,
-        "retweet_count": 2118,
-        "favorite_count": 22519,
-        "favorited": false,
-        "retweeted": false,
-        "lang": "en"
-    }
-]
+        {
+            "id_str": "f1142926046607609858",
+            "in_reply_to_status_id_str": null,
+            "count": 33703
+        },
+        {
+            "id_str": "f1142942333580787712",
+            "in_reply_to_status_id_str": "1142941244764643329",
+            "count": 17
+        },
+        {
+            "id_str": "f1142943397046575105",
+            "in_reply_to_status_id_str": "1142943135720464384",
+            "count": 18
+        },
+        {
+            "id_str": "f1143074965497012224",
+            "in_reply_to_status_id_str": "1142966466616156160",
+            "count": 402
+        },
+        {
+            "id_str": "f1143077870232899584",
+            "in_reply_to_status_id_str": "1142924111393501185",
+            "count": 1033
+        },
+        {
+            "id_str": "f1143086190167560193",
+            "in_reply_to_status_id_str": "1143085243135602690",
+            "count": 414
+        },
+        {
+            "id_str": "f1143086487635988480",
+            "in_reply_to_status_id_str": "1143086311345139713",
+            "count": 134
+        },
+        {
+            "id_str": "f1143128791675539456",
+            "in_reply_to_status_id_str": null,
+            "count": 18358
+        },
+        {
+            "id_str": "f1143176865378684928",
+            "in_reply_to_status_id_str": "1143176701687533568",
+            "count": 15
+        },
+        {
+            "id_str": "f1143178184642441216",
+            "in_reply_to_status_id_str": "1143178107412762624",
+            "count": 32
+        },
+        {
+            "id_str": "f1143179676115972096",
+            "in_reply_to_status_id_str": null,
+            "count": 29993
+        },
+        {
+            "id_str": "f1143219238280355846",
+            "in_reply_to_status_id_str": "1143216432458665984",
+            "count": 22
+        },
+        {
+            "id_str": "f1143225590356557824",
+            "in_reply_to_status_id_str": null,
+            "count": 26983
+        },
+        {
+            "id_str": "f1143226428927987712",
+            "in_reply_to_status_id_str": "1143175470806122496",
+            "count": 10784
+        },
+        {
+            "id_str": "f1143247173838155777",
+            "in_reply_to_status_id_str": null,
+            "count": 4982
+        },
+        {
+            "id_str": "f1143289663333048320",
+            "in_reply_to_status_id_str": null,
+            "count": 16679
+        },
+        {
+            "id_str": "f1143289805129826304",
+            "in_reply_to_status_id_str": "1143289718207111170",
+            "count": 275
+        },
+        {
+            "id_str": "f1143295955158097921",
+            "in_reply_to_status_id_str": "1143295610252079107",
+            "count": 5195
+        },
+        {
+            "id_str": "f1143297694158532608",
+            "in_reply_to_status_id_str": "1143297369305485312",
+            "count": 195
+        },
+        {
+            "id_str": "f1143300113202405381",
+            "in_reply_to_status_id_str": "1143299541728399363",
+            "count": 159
+        },
+        {
+            "id_str": "f1143495544876294144",
+            "in_reply_to_status_id_str": null,
+            "count": 39516
+        },
+        {
+            "id_str": "f1143496722494185473",
+            "in_reply_to_status_id_str": "1143496363780575239",
+            "count": 1857
+        },
+        {
+            "id_str": "f1143500606692368384",
+            "in_reply_to_status_id_str": "1143495805388623873",
+            "count": 600
+        },
+        {
+            "id_str": "f1143504759179087873",
+            "in_reply_to_status_id_str": "1143504674605228033",
+            "count": 3744
+        },
+        {
+            "id_str": "f1143508333195878401",
+            "in_reply_to_status_id_str": "1143508269891301376",
+            "count": 134
+        },
+        {
+            "id_str": "f1143510698003185664",
+            "in_reply_to_status_id_str": "1143508969169838080",
+            "count": 66
+        },
+        {
+            "id_str": "f1143535747808579585",
+            "in_reply_to_status_id_str": null,
+            "count": 16651
+        },
+        {
+            "id_str": "f1143579363608342528",
+            "in_reply_to_status_id_str": "1143566254806044672",
+            "count": 1922
+        },
+        {
+            "id_str": "f1143582896017629186",
+            "in_reply_to_status_id_str": null,
+            "count": 28795
+        },
+        {
+            "id_str": "f1143601936677122053",
+            "in_reply_to_status_id_str": "1143601368994918404",
+            "count": 68
+        },
+        {
+            "id_str": "f1143639968608395265",
+            "in_reply_to_status_id_str": null,
+            "count": 15505
+        },
+        {
+            "id_str": "f1143650688364363776",
+            "in_reply_to_status_id_str": null,
+            "count": 9747
+        },
+        {
+            "id_str": "f1143694391061688325",
+            "in_reply_to_status_id_str": null,
+            "count": 26186
+        },
+        {
+            "id_str": "f1143699312536371200",
+            "in_reply_to_status_id_str": "1143699161788891136",
+            "count": 26
+        }
+    ],
+    "retweets": [
+        {
+            "id_str": "r1142460830115618822",
+            "in_reply_to_status_id_str": "1142460582219657218",
+            "count": 0
+        },
+        {
+            "id_str": "r1142465239474196480",
+            "in_reply_to_status_id_str": null,
+            "count": 15536
+        },
+        {
+            "id_str": "r1142531589693460481",
+            "in_reply_to_status_id_str": null,
+            "count": 5430
+        },
+        {
+            "id_str": "r1142589379199811585",
+            "in_reply_to_status_id_str": null,
+            "count": 4631
+        },
+        {
+            "id_str": "r1142760131177996289",
+            "in_reply_to_status_id_str": null,
+            "count": 2196
+        },
+        {
+            "id_str": "r1142809721814048768",
+            "in_reply_to_status_id_str": null,
+            "count": 4253
+        },
+        {
+            "id_str": "r1142873223098449920",
+            "in_reply_to_status_id_str": null,
+            "count": 20827
+        },
+        {
+            "id_str": "r1142915584432193536",
+            "in_reply_to_status_id_str": "1142904294196178944",
+            "count": 343
+        },
+        {
+            "id_str": "r1142922425153331201",
+            "in_reply_to_status_id_str": null,
+            "count": 2898
+        },
+        {
+            "id_str": "r1142922488151793676",
+            "in_reply_to_status_id_str": "1142922441058115586",
+            "count": 0
+        },
+        {
+            "id_str": "r1142923055867600897",
+            "in_reply_to_status_id_str": "1142922652492976131",
+            "count": 0
+        },
+        {
+            "id_str": "r1142924608334696448",
+            "in_reply_to_status_id_str": "1142924426930982912",
+            "count": 0
+        },
+        {
+            "id_str": "r1142925094966218753",
+            "in_reply_to_status_id_str": "1142924988607074306",
+            "count": 0
+        },
+        {
+            "id_str": "r1142925315955724293",
+            "in_reply_to_status_id_str": "1142925262952288256",
+            "count": 0
+        },
+        {
+            "id_str": "r1142925436323803137",
+            "in_reply_to_status_id_str": "1142925321404067841",
+            "count": 0
+        },
+        {
+            "id_str": "r1142925918912073729",
+            "in_reply_to_status_id_str": "1142925824909369344",
+            "count": 0
+        },
+        {
+            "id_str": "r1142926046607609858",
+            "in_reply_to_status_id_str": null,
+            "count": 5126
+        },
+        {
+            "id_str": "r1142942333580787712",
+            "in_reply_to_status_id_str": "1142941244764643329",
+            "count": 0
+        },
+        {
+            "id_str": "r1142943397046575105",
+            "in_reply_to_status_id_str": "1142943135720464384",
+            "count": 0
+        },
+        {
+            "id_str": "r1143074965497012224",
+            "in_reply_to_status_id_str": "1142966466616156160",
+            "count": 6
+        },
+        {
+            "id_str": "r1143077870232899584",
+            "in_reply_to_status_id_str": "1142924111393501185",
+            "count": 5
+        },
+        {
+            "id_str": "r1143086190167560193",
+            "in_reply_to_status_id_str": "1143085243135602690",
+            "count": 29
+        },
+        {
+            "id_str": "r1143086487635988480",
+            "in_reply_to_status_id_str": "1143086311345139713",
+            "count": 1
+        },
+        {
+            "id_str": "r1143128791675539456",
+            "in_reply_to_status_id_str": null,
+            "count": 1676
+        },
+        {
+            "id_str": "r1143176865378684928",
+            "in_reply_to_status_id_str": "1143176701687533568",
+            "count": 0
+        },
+        {
+            "id_str": "r1143178184642441216",
+            "in_reply_to_status_id_str": "1143178107412762624",
+            "count": 0
+        },
+        {
+            "id_str": "r1143179676115972096",
+            "in_reply_to_status_id_str": null,
+            "count": 3174
+        },
+        {
+            "id_str": "r1143219238280355846",
+            "in_reply_to_status_id_str": "1143216432458665984",
+            "count": 0
+        },
+        {
+            "id_str": "r1143225590356557824",
+            "in_reply_to_status_id_str": null,
+            "count": 1373
+        },
+        {
+            "id_str": "r1143226428927987712",
+            "in_reply_to_status_id_str": "1143175470806122496",
+            "count": 358
+        },
+        {
+            "id_str": "r1143247173838155777",
+            "in_reply_to_status_id_str": null,
+            "count": 492
+        },
+        {
+            "id_str": "r1143289663333048320",
+            "in_reply_to_status_id_str": null,
+            "count": 1369
+        },
+        {
+            "id_str": "r1143289805129826304",
+            "in_reply_to_status_id_str": "1143289718207111170",
+            "count": 5
+        },
+        {
+            "id_str": "r1143295955158097921",
+            "in_reply_to_status_id_str": "1143295610252079107",
+            "count": 136
+        },
+        {
+            "id_str": "r1143297694158532608",
+            "in_reply_to_status_id_str": "1143297369305485312",
+            "count": 2
+        },
+        {
+            "id_str": "r1143300113202405381",
+            "in_reply_to_status_id_str": "1143299541728399363",
+            "count": 4
+        },
+        {
+            "id_str": "r1143495544876294144",
+            "in_reply_to_status_id_str": null,
+            "count": 3556
+        },
+        {
+            "id_str": "r1143496722494185473",
+            "in_reply_to_status_id_str": "1143496363780575239",
+            "count": 135
+        },
+        {
+            "id_str": "r1143500606692368384",
+            "in_reply_to_status_id_str": "1143495805388623873",
+            "count": 4
+        },
+        {
+            "id_str": "r1143504759179087873",
+            "in_reply_to_status_id_str": "1143504674605228033",
+            "count": 125
+        },
+        {
+            "id_str": "r1143508333195878401",
+            "in_reply_to_status_id_str": "1143508269891301376",
+            "count": 1
+        },
+        {
+            "id_str": "r1143510698003185664",
+            "in_reply_to_status_id_str": "1143508969169838080",
+            "count": 1
+        },
+        {
+            "id_str": "r1143535747808579585",
+            "in_reply_to_status_id_str": null,
+            "count": 1717
+        },
+        {
+            "id_str": "r1143579363608342528",
+            "in_reply_to_status_id_str": "1143566254806044672",
+            "count": 40
+        },
+        {
+            "id_str": "r1143582896017629186",
+            "in_reply_to_status_id_str": null,
+            "count": 3002
+        },
+        {
+            "id_str": "r1143601936677122053",
+            "in_reply_to_status_id_str": "1143601368994918404",
+            "count": 2
+        },
+        {
+            "id_str": "r1143639968608395265",
+            "in_reply_to_status_id_str": null,
+            "count": 1766
+        },
+        {
+            "id_str": "r1143650688364363776",
+            "in_reply_to_status_id_str": null,
+            "count": 694
+        },
+        {
+            "id_str": "r1143694391061688325",
+            "in_reply_to_status_id_str": null,
+            "count": 6209
+        },
+        {
+            "id_str": "r1143699312536371200",
+            "in_reply_to_status_id_str": "1143699161788891136",
+            "count": 3
+        }
+    ]
+}
