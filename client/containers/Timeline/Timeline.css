@@ -1,0 +1,9 @@
+.Timeline div {
+  background-color: #00f;
+  color: white;
+  font: 10px sans-serif;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: right;
+}
