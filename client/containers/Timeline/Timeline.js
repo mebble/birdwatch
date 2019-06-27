@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { select, scaleLinear, max } from 'd3';
+import { select } from 'd3-selection';
+import { scaleLinear } from 'd3-scale';
+import { max } from 'd3-array';
+import 'd3-transition';
 
 import './Timeline.css';
 
