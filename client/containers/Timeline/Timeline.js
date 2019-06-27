@@ -80,7 +80,7 @@ export default class Timeline extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:9000/getTweetEngagement')
+        fetch('http://192.168.1.4:9000/getTweetEngagement')
             .then(res => res.json())
             .then(({ favourites, retweets }) => {
                 this.setState({

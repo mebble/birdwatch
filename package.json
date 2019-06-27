@@ -7,7 +7,7 @@
     "lambda-serve": "netlify-lambda serve lambdas --timeout 120",
     "lambda-build": "netlify-lambda build lambdas",
     "client-cleanup": "rm -rf .cache dist",
-    "client-serve": "parcel client/index.html",
+    "client-serve": "npm run client-cleanup && parcel client/index.html",
     "client-build": "npm run client-cleanup && parcel build client/index.html --no-source-maps",
     "build": "npm run client-build && npm run lambda-build"
   },
@@ -28,7 +28,9 @@
   },
   "homepage": "https://github.com/mebble/twitter-count#readme",
   "dependencies": {
-    "d3": "^5.9.2",
+    "bootstrap": "^4.3.1",
+    "classnames": "^2.2.6",
+    "d3": "^5.9.4",
     "dotenv": "^8.0.0",
     "netlify-lambda": "^1.4.13",
     "react": "^16.8.6",

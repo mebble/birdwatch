@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 
 import Timeline from './containers/Timeline';
+import Button from './components/Button';
+import Header from './components/Header';
+import Checkbox from './components/Checkbox';
 
 class App extends Component {
     constructor(props) {
@@ -38,12 +41,11 @@ class App extends Component {
         const { current, withReplies } = this.state;
         return (
             <>
-                <button onClick={this.onFavourites} disabled={current === 'favourites'}>Favourites</button>
-                <button onClick={this.onRetweets} disabled={current === 'retweets'}>Retweets</button>
-                <label>
-                    <input onChange={this.onReplyToggle} type="checkbox" checked={withReplies} />
-                    With replies
-                </label>
+                <Header>
+                    <Button onClick={this.onFavourites} disabled={current === 'favourites'}>Favourites</Button>
+                    <Button onClick={this.onRetweets} disabled={current === 'retweets'}>Retweets</Button>
+                    <Checkbox onChange={this.onReplyToggle} checked={withReplies}>With replies</Checkbox>
+                </Header>
                 <Timeline current={current} withReplies={withReplies} />
             </>
         );
