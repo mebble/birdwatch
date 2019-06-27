@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 
 import Timeline from './containers/Timeline';
 import Button from './components/Button';
+import Row from './components/Row';
+import Toggle from './components/Toggle';
+import SearchBar from './components/SearchBar';
 import Header from './components/Header';
-import Checkbox from './components/Checkbox';
 
 class App extends Component {
     constructor(props) {
@@ -42,9 +44,14 @@ class App extends Component {
         return (
             <>
                 <Header>
-                    <Button onClick={this.onFavourites} disabled={current === 'favourites'}>Favourites</Button>
-                    <Button onClick={this.onRetweets} disabled={current === 'retweets'}>Retweets</Button>
-                    <Checkbox onChange={this.onReplyToggle} checked={withReplies}>With replies</Checkbox>
+                    <Row>
+                        <SearchBar placeholder="Find a twitter user..." value="" />
+                    </Row>
+                    <Row>
+                        <Button onClick={this.onFavourites} disabled={current === 'favourites'}>Favourites</Button>
+                        <Button onClick={this.onRetweets} disabled={current === 'retweets'}>Retweets</Button>
+                        <Toggle onClick={this.onReplyToggle} isOn={withReplies}>With replies</Toggle>
+                    </Row>
                 </Header>
                 <Timeline current={current} withReplies={withReplies} />
             </>
