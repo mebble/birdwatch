@@ -110,10 +110,6 @@ export default class Timeline extends Component {
         updateChart(this.chart.current, data);
     }
 
-    updateChart(data) {
-
-    }
-
     render() {
         const { dataLoaded, dataLoadErr } = this.state;
 
