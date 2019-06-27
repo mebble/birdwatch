@@ -3,8 +3,7 @@ import { select, scaleLinear, max } from 'd3';
 
 import './Timeline.css';
 
-const exitDuration = 500;
-const enterDuration = 500;
+const transDuration = 500;
 const barHeight = 20;
 const chartWidth = 420;
 const x = scaleLinear()
@@ -40,8 +39,6 @@ export default class Timeline extends Component {
                     dataLoadErr: err
                 })
             });
-        select(this.chart.current)
-            .style('width', `${chartWidth}px`);
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -58,65 +55,58 @@ export default class Timeline extends Component {
     }
 
     updateChart(data) {
-        x.domain([0, max(data, d => d.count)])
-        const bars = select(this.chart.current)
-                .attr('height', barHeight * data.length)
+        x.domain([0, max(data, d => d.count)]);
+
+        const bar = select(this.chart.current)
+            .attr('height', barHeight * data.length)
+            .attr('width', chartWidth)  // move out if possible, since it stays constant
             .selectAll('g')
-                .data(data, (d, i) => d.id_str)
-                .attr('transform', (d, i) => `translate(0, ${i * barHeight})`)
-        const foo = bars.enter()
+            .data(data, (d, i) => d.id_str);
+
+        const barUpdate = bar
+            .transition()
+            .duration(transDuration)
+            .attr('transform', (d, i) => `translate(0, ${i * barHeight})`);
+        barUpdate.select('rect')
+            .transition()
+            .duration(transDuration)
+            .attr('width', d => x(d.count));
+        barUpdate.select('text')
+            .transition()
+            .duration(transDuration)
+            .attr('x', d => x(d.count) - 3);
+
+        const barEnter = bar.enter()
             .append('g')
-                .attr('transform', (d, i) => `translate(0, ${i * barHeight})`);
-        foo.append('rect')
+            .attr('transform', (d, i) => `translate(0, ${i * barHeight})`);
+        barEnter.append('rect')
+            .transition()
+            .duration(transDuration)
             .attr('width', d => x(d.count))
-            .attr("height", barHeight - 1);
-        foo.append('text')
-            .attr('x', d => x(d.count) - 3)
+            .attr('height', barHeight - 1);
+        barEnter.append('text')
             .attr('y', barHeight / 2)
             .attr('dy', '.35em')
+            .transition()
+            .duration(transDuration)
+            .attr('x', d => x(d.count) - 3)
             .text(d => d.count);
-        bars.exit()
-            .remove()
 
-        /* ************
-        x.domain([0, d3.max(data, function (d) { return d.value; })]);
-
-        chart.attr("height", barHeight * data.length);
-
-        var bar = chart.selectAll("g")
-            .data(data)
-            .enter().append("g")
-            .attr("transform", function (d, i) { return "translate(0," + i * barHeight + ")"; });
-
-        bar.append("rect")
-            .attr("width", function (d) { return x(d.value); })
-            .attr("height", barHeight - 1);
-
-        bar.append("text")
-            .attr("x", function (d) { return x(d.value) - 3; })
-            .attr("y", barHeight / 2)
-            .attr("dy", ".35em")
-            .text(function (d) { return d.value; });
-        */
-
-        // x.domain([0, max(data, d => d.count)])
-        // const bars = select(this.chart.current)
-        //     .style('height', `${barHeight * data.length}px`)
-        //     .selectAll('div')
-        //     .data(data, (d, i) => d.id_str);
-        // bars.enter()
-        //     .append('div')
-        //     .style('width', '0px')
-        //     .transition()
-        //     .delay(exitDuration)
-        //     .duration(enterDuration)
-        //     .style('width', d => `${x(d.count)}px`)
-        //     .text(d => d.count)
-        // bars.exit()
-        //     .transition()
-        //     .duration(exitDuration)
-        //     .style('width', '0px')
-        //     .remove()
+        const barExit = bar.exit()
+        barExit
+            .transition()
+            .delay(transDuration)  // delay the 'remove' to allow transition-out effect before remove
+            .remove();
+        barExit.select('rect')
+            .transition()
+            .duration(transDuration)
+            .attr('width', 0)
+            .remove();
+        barExit.select('text')
+            .transition()
+            .duration(transDuration)
+            .attr('x', 0 - 3)
+            .remove();
     }
 
     render() {
