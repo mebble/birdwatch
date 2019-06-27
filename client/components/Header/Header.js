@@ -1,7 +1,10 @@
 import React from 'react';
 
 export default ({ children }) => {
-    const classes = 'sticky top-0 bg-gray-300 py-8';
+    const classes = `
+        bg-gray-300 py-8
+        sticky top-0
+    `;
     return (
         <section className={classes}>
             {children}

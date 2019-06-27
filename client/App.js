@@ -48,9 +48,9 @@ class App extends Component {
                         <SearchBar placeholder="Find a twitter user..." value="" />
                     </Row>
                     <Row>
-                        <Button onClick={this.onFavourites} disabled={current === 'favourites'}>Favourites</Button>
-                        <Button onClick={this.onRetweets} disabled={current === 'retweets'}>Retweets</Button>
-                        <Toggle onClick={this.onReplyToggle} isOn={withReplies}>With replies</Toggle>
+                        <Button onClick={this.onFavourites} disabled={current === 'favourites'}>favourites</Button>
+                        <Button onClick={this.onRetweets} disabled={current === 'retweets'}>retweets</Button>
+                        <Toggle onClick={this.onReplyToggle} isOn={withReplies}>replies</Toggle>
                     </Row>
                 </Header>
                 <Timeline current={current} withReplies={withReplies} />
