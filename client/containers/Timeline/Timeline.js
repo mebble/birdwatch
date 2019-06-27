@@ -5,9 +5,6 @@ import './Timeline.css';
 
 const transDuration = 500;
 const barHeight = 20;
-const chartWidth = 420;
-const x = scaleLinear()
-    .range([10, chartWidth]);
 
 export default class Timeline extends Component {
     constructor(props) {
@@ -55,7 +52,10 @@ export default class Timeline extends Component {
     }
 
     updateChart(data) {
-        x.domain([0, max(data, d => d.count)]);
+        const chartWidth = this.chart.current.parentNode.clientWidth - 20;
+        const x = scaleLinear()
+            .domain([0, max(data, d => d.count)])
+            .range([20, chartWidth]);
 
         const bar = select(this.chart.current)
             .attr('height', barHeight * data.length)
