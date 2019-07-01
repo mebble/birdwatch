@@ -9,64 +9,6 @@ import './Timeline.css';
 const transDuration = 500;
 const barHeight = 20;
 
-const updateChart = (chartNode, data) => {
-    const chartWidth = chartNode.parentNode.clientWidth - 20;
-    const x = scaleLinear()
-        .domain([0, max(data, d => d.count)])
-        .range([20, chartWidth]);
-
-    const bar = select(chartNode)
-        .attr('height', barHeight * data.length)
-        .attr('width', chartWidth)  // move out if possible, since it stays constant
-        .selectAll('g')
-        .data(data, (d, i) => d.id_str);
-
-    const barUpdate = bar
-        .transition()
-        .duration(transDuration)
-        .attr('transform', (d, i) => `translate(0, ${i * barHeight})`);
-    barUpdate.select('rect')
-        .transition()
-        .duration(transDuration)
-        .attr('width', d => x(d.count));
-    barUpdate.select('text')
-        .transition()
-        .duration(transDuration)
-        .attr('x', d => x(d.count) - 3);
-
-    const barEnter = bar.enter()
-        .append('g')
-        .attr('transform', (d, i) => `translate(0, ${i * barHeight})`);
-    barEnter.append('rect')
-        .transition()
-        .duration(transDuration)
-        .attr('width', d => x(d.count))
-        .attr('height', barHeight - 1);
-    barEnter.append('text')
-        .attr('y', barHeight / 2)
-        .attr('dy', '.35em')
-        .transition()
-        .duration(transDuration)
-        .attr('x', d => x(d.count) - 3)
-        .text(d => d.count);
-
-    const barExit = bar.exit()
-    barExit
-        .transition()
-        .delay(transDuration)  // delay the 'remove' to allow transition-out effect before remove
-        .remove();
-    barExit.select('rect')
-        .transition()
-        .duration(transDuration)
-        .attr('width', 0)
-        .remove();
-    barExit.select('text')
-        .transition()
-        .duration(transDuration)
-        .attr('x', 0 - 3)
-        .remove();
-};
-
 export default class Timeline extends Component {
     constructor(props) {
         super(props);
@@ -77,10 +19,11 @@ export default class Timeline extends Component {
             favourites: [],
             retweets: [],
         };
+        this.updateChart = this.updateChart.bind(this);
     }
 
     componentDidMount() {
-        fetch('http://192.168.1.4:9000/getTweetEngagement')
+        fetch('http://localhost:9000/getTweetEngagement')
             .then(res => res.json())
             .then(({ favourites, retweets }) => {
                 this.setState({
@@ -106,8 +49,70 @@ export default class Timeline extends Component {
         }[current];
         const data = withReplies
             ? data_
-            : data_.filter(({ in_reply_to_status_id_str }) => in_reply_to_status_id_str);
-        updateChart(this.chart.current, data);
+            : data_.filter(({ in_reply_to_status_id_str }) => in_reply_to_status_id_str === null);
+        this.updateChart(data, this.props.openTweet);
+    }
+
+    updateChart(data, openTweet) {
+        const chartWidth = this.chart.current.parentNode.clientWidth - 20;
+        const x = scaleLinear()
+            .domain([0, max(data, d => d.count)])
+            .range([20, chartWidth]);
+
+        const bar = select(this.chart.current)
+            .attr('height', barHeight * data.length)
+            .attr('width', chartWidth)  // move out if possible, since it stays constant
+            .selectAll('g')
+            .data(data, (d, i) => d.id_str);
+
+        const barUpdate = bar
+            .transition()
+            .duration(transDuration)
+            .attr('transform', (d, i) => `translate(0, ${i * barHeight})`);
+        barUpdate.select('rect')
+            .transition()
+            .duration(transDuration)
+            .attr('width', d => x(d.count));
+        barUpdate.select('text')
+            .transition()
+            .duration(transDuration)
+            .attr('x', d => x(d.count) - 3);
+
+        const barEnter = bar.enter()
+            .append('g')
+            .attr('transform', (d, i) => `translate(0, ${i * barHeight})`);
+        barEnter.append('rect')
+            .on('click', function(d) {
+                const tweetID = d.id_str.slice(1);  // remove 'r' or 'f' format
+                openTweet(tweetID);
+            })
+            .transition()
+            .duration(transDuration)
+            .attr('width', d => x(d.count))
+            .attr('height', barHeight - 1)
+        barEnter.append('text')
+            .attr('y', barHeight / 2)
+            .attr('dy', '.35em')
+            .transition()
+            .duration(transDuration)
+            .attr('x', d => x(d.count) - 3)
+            .text(d => d.count);
+
+        const barExit = bar.exit()
+        barExit
+            .transition()
+            .delay(transDuration)  // delay the 'remove' to allow transition-out effect before remove
+            .remove();
+        barExit.select('rect')
+            .transition()
+            .duration(transDuration)
+            .attr('width', 0)
+            .remove();
+        barExit.select('text')
+            .transition()
+            .duration(transDuration)
+            .attr('x', 0 - 3)
+            .remove();
     }
 
     render() {
