@@ -1,758 +1,2778 @@
-{
-    "tweets": [
-        {
-            "created_at": "Sat Jun 22 15:54:22 +0000 2019",
-            "id_str": "1142460830115618822",
-            "text": "@SiIlymel @julianakilrose https://t.co/Pr2R7obxrF"
+[
+    {
+        "created_at": "Mon Jul 01 10:26:35 +0000 2019",
+        "id": 1145639832686944300,
+        "id_str": "1145639832686944256",
+        "full_text": "@SiIlymel Well deserved",
+        "truncated": false,
+        "display_text_range": [
+            10,
+            23
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "SiIlymel",
+                    "name": "۵",
+                    "id": 1835832974,
+                    "id_str": "1835832974",
+                    "indices": [
+                        0,
+                        9
+                    ]
+                }
+            ],
+            "urls": []
         },
-        {
-            "created_at": "Sat Jun 22 16:11:53 +0000 2019",
-            "id_str": "1142465239474196480",
-            "text": "Hail\n  🌹🌹\n🌹    🌹\n🌹\n    🌹\n       🌹\n🌹     🌹\n     🌹\n     \n      🌹\n  🌹  🌹\n🌹      🌹\n🌹 🌹 🌹\n🌹       🌹\n\n🌹🌹🌹\n     🌹\n     🌹\n     🌹\n\n      🌹\n  🌹  🌹\n🌹      🌹\n🌹 🌹 🌹\n🌹       🌹\n\n🌹         🌹\n🌹🌹    🌹\n🌹    🌹🌹\n🌹         🌹"
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1145639711572189200,
+        "in_reply_to_status_id_str": "1145639711572189185",
+        "in_reply_to_user_id": 1835832974,
+        "in_reply_to_user_id_str": "1835832974",
+        "in_reply_to_screen_name": "SiIlymel",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
         },
-        {
-            "created_at": "Sat Jun 22 20:35:32 +0000 2019",
-            "id_str": "1142531589693460481",
-            "text": "We still have cute animals in Hell, the only difference is they have multiple heads. Which just means more to pet."
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Mon Jul 01 10:20:08 +0000 2019",
+        "id": 1145638208929185800,
+        "id_str": "1145638208929185792",
+        "full_text": "@SiIlymel GLOWING!",
+        "truncated": false,
+        "display_text_range": [
+            10,
+            18
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "SiIlymel",
+                    "name": "۵",
+                    "id": 1835832974,
+                    "id_str": "1835832974",
+                    "indices": [
+                        0,
+                        9
+                    ]
+                }
+            ],
+            "urls": []
         },
-        {
-            "created_at": "Sun Jun 23 00:25:10 +0000 2019",
-            "id_str": "1142589379199811585",
-            "text": "Life is a simulation"
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1145502390566686700,
+        "in_reply_to_status_id_str": "1145502390566686720",
+        "in_reply_to_user_id": 1835832974,
+        "in_reply_to_user_id_str": "1835832974",
+        "in_reply_to_screen_name": "SiIlymel",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
         },
-        {
-            "created_at": "Sun Jun 23 11:43:41 +0000 2019",
-            "id_str": "1142760131177996289",
-            "text": "Get out of church you traitors"
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 4,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Mon Jul 01 00:18:36 +0000 2019",
+        "id": 1145486829791187000,
+        "id_str": "1145486829791186946",
+        "full_text": "@catsu Nice",
+        "truncated": false,
+        "display_text_range": [
+            7,
+            11
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "catsu",
+                    "name": "🐈",
+                    "id": 2849879751,
+                    "id_str": "2849879751",
+                    "indices": [
+                        0,
+                        6
+                    ]
+                }
+            ],
+            "urls": []
         },
-        {
-            "created_at": "Sun Jun 23 15:00:44 +0000 2019",
-            "id_str": "1142809721814048768",
-            "text": "Aliens lock their doors when they fly past Earth"
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1145486639273324500,
+        "in_reply_to_status_id_str": "1145486639273324544",
+        "in_reply_to_user_id": 2849879751,
+        "in_reply_to_user_id_str": "2849879751",
+        "in_reply_to_screen_name": "catsu",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
         },
-        {
-            "created_at": "Sun Jun 23 19:13:04 +0000 2019",
-            "id_str": "1142873223098449920",
-            "text": "The monsters under your bed can hear you crying, are you okay?"
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 5,
+        "favorite_count": 952,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Mon Jul 01 00:17:05 +0000 2019",
+        "id": 1145486444749832200,
+        "id_str": "1145486444749832192",
+        "full_text": "Reply with memes",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            16
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
         },
-        {
-            "created_at": "Sun Jun 23 22:01:24 +0000 2019",
-            "id_str": "1142915584432193536",
-            "text": "@elonmusk OCCUPY HELL"
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
         },
-        {
-            "created_at": "Sun Jun 23 22:28:35 +0000 2019",
-            "id_str": "1142922425153331201",
-            "text": "God says his own name during sex"
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 811,
+        "favorite_count": 12270,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Mon Jul 01 00:10:27 +0000 2019",
+        "id": 1145484775706320900,
+        "id_str": "1145484775706320897",
+        "full_text": "@SiIlymel First name that came to mind shh",
+        "truncated": false,
+        "display_text_range": [
+            10,
+            42
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "SiIlymel",
+                    "name": "۵",
+                    "id": 1835832974,
+                    "id_str": "1835832974",
+                    "indices": [
+                        0,
+                        9
+                    ]
+                }
+            ],
+            "urls": []
         },
-        {
-            "created_at": "Sun Jun 23 22:28:50 +0000 2019",
-            "id_str": "1142922488151793676",
-            "text": "@SiIlymel Blocked"
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1145484647972950000,
+        "in_reply_to_status_id_str": "1145484647972950017",
+        "in_reply_to_user_id": 1835832974,
+        "in_reply_to_user_id_str": "1835832974",
+        "in_reply_to_screen_name": "SiIlymel",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
         },
-        {
-            "created_at": "Sun Jun 23 22:31:05 +0000 2019",
-            "id_str": "1142923055867600897",
-            "text": "@SiIlymel https://t.co/qy5glnDCke"
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 15,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Mon Jul 01 00:09:28 +0000 2019",
+        "id": 1145484529777463300,
+        "id_str": "1145484529777463296",
+        "full_text": "@SiIlymel ...",
+        "truncated": false,
+        "display_text_range": [
+            10,
+            13
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "SiIlymel",
+                    "name": "۵",
+                    "id": 1835832974,
+                    "id_str": "1835832974",
+                    "indices": [
+                        0,
+                        9
+                    ]
+                }
+            ],
+            "urls": []
         },
-        {
-            "created_at": "Sun Jun 23 22:37:15 +0000 2019",
-            "id_str": "1142924608334696448",
-            "text": "@SiIlymel I know"
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1145483752052863000,
+        "in_reply_to_status_id_str": "1145483752052862977",
+        "in_reply_to_user_id": 1835832974,
+        "in_reply_to_user_id_str": "1835832974",
+        "in_reply_to_screen_name": "SiIlymel",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
         },
-        {
-            "created_at": "Sun Jun 23 22:39:11 +0000 2019",
-            "id_str": "1142925094966218753",
-            "text": "@SiIlymel That’s what u say after"
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 12,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "und"
+    },
+    {
+        "created_at": "Sun Jun 30 22:58:05 +0000 2019",
+        "id": 1145466565766373400,
+        "id_str": "1145466565766373377",
+        "full_text": "I got one question for y’all.\n\nWhat the fuck is wrong with you?",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            63
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
         },
-        {
-            "created_at": "Sun Jun 23 22:40:04 +0000 2019",
-            "id_str": "1142925315955724293",
-            "text": "@SiIlymel Wtf"
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
         },
-        {
-            "created_at": "Sun Jun 23 22:40:33 +0000 2019",
-            "id_str": "1142925436323803137",
-            "text": "@SiIlymel @Ultra15151 I have notific..."
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 7277,
+        "favorite_count": 37723,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sun Jun 30 17:49:32 +0000 2019",
+        "id": 1145388914624073700,
+        "id_str": "1145388914624073728",
+        "full_text": "@lindsaydemeola @captainkalvis What the hell?",
+        "truncated": false,
+        "display_text_range": [
+            31,
+            45
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "lindsaydemeola",
+                    "name": "matt",
+                    "id": 18872613,
+                    "id_str": "18872613",
+                    "indices": [
+                        0,
+                        15
+                    ]
+                },
+                {
+                    "screen_name": "captainkalvis",
+                    "name": "Kellen",
+                    "id": 362246318,
+                    "id_str": "362246318",
+                    "indices": [
+                        16,
+                        30
+                    ]
+                }
+            ],
+            "urls": []
         },
-        {
-            "created_at": "Sun Jun 23 22:42:28 +0000 2019",
-            "id_str": "1142925918912073729",
-            "text": "@Ultra15151 @SiIlymel For king sernas honour I shall!!"
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1145367121209118700,
+        "in_reply_to_status_id_str": "1145367121209118720",
+        "in_reply_to_user_id": 18872613,
+        "in_reply_to_user_id_str": "18872613",
+        "in_reply_to_screen_name": "lindsaydemeola",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
         },
-        {
-            "created_at": "Sun Jun 23 22:42:58 +0000 2019",
-            "id_str": "1142926046607609858",
-            "text": "There’s a special place in Hell for people that cheat"
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 28,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sun Jun 30 17:43:17 +0000 2019",
+        "id": 1145387341097439200,
+        "id_str": "1145387341097439232",
+        "full_text": "You should be in jail https://t.co/ZpGNLCLoKF",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            21
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [
+                {
+                    "url": "https://t.co/ZpGNLCLoKF",
+                    "expanded_url": "https://twitter.com/abramaranda0/status/1144635683178500096",
+                    "display_url": "twitter.com/abramaranda0/s…",
+                    "indices": [
+                        22,
+                        45
+                    ]
+                }
+            ]
         },
-        {
-            "created_at": "Sun Jun 23 23:47:41 +0000 2019",
-            "id_str": "1142942333580787712",
-            "text": "@SiIlymel Your throw! I’m Tryna sleep"
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
         },
-        {
-            "created_at": "Sun Jun 23 23:51:55 +0000 2019",
-            "id_str": "1142943397046575105",
-            "text": "@SiIlymel Why??"
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": true,
+        "quoted_status_id": 1144635683178500100,
+        "quoted_status_id_str": "1144635683178500096",
+        "quoted_status_permalink": {
+            "url": "https://t.co/ZpGNLCLoKF",
+            "expanded": "https://twitter.com/abramaranda0/status/1144635683178500096",
+            "display": "twitter.com/abramaranda0/s…"
         },
-        {
-            "created_at": "Mon Jun 24 08:34:43 +0000 2019",
-            "id_str": "1143074965497012224",
-            "text": "@Classify https://t.co/ledhnjP1LD"
-        },
-        {
-            "created_at": "Mon Jun 24 08:46:16 +0000 2019",
-            "id_str": "1143077870232899584",
-            "text": "@sivemorten @nopeifyaltalt Do me"
-        },
-        {
-            "created_at": "Mon Jun 24 09:19:19 +0000 2019",
-            "id_str": "1143086190167560193",
-            "text": "@Froste https://t.co/gVYkmi0eRh"
-        },
-        {
-            "created_at": "Mon Jun 24 09:20:30 +0000 2019",
-            "id_str": "1143086487635988480",
-            "text": "@Froste Back to your roots to the froste tweets we hate and love"
-        },
-        {
-            "created_at": "Mon Jun 24 12:08:36 +0000 2019",
-            "id_str": "1143128791675539456",
-            "text": "Now that Gods day is over, its back to sinning."
-        },
-        {
-            "created_at": "Mon Jun 24 15:19:38 +0000 2019",
-            "id_str": "1143176865378684928",
-            "text": "@DiGiorno @Not_Aubreyyy 🧐"
-        },
-        {
-            "created_at": "Mon Jun 24 15:24:53 +0000 2019",
-            "id_str": "1143178184642441216",
-            "text": "@DiGiorno @Not_Aubreyyy Haha hey"
-        },
-        {
-            "created_at": "Mon Jun 24 15:30:48 +0000 2019",
-            "id_str": "1143179676115972096",
-            "text": "The real reason God kicked me out of Heaven is because I beat him in a 1v1 on rust"
-        },
-        {
-            "created_at": "Mon Jun 24 18:08:01 +0000 2019",
-            "id_str": "1143219238280355846",
-            "text": "@FameGaming Love YOU"
-        },
-        {
-            "created_at": "Mon Jun 24 18:33:15 +0000 2019",
-            "id_str": "1143225590356557824",
-            "text": "Twitter : h-\n\nMe : please verify me"
-        },
-        {
-            "created_at": "Mon Jun 24 18:36:35 +0000 2019",
-            "id_str": "1143226428927987712",
-            "text": "@Jack_Septic_Eye https://t.co/isMrekKPda"
-        },
-        {
-            "created_at": "Mon Jun 24 19:59:01 +0000 2019",
-            "id_str": "1143247173838155777",
-            "text": "You haven’t been to Hell until you see this @ATLiensOfficial music video https://t.co/AnNpdGUZL1"
-        },
-        {
-            "created_at": "Mon Jun 24 22:47:51 +0000 2019",
-            "id_str": "1143289663333048320",
-            "text": "That epic gamer moment when you sacrifice your mother to Satan"
-        },
-        {
-            "created_at": "Mon Jun 24 22:48:25 +0000 2019",
-            "id_str": "1143289805129826304",
-            "text": "@aaaaaaaaaaancel No"
-        },
-        {
-            "created_at": "Mon Jun 24 23:12:51 +0000 2019",
-            "id_str": "1143295955158097921",
-            "text": "@Jack_Septic_Eye https://t.co/GJT4YB1PnL"
-        },
-        {
-            "created_at": "Mon Jun 24 23:19:46 +0000 2019",
-            "id_str": "1143297694158532608",
-            "text": "@CaucasianJames Wrong acc pal"
-        },
-        {
-            "created_at": "Mon Jun 24 23:29:23 +0000 2019",
-            "id_str": "1143300113202405381",
-            "text": "@CaucasianJames Oms big fan, of James. not you Miranda 👿"
-        },
-        {
-            "created_at": "Tue Jun 25 12:25:57 +0000 2019",
-            "id_str": "1143495544876294144",
-            "text": "Can someone rule over Hell for a while? I need a vacation."
-        },
-        {
-            "created_at": "Tue Jun 25 12:30:38 +0000 2019",
-            "id_str": "1143496722494185473",
-            "text": "@catsu Catsu the new king of Hell"
-        },
-        {
-            "created_at": "Tue Jun 25 12:46:04 +0000 2019",
-            "id_str": "1143500606692368384",
-            "text": "@inciakcasu Yes"
-        },
-        {
-            "created_at": "Tue Jun 25 13:02:34 +0000 2019",
-            "id_str": "1143504759179087873",
-            "text": "@s8nspam Don’t ask me how I know what ass tastes like"
-        },
-        {
-            "created_at": "Tue Jun 25 13:16:46 +0000 2019",
-            "id_str": "1143508333195878401",
-            "text": "@SiIlymel @atJAHSEH @s8nspam Can confirm"
-        },
-        {
-            "created_at": "Tue Jun 25 13:26:10 +0000 2019",
-            "id_str": "1143510698003185664",
-            "text": "@MyFavsTrash get on my level"
-        },
-        {
-            "created_at": "Tue Jun 25 15:05:42 +0000 2019",
-            "id_str": "1143535747808579585",
-            "text": "Come to Hell before World War III starts"
-        },
-        {
-            "created_at": "Tue Jun 25 17:59:01 +0000 2019",
-            "id_str": "1143579363608342528",
-            "text": "@BrittanyVenti Get a grip"
-        },
-        {
-            "created_at": "Tue Jun 25 18:13:03 +0000 2019",
-            "id_str": "1143582896017629186",
-            "text": "no one:\n\nliterally no one:\n\nnot a single soul:\n\nme: God is kind of a dick"
-        },
-        {
-            "created_at": "Tue Jun 25 19:28:43 +0000 2019",
-            "id_str": "1143601936677122053",
-            "text": "@steak_umm If u must"
-        },
-        {
-            "created_at": "Tue Jun 25 21:59:50 +0000 2019",
-            "id_str": "1143639968608395265",
-            "text": "I don’t tell people to ‘go to Hell’ because it’s where I work and I’d rather not see them everyday for eternity."
-        },
-        {
-            "created_at": "Tue Jun 25 22:42:26 +0000 2019",
-            "id_str": "1143650688364363776",
-            "text": "Rip king 🖤 https://t.co/Vo0KdDnEQi"
-        },
-        {
-            "created_at": "Wed Jun 26 01:36:06 +0000 2019",
-            "id_str": "1143694391061688325",
-            "text": "Someone out there loves you, it’s not me. I hate you all, but someone loves you."
-        },
-        {
-            "created_at": "Wed Jun 26 01:55:39 +0000 2019",
-            "id_str": "1143699312536371200",
-            "text": "@SiIlymel When I said all I meant everyone but you"
-        }
-    ],
-    "favourites": [
-        {
-            "id_str": "f1142460830115618822",
-            "in_reply_to_status_id_str": "1142460582219657218",
-            "count": 25
-        },
-        {
-            "id_str": "f1142465239474196480",
+        "quoted_status": {
+            "created_at": "Fri Jun 28 15:56:27 +0000 2019",
+            "id": 1144635683178500100,
+            "id_str": "1144635683178500096",
+            "full_text": "hot boy season necessities https://t.co/Mm6F7S6sI4",
+            "truncated": false,
+            "display_text_range": [
+                0,
+                26
+            ],
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [],
+                "media": [
+                    {
+                        "id": 1144635678069796900,
+                        "id_str": "1144635678069796865",
+                        "indices": [
+                            27,
+                            50
+                        ],
+                        "media_url": "http://pbs.twimg.com/media/D-KQFayWsAE1rbv.jpg",
+                        "media_url_https": "https://pbs.twimg.com/media/D-KQFayWsAE1rbv.jpg",
+                        "url": "https://t.co/Mm6F7S6sI4",
+                        "display_url": "pic.twitter.com/Mm6F7S6sI4",
+                        "expanded_url": "https://twitter.com/abramaranda0/status/1144635683178500096/photo/1",
+                        "type": "photo",
+                        "sizes": {
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            },
+                            "large": {
+                                "w": 1152,
+                                "h": 2048,
+                                "resize": "fit"
+                            },
+                            "medium": {
+                                "w": 675,
+                                "h": 1200,
+                                "resize": "fit"
+                            },
+                            "small": {
+                                "w": 383,
+                                "h": 680,
+                                "resize": "fit"
+                            }
+                        }
+                    }
+                ]
+            },
+            "extended_entities": {
+                "media": [
+                    {
+                        "id": 1144635678069796900,
+                        "id_str": "1144635678069796865",
+                        "indices": [
+                            27,
+                            50
+                        ],
+                        "media_url": "http://pbs.twimg.com/media/D-KQFayWsAE1rbv.jpg",
+                        "media_url_https": "https://pbs.twimg.com/media/D-KQFayWsAE1rbv.jpg",
+                        "url": "https://t.co/Mm6F7S6sI4",
+                        "display_url": "pic.twitter.com/Mm6F7S6sI4",
+                        "expanded_url": "https://twitter.com/abramaranda0/status/1144635683178500096/photo/1",
+                        "type": "photo",
+                        "sizes": {
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            },
+                            "large": {
+                                "w": 1152,
+                                "h": 2048,
+                                "resize": "fit"
+                            },
+                            "medium": {
+                                "w": 675,
+                                "h": 1200,
+                                "resize": "fit"
+                            },
+                            "small": {
+                                "w": 383,
+                                "h": 680,
+                                "resize": "fit"
+                            }
+                        }
+                    },
+                    {
+                        "id": 1144635678069858300,
+                        "id_str": "1144635678069858305",
+                        "indices": [
+                            27,
+                            50
+                        ],
+                        "media_url": "http://pbs.twimg.com/media/D-KQFayXoAEF4CV.jpg",
+                        "media_url_https": "https://pbs.twimg.com/media/D-KQFayXoAEF4CV.jpg",
+                        "url": "https://t.co/Mm6F7S6sI4",
+                        "display_url": "pic.twitter.com/Mm6F7S6sI4",
+                        "expanded_url": "https://twitter.com/abramaranda0/status/1144635683178500096/photo/1",
+                        "type": "photo",
+                        "sizes": {
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            },
+                            "medium": {
+                                "w": 675,
+                                "h": 1200,
+                                "resize": "fit"
+                            },
+                            "small": {
+                                "w": 383,
+                                "h": 680,
+                                "resize": "fit"
+                            },
+                            "large": {
+                                "w": 1152,
+                                "h": 2048,
+                                "resize": "fit"
+                            }
+                        }
+                    }
+                ]
+            },
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "in_reply_to_status_id": null,
             "in_reply_to_status_id_str": null,
-            "count": 82294
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 905836220177158100,
+                "id_str": "905836220177158144"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 1383,
+            "favorite_count": 3805,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": true,
+            "lang": "en"
         },
-        {
-            "id_str": "f1142531589693460481",
+        "retweet_count": 873,
+        "favorite_count": 11301,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sun Jun 30 17:40:16 +0000 2019",
+        "id": 1145386584138760200,
+        "id_str": "1145386584138760192",
+        "full_text": "@SiIlymel OMG u replied... I’m your biggest fan",
+        "truncated": false,
+        "display_text_range": [
+            10,
+            47
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "SiIlymel",
+                    "name": "۵",
+                    "id": 1835832974,
+                    "id_str": "1835832974",
+                    "indices": [
+                        0,
+                        9
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1145386331163562000,
+        "in_reply_to_status_id_str": "1145386331163561985",
+        "in_reply_to_user_id": 1835832974,
+        "in_reply_to_user_id_str": "1835832974",
+        "in_reply_to_screen_name": "SiIlymel",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 27,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sun Jun 30 17:38:39 +0000 2019",
+        "id": 1145386178243387400,
+        "id_str": "1145386178243387393",
+        "full_text": "@SiIlymel Hey you",
+        "truncated": false,
+        "display_text_range": [
+            10,
+            17
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "SiIlymel",
+                    "name": "۵",
+                    "id": 1835832974,
+                    "id_str": "1835832974",
+                    "indices": [
+                        0,
+                        9
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1145386096605503500,
+        "in_reply_to_status_id_str": "1145386096605503488",
+        "in_reply_to_user_id": 1835832974,
+        "in_reply_to_user_id_str": "1835832974",
+        "in_reply_to_screen_name": "SiIlymel",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 17,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sun Jun 30 17:16:00 +0000 2019",
+        "id": 1145380475025969200,
+        "id_str": "1145380475025969153",
+        "full_text": "Horny for love and affection",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            28
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 15452,
+        "favorite_count": 45759,
+        "favorited": true,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sun Jun 30 12:42:37 +0000 2019",
+        "id": 1145311677346451500,
+        "id_str": "1145311677346451456",
+        "full_text": "Going to church for one day of the week doesn’t cancel out all the sinning you’ve done for the rest of it.",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            106
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 4615,
+        "favorite_count": 30309,
+        "favorited": true,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sun Jun 30 12:28:26 +0000 2019",
+        "id": 1145308107054178300,
+        "id_str": "1145308107054178305",
+        "full_text": "@BillRatchet I retract my previous comment now sir",
+        "truncated": false,
+        "display_text_range": [
+            13,
+            50
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "BillRatchet",
+                    "name": "officer bill",
+                    "id": 500497164,
+                    "id_str": "500497164",
+                    "indices": [
+                        0,
+                        12
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1145307928024551400,
+        "in_reply_to_status_id_str": "1145307928024551424",
+        "in_reply_to_user_id": 500497164,
+        "in_reply_to_user_id_str": "500497164",
+        "in_reply_to_screen_name": "BillRatchet",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 59,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sun Jun 30 12:13:12 +0000 2019",
+        "id": 1145304275205152800,
+        "id_str": "1145304275205152769",
+        "full_text": "@BillRatchet Traitor",
+        "truncated": false,
+        "display_text_range": [
+            13,
+            20
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "BillRatchet",
+                    "name": "officer bill",
+                    "id": 500497164,
+                    "id_str": "500497164",
+                    "indices": [
+                        0,
+                        12
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1145298965086253000,
+        "in_reply_to_status_id_str": "1145298965086253056",
+        "in_reply_to_user_id": 500497164,
+        "in_reply_to_user_id_str": "500497164",
+        "in_reply_to_screen_name": "BillRatchet",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 5,
+        "favorite_count": 101,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sat Jun 29 22:24:23 +0000 2019",
+        "id": 1145095697718534100,
+        "id_str": "1145095697718534145",
+        "full_text": "Idk what y’all doing up there but I want no part of it",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            54
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1708,
+        "favorite_count": 19837,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sat Jun 29 18:02:37 +0000 2019",
+        "id": 1145029822466416600,
+        "id_str": "1145029822466416640",
+        "full_text": "Hey you, yes you. \n\nFuck you.",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            29
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 34347,
+        "favorite_count": 118023,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sat Jun 29 13:59:51 +0000 2019",
+        "id": 1144968726929952800,
+        "id_str": "1144968726929952768",
+        "full_text": "What https://t.co/m7zeopYjKW",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            4
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [
+                {
+                    "url": "https://t.co/m7zeopYjKW",
+                    "expanded_url": "https://twitter.com/aldotcom/status/1144057544220053506",
+                    "display_url": "twitter.com/aldotcom/statu…",
+                    "indices": [
+                        5,
+                        28
+                    ]
+                }
+            ]
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": true,
+        "quoted_status_id": 1144057544220053500,
+        "quoted_status_id_str": "1144057544220053506",
+        "quoted_status_permalink": {
+            "url": "https://t.co/m7zeopYjKW",
+            "expanded": "https://twitter.com/aldotcom/status/1144057544220053506",
+            "display": "twitter.com/aldotcom/statu…"
+        },
+        "quoted_status": {
+            "created_at": "Thu Jun 27 01:39:08 +0000 2019",
+            "id": 1144057544220053500,
+            "id_str": "1144057544220053506",
+            "full_text": "An Alabama woman who was shot in the stomach while pregnant has been indicted and charged with manslaughter for the death of the fetus. \n\nCharges against the shooter have been dismissed. https://t.co/YI0fiTHI5j https://t.co/4Q9QbTBq4Q",
+            "truncated": false,
+            "display_text_range": [
+                0,
+                210
+            ],
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/YI0fiTHI5j",
+                        "expanded_url": "https://trib.al/d1flwyi",
+                        "display_url": "trib.al/d1flwyi",
+                        "indices": [
+                            187,
+                            210
+                        ]
+                    }
+                ],
+                "media": [
+                    {
+                        "id": 1144057542328422400,
+                        "id_str": "1144057542328422407",
+                        "indices": [
+                            211,
+                            234
+                        ],
+                        "media_url": "http://pbs.twimg.com/media/D-CCRfUXkAcznHe.jpg",
+                        "media_url_https": "https://pbs.twimg.com/media/D-CCRfUXkAcznHe.jpg",
+                        "url": "https://t.co/4Q9QbTBq4Q",
+                        "display_url": "pic.twitter.com/4Q9QbTBq4Q",
+                        "expanded_url": "https://twitter.com/aldotcom/status/1144057544220053506/photo/1",
+                        "type": "photo",
+                        "sizes": {
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            },
+                            "small": {
+                                "w": 661,
+                                "h": 680,
+                                "resize": "fit"
+                            },
+                            "large": {
+                                "w": 1200,
+                                "h": 1235,
+                                "resize": "fit"
+                            },
+                            "medium": {
+                                "w": 1166,
+                                "h": 1200,
+                                "resize": "fit"
+                            }
+                        }
+                    }
+                ]
+            },
+            "extended_entities": {
+                "media": [
+                    {
+                        "id": 1144057542328422400,
+                        "id_str": "1144057542328422407",
+                        "indices": [
+                            211,
+                            234
+                        ],
+                        "media_url": "http://pbs.twimg.com/media/D-CCRfUXkAcznHe.jpg",
+                        "media_url_https": "https://pbs.twimg.com/media/D-CCRfUXkAcznHe.jpg",
+                        "url": "https://t.co/4Q9QbTBq4Q",
+                        "display_url": "pic.twitter.com/4Q9QbTBq4Q",
+                        "expanded_url": "https://twitter.com/aldotcom/status/1144057544220053506/photo/1",
+                        "type": "photo",
+                        "sizes": {
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            },
+                            "small": {
+                                "w": 661,
+                                "h": 680,
+                                "resize": "fit"
+                            },
+                            "large": {
+                                "w": 1200,
+                                "h": 1235,
+                                "resize": "fit"
+                            },
+                            "medium": {
+                                "w": 1166,
+                                "h": 1200,
+                                "resize": "fit"
+                            }
+                        }
+                    }
+                ]
+            },
+            "source": "<a href=\"http://www.socialflow.com\" rel=\"nofollow\">SocialFlow</a>",
+            "in_reply_to_status_id": null,
             "in_reply_to_status_id_str": null,
-            "count": 40454
-        },
-        {
-            "id_str": "f1142589379199811585",
-            "in_reply_to_status_id_str": null,
-            "count": 28963
-        },
-        {
-            "id_str": "f1142760131177996289",
-            "in_reply_to_status_id_str": null,
-            "count": 22961
-        },
-        {
-            "id_str": "f1142809721814048768",
-            "in_reply_to_status_id_str": null,
-            "count": 34225
-        },
-        {
-            "id_str": "f1142873223098449920",
-            "in_reply_to_status_id_str": null,
-            "count": 91497
-        },
-        {
-            "id_str": "f1142915584432193536",
-            "in_reply_to_status_id_str": "1142904294196178944",
-            "count": 12220
-        },
-        {
-            "id_str": "f1142922425153331201",
-            "in_reply_to_status_id_str": null,
-            "count": 26723
-        },
-        {
-            "id_str": "f1142922488151793676",
-            "in_reply_to_status_id_str": "1142922441058115586",
-            "count": 17
-        },
-        {
-            "id_str": "f1142923055867600897",
-            "in_reply_to_status_id_str": "1142922652492976131",
-            "count": 16
-        },
-        {
-            "id_str": "f1142924608334696448",
-            "in_reply_to_status_id_str": "1142924426930982912",
-            "count": 18
-        },
-        {
-            "id_str": "f1142925094966218753",
-            "in_reply_to_status_id_str": "1142924988607074306",
-            "count": 11
-        },
-        {
-            "id_str": "f1142925315955724293",
-            "in_reply_to_status_id_str": "1142925262952288256",
-            "count": 17
-        },
-        {
-            "id_str": "f1142925436323803137",
-            "in_reply_to_status_id_str": "1142925321404067841",
-            "count": 20
-        },
-        {
-            "id_str": "f1142925918912073729",
-            "in_reply_to_status_id_str": "1142925824909369344",
-            "count": 26
-        },
-        {
-            "id_str": "f1142926046607609858",
-            "in_reply_to_status_id_str": null,
-            "count": 33703
-        },
-        {
-            "id_str": "f1142942333580787712",
-            "in_reply_to_status_id_str": "1142941244764643329",
-            "count": 17
-        },
-        {
-            "id_str": "f1142943397046575105",
-            "in_reply_to_status_id_str": "1142943135720464384",
-            "count": 18
-        },
-        {
-            "id_str": "f1143074965497012224",
-            "in_reply_to_status_id_str": "1142966466616156160",
-            "count": 402
-        },
-        {
-            "id_str": "f1143077870232899584",
-            "in_reply_to_status_id_str": "1142924111393501185",
-            "count": 1033
-        },
-        {
-            "id_str": "f1143086190167560193",
-            "in_reply_to_status_id_str": "1143085243135602690",
-            "count": 414
-        },
-        {
-            "id_str": "f1143086487635988480",
-            "in_reply_to_status_id_str": "1143086311345139713",
-            "count": 134
-        },
-        {
-            "id_str": "f1143128791675539456",
-            "in_reply_to_status_id_str": null,
-            "count": 18358
-        },
-        {
-            "id_str": "f1143176865378684928",
-            "in_reply_to_status_id_str": "1143176701687533568",
-            "count": 15
-        },
-        {
-            "id_str": "f1143178184642441216",
-            "in_reply_to_status_id_str": "1143178107412762624",
-            "count": 32
-        },
-        {
-            "id_str": "f1143179676115972096",
-            "in_reply_to_status_id_str": null,
-            "count": 29993
-        },
-        {
-            "id_str": "f1143219238280355846",
-            "in_reply_to_status_id_str": "1143216432458665984",
-            "count": 22
-        },
-        {
-            "id_str": "f1143225590356557824",
-            "in_reply_to_status_id_str": null,
-            "count": 26983
-        },
-        {
-            "id_str": "f1143226428927987712",
-            "in_reply_to_status_id_str": "1143175470806122496",
-            "count": 10784
-        },
-        {
-            "id_str": "f1143247173838155777",
-            "in_reply_to_status_id_str": null,
-            "count": 4982
-        },
-        {
-            "id_str": "f1143289663333048320",
-            "in_reply_to_status_id_str": null,
-            "count": 16679
-        },
-        {
-            "id_str": "f1143289805129826304",
-            "in_reply_to_status_id_str": "1143289718207111170",
-            "count": 275
-        },
-        {
-            "id_str": "f1143295955158097921",
-            "in_reply_to_status_id_str": "1143295610252079107",
-            "count": 5195
-        },
-        {
-            "id_str": "f1143297694158532608",
-            "in_reply_to_status_id_str": "1143297369305485312",
-            "count": 195
-        },
-        {
-            "id_str": "f1143300113202405381",
-            "in_reply_to_status_id_str": "1143299541728399363",
-            "count": 159
-        },
-        {
-            "id_str": "f1143495544876294144",
-            "in_reply_to_status_id_str": null,
-            "count": 39516
-        },
-        {
-            "id_str": "f1143496722494185473",
-            "in_reply_to_status_id_str": "1143496363780575239",
-            "count": 1857
-        },
-        {
-            "id_str": "f1143500606692368384",
-            "in_reply_to_status_id_str": "1143495805388623873",
-            "count": 600
-        },
-        {
-            "id_str": "f1143504759179087873",
-            "in_reply_to_status_id_str": "1143504674605228033",
-            "count": 3744
-        },
-        {
-            "id_str": "f1143508333195878401",
-            "in_reply_to_status_id_str": "1143508269891301376",
-            "count": 134
-        },
-        {
-            "id_str": "f1143510698003185664",
-            "in_reply_to_status_id_str": "1143508969169838080",
-            "count": 66
-        },
-        {
-            "id_str": "f1143535747808579585",
-            "in_reply_to_status_id_str": null,
-            "count": 16651
-        },
-        {
-            "id_str": "f1143579363608342528",
-            "in_reply_to_status_id_str": "1143566254806044672",
-            "count": 1922
-        },
-        {
-            "id_str": "f1143582896017629186",
-            "in_reply_to_status_id_str": null,
-            "count": 28795
-        },
-        {
-            "id_str": "f1143601936677122053",
-            "in_reply_to_status_id_str": "1143601368994918404",
-            "count": 68
-        },
-        {
-            "id_str": "f1143639968608395265",
-            "in_reply_to_status_id_str": null,
-            "count": 15505
-        },
-        {
-            "id_str": "f1143650688364363776",
-            "in_reply_to_status_id_str": null,
-            "count": 9747
-        },
-        {
-            "id_str": "f1143694391061688325",
-            "in_reply_to_status_id_str": null,
-            "count": 26186
-        },
-        {
-            "id_str": "f1143699312536371200",
-            "in_reply_to_status_id_str": "1143699161788891136",
-            "count": 26
-        }
-    ],
-    "retweets": [
-        {
-            "id_str": "r1142460830115618822",
-            "in_reply_to_status_id_str": "1142460582219657218",
-            "count": 0
-        },
-        {
-            "id_str": "r1142465239474196480",
-            "in_reply_to_status_id_str": null,
-            "count": 15536
-        },
-        {
-            "id_str": "r1142531589693460481",
-            "in_reply_to_status_id_str": null,
-            "count": 5430
-        },
-        {
-            "id_str": "r1142589379199811585",
-            "in_reply_to_status_id_str": null,
-            "count": 4631
-        },
-        {
-            "id_str": "r1142760131177996289",
-            "in_reply_to_status_id_str": null,
-            "count": 2196
-        },
-        {
-            "id_str": "r1142809721814048768",
-            "in_reply_to_status_id_str": null,
-            "count": 4253
-        },
-        {
-            "id_str": "r1142873223098449920",
-            "in_reply_to_status_id_str": null,
-            "count": 20827
-        },
-        {
-            "id_str": "r1142915584432193536",
-            "in_reply_to_status_id_str": "1142904294196178944",
-            "count": 343
-        },
-        {
-            "id_str": "r1142922425153331201",
-            "in_reply_to_status_id_str": null,
-            "count": 2898
-        },
-        {
-            "id_str": "r1142922488151793676",
-            "in_reply_to_status_id_str": "1142922441058115586",
-            "count": 0
-        },
-        {
-            "id_str": "r1142923055867600897",
-            "in_reply_to_status_id_str": "1142922652492976131",
-            "count": 0
-        },
-        {
-            "id_str": "r1142924608334696448",
-            "in_reply_to_status_id_str": "1142924426930982912",
-            "count": 0
-        },
-        {
-            "id_str": "r1142925094966218753",
-            "in_reply_to_status_id_str": "1142924988607074306",
-            "count": 0
-        },
-        {
-            "id_str": "r1142925315955724293",
-            "in_reply_to_status_id_str": "1142925262952288256",
-            "count": 0
-        },
-        {
-            "id_str": "r1142925436323803137",
-            "in_reply_to_status_id_str": "1142925321404067841",
-            "count": 0
-        },
-        {
-            "id_str": "r1142925918912073729",
-            "in_reply_to_status_id_str": "1142925824909369344",
-            "count": 0
-        },
-        {
-            "id_str": "r1142926046607609858",
-            "in_reply_to_status_id_str": null,
-            "count": 5126
-        },
-        {
-            "id_str": "r1142942333580787712",
-            "in_reply_to_status_id_str": "1142941244764643329",
-            "count": 0
-        },
-        {
-            "id_str": "r1142943397046575105",
-            "in_reply_to_status_id_str": "1142943135720464384",
-            "count": 0
-        },
-        {
-            "id_str": "r1143074965497012224",
-            "in_reply_to_status_id_str": "1142966466616156160",
-            "count": 6
-        },
-        {
-            "id_str": "r1143077870232899584",
-            "in_reply_to_status_id_str": "1142924111393501185",
-            "count": 5
-        },
-        {
-            "id_str": "r1143086190167560193",
-            "in_reply_to_status_id_str": "1143085243135602690",
-            "count": 29
-        },
-        {
-            "id_str": "r1143086487635988480",
-            "in_reply_to_status_id_str": "1143086311345139713",
-            "count": 1
-        },
-        {
-            "id_str": "r1143128791675539456",
-            "in_reply_to_status_id_str": null,
-            "count": 1676
-        },
-        {
-            "id_str": "r1143176865378684928",
-            "in_reply_to_status_id_str": "1143176701687533568",
-            "count": 0
-        },
-        {
-            "id_str": "r1143178184642441216",
-            "in_reply_to_status_id_str": "1143178107412762624",
-            "count": 0
-        },
-        {
-            "id_str": "r1143179676115972096",
-            "in_reply_to_status_id_str": null,
-            "count": 3174
-        },
-        {
-            "id_str": "r1143219238280355846",
-            "in_reply_to_status_id_str": "1143216432458665984",
-            "count": 0
-        },
-        {
-            "id_str": "r1143225590356557824",
-            "in_reply_to_status_id_str": null,
-            "count": 1373
-        },
-        {
-            "id_str": "r1143226428927987712",
-            "in_reply_to_status_id_str": "1143175470806122496",
-            "count": 358
-        },
-        {
-            "id_str": "r1143247173838155777",
-            "in_reply_to_status_id_str": null,
-            "count": 492
-        },
-        {
-            "id_str": "r1143289663333048320",
-            "in_reply_to_status_id_str": null,
-            "count": 1369
-        },
-        {
-            "id_str": "r1143289805129826304",
-            "in_reply_to_status_id_str": "1143289718207111170",
-            "count": 5
-        },
-        {
-            "id_str": "r1143295955158097921",
-            "in_reply_to_status_id_str": "1143295610252079107",
-            "count": 136
-        },
-        {
-            "id_str": "r1143297694158532608",
-            "in_reply_to_status_id_str": "1143297369305485312",
-            "count": 2
-        },
-        {
-            "id_str": "r1143300113202405381",
-            "in_reply_to_status_id_str": "1143299541728399363",
-            "count": 4
-        },
-        {
-            "id_str": "r1143495544876294144",
-            "in_reply_to_status_id_str": null,
-            "count": 3556
-        },
-        {
-            "id_str": "r1143496722494185473",
-            "in_reply_to_status_id_str": "1143496363780575239",
-            "count": 135
-        },
-        {
-            "id_str": "r1143500606692368384",
-            "in_reply_to_status_id_str": "1143495805388623873",
-            "count": 4
-        },
-        {
-            "id_str": "r1143504759179087873",
-            "in_reply_to_status_id_str": "1143504674605228033",
-            "count": 125
-        },
-        {
-            "id_str": "r1143508333195878401",
-            "in_reply_to_status_id_str": "1143508269891301376",
-            "count": 1
-        },
-        {
-            "id_str": "r1143510698003185664",
-            "in_reply_to_status_id_str": "1143508969169838080",
-            "count": 1
-        },
-        {
-            "id_str": "r1143535747808579585",
-            "in_reply_to_status_id_str": null,
-            "count": 1717
-        },
-        {
-            "id_str": "r1143579363608342528",
-            "in_reply_to_status_id_str": "1143566254806044672",
-            "count": 40
-        },
-        {
-            "id_str": "r1143582896017629186",
-            "in_reply_to_status_id_str": null,
-            "count": 3002
-        },
-        {
-            "id_str": "r1143601936677122053",
-            "in_reply_to_status_id_str": "1143601368994918404",
-            "count": 2
-        },
-        {
-            "id_str": "r1143639968608395265",
-            "in_reply_to_status_id_str": null,
-            "count": 1766
-        },
-        {
-            "id_str": "r1143650688364363776",
-            "in_reply_to_status_id_str": null,
-            "count": 694
-        },
-        {
-            "id_str": "r1143694391061688325",
-            "in_reply_to_status_id_str": null,
-            "count": 6209
-        },
-        {
-            "id_str": "r1143699312536371200",
-            "in_reply_to_status_id_str": "1143699161788891136",
-            "count": 3
-        }
-    ]
-}
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 14528874,
+                "id_str": "14528874"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 3610,
+            "favorite_count": 5128,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        "retweet_count": 18199,
+        "favorite_count": 83233,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sat Jun 29 13:53:57 +0000 2019",
+        "id": 1144967243366916100,
+        "id_str": "1144967243366916097",
+        "full_text": "@MyFavsTrash @TristanGHill Bro the uk isn’t use to this kinda heat it’s nasty",
+        "truncated": false,
+        "display_text_range": [
+            27,
+            77
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "MyFavsTrash",
+                    "name": "Daniel",
+                    "id": 432223467,
+                    "id_str": "432223467",
+                    "indices": [
+                        0,
+                        12
+                    ]
+                },
+                {
+                    "screen_name": "TristanGHill",
+                    "name": "Tristan 🏁",
+                    "id": 276193153,
+                    "id_str": "276193153",
+                    "indices": [
+                        13,
+                        26
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1144965583043223600,
+        "in_reply_to_status_id_str": "1144965583043223552",
+        "in_reply_to_user_id": 432223467,
+        "in_reply_to_user_id_str": "432223467",
+        "in_reply_to_screen_name": "MyFavsTrash",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 67,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sat Jun 29 12:37:45 +0000 2019",
+        "id": 1144948066761547800,
+        "id_str": "1144948066761547776",
+        "full_text": "That’s it, I’m closing my DMs until further notice. https://t.co/ACJuRzORth",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            51
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [],
+            "media": [
+                {
+                    "id": 1144948062038712300,
+                    "id_str": "1144948062038712323",
+                    "indices": [
+                        52,
+                        75
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/D-OsMjwW4AMnCrQ.jpg",
+                    "media_url_https": "https://pbs.twimg.com/media/D-OsMjwW4AMnCrQ.jpg",
+                    "url": "https://t.co/ACJuRzORth",
+                    "display_url": "pic.twitter.com/ACJuRzORth",
+                    "expanded_url": "https://twitter.com/s8n/status/1144948066761547776/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "medium": {
+                            "w": 554,
+                            "h": 1200,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "small": {
+                            "w": 314,
+                            "h": 680,
+                            "resize": "fit"
+                        },
+                        "large": {
+                            "w": 946,
+                            "h": 2048,
+                            "resize": "fit"
+                        }
+                    }
+                }
+            ]
+        },
+        "extended_entities": {
+            "media": [
+                {
+                    "id": 1144948062038712300,
+                    "id_str": "1144948062038712323",
+                    "indices": [
+                        52,
+                        75
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/D-OsMjwW4AMnCrQ.jpg",
+                    "media_url_https": "https://pbs.twimg.com/media/D-OsMjwW4AMnCrQ.jpg",
+                    "url": "https://t.co/ACJuRzORth",
+                    "display_url": "pic.twitter.com/ACJuRzORth",
+                    "expanded_url": "https://twitter.com/s8n/status/1144948066761547776/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "medium": {
+                            "w": 554,
+                            "h": 1200,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "small": {
+                            "w": 314,
+                            "h": 680,
+                            "resize": "fit"
+                        },
+                        "large": {
+                            "w": 946,
+                            "h": 2048,
+                            "resize": "fit"
+                        }
+                    }
+                },
+                {
+                    "id": 1144948062034567200,
+                    "id_str": "1144948062034567169",
+                    "indices": [
+                        52,
+                        75
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/D-OsMjvXoAE7wCe.jpg",
+                    "media_url_https": "https://pbs.twimg.com/media/D-OsMjvXoAE7wCe.jpg",
+                    "url": "https://t.co/ACJuRzORth",
+                    "display_url": "pic.twitter.com/ACJuRzORth",
+                    "expanded_url": "https://twitter.com/s8n/status/1144948066761547776/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "medium": {
+                            "w": 554,
+                            "h": 1200,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "small": {
+                            "w": 314,
+                            "h": 680,
+                            "resize": "fit"
+                        },
+                        "large": {
+                            "w": 946,
+                            "h": 2048,
+                            "resize": "fit"
+                        }
+                    }
+                }
+            ]
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1076,
+        "favorite_count": 19990,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sat Jun 29 12:18:20 +0000 2019",
+        "id": 1144943179680141300,
+        "id_str": "1144943179680141313",
+        "full_text": "Sinning the pain away",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            21
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 3133,
+        "favorite_count": 18667,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sat Jun 29 01:24:37 +0000 2019",
+        "id": 1144778666989240300,
+        "id_str": "1144778666989240320",
+        "full_text": "@YeehawMcCartney Wtf",
+        "truncated": false,
+        "display_text_range": [
+            17,
+            20
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "YeehawMcCartney",
+                    "name": "Yeehaw McCartney",
+                    "id": 877270218522976300,
+                    "id_str": "877270218522976257",
+                    "indices": [
+                        0,
+                        16
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1144778494964097000,
+        "in_reply_to_status_id_str": "1144778494964097029",
+        "in_reply_to_user_id": 877270218522976300,
+        "in_reply_to_user_id_str": "877270218522976257",
+        "in_reply_to_screen_name": "YeehawMcCartney",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 235,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "und"
+    },
+    {
+        "created_at": "Sat Jun 29 01:23:22 +0000 2019",
+        "id": 1144778352563277800,
+        "id_str": "1144778352563277824",
+        "full_text": "https://t.co/VUHCROdhO7",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            0
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [],
+            "media": [
+                {
+                    "id": 1144778343453270000,
+                    "id_str": "1144778343453270016",
+                    "indices": [
+                        0,
+                        23
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/D-MR1owXoAAAxNp.jpg",
+                    "media_url_https": "https://pbs.twimg.com/media/D-MR1owXoAAAxNp.jpg",
+                    "url": "https://t.co/VUHCROdhO7",
+                    "display_url": "pic.twitter.com/VUHCROdhO7",
+                    "expanded_url": "https://twitter.com/s8n/status/1144778352563277824/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "small": {
+                            "w": 680,
+                            "h": 666,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "medium": {
+                            "w": 1125,
+                            "h": 1102,
+                            "resize": "fit"
+                        },
+                        "large": {
+                            "w": 1125,
+                            "h": 1102,
+                            "resize": "fit"
+                        }
+                    }
+                }
+            ]
+        },
+        "extended_entities": {
+            "media": [
+                {
+                    "id": 1144778343453270000,
+                    "id_str": "1144778343453270016",
+                    "indices": [
+                        0,
+                        23
+                    ],
+                    "media_url": "http://pbs.twimg.com/media/D-MR1owXoAAAxNp.jpg",
+                    "media_url_https": "https://pbs.twimg.com/media/D-MR1owXoAAAxNp.jpg",
+                    "url": "https://t.co/VUHCROdhO7",
+                    "display_url": "pic.twitter.com/VUHCROdhO7",
+                    "expanded_url": "https://twitter.com/s8n/status/1144778352563277824/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "small": {
+                            "w": 680,
+                            "h": 666,
+                            "resize": "fit"
+                        },
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "medium": {
+                            "w": 1125,
+                            "h": 1102,
+                            "resize": "fit"
+                        },
+                        "large": {
+                            "w": 1125,
+                            "h": 1102,
+                            "resize": "fit"
+                        }
+                    }
+                }
+            ]
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1086,
+        "favorite_count": 17743,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "und"
+    },
+    {
+        "created_at": "Fri Jun 28 21:47:06 +0000 2019",
+        "id": 1144723925798178800,
+        "id_str": "1144723925798178816",
+        "full_text": "Don’t forget to sin this weekend.",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            33
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 8131,
+        "favorite_count": 37008,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Fri Jun 28 21:39:10 +0000 2019",
+        "id": 1144721931175940100,
+        "id_str": "1144721931175940096",
+        "full_text": "@KodiTV Kodi the legend you can have vip",
+        "truncated": false,
+        "display_text_range": [
+            8,
+            40
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "KodiTV",
+                    "name": "Kodi",
+                    "id": 15821823,
+                    "id_str": "15821823",
+                    "indices": [
+                        0,
+                        7
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1144721562635067400,
+        "in_reply_to_status_id_str": "1144721562635067392",
+        "in_reply_to_user_id": 15821823,
+        "in_reply_to_user_id_str": "15821823",
+        "in_reply_to_screen_name": "KodiTV",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 2,
+        "favorite_count": 51,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Fri Jun 28 19:02:40 +0000 2019",
+        "id": 1144682543742115800,
+        "id_str": "1144682543742115840",
+        "full_text": "1 like and I’ll come and take over Earth",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            40
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 2093,
+        "favorite_count": 41795,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Fri Jun 28 15:51:33 +0000 2019",
+        "id": 1144634446676672500,
+        "id_str": "1144634446676672512",
+        "full_text": "The AC just broke. Fuck.",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            24
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1512,
+        "favorite_count": 24458,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Fri Jun 28 14:03:59 +0000 2019",
+        "id": 1144607376756097000,
+        "id_str": "1144607376756097031",
+        "full_text": "@elonmusk Happy birthday papi",
+        "truncated": false,
+        "display_text_range": [
+            10,
+            29
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "elonmusk",
+                    "name": "Elon Musk",
+                    "id": 44196397,
+                    "id_str": "44196397",
+                    "indices": [
+                        0,
+                        9
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1144519004159205400,
+        "in_reply_to_status_id_str": "1144519004159205376",
+        "in_reply_to_user_id": 44196397,
+        "in_reply_to_user_id_str": "44196397",
+        "in_reply_to_screen_name": "elonmusk",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 180,
+        "favorite_count": 9175,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Fri Jun 28 13:59:50 +0000 2019",
+        "id": 1144606336207990800,
+        "id_str": "1144606336207990786",
+        "full_text": "@Classify Hope the block was worth it",
+        "truncated": false,
+        "display_text_range": [
+            10,
+            37
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "Classify",
+                    "name": "100T Classy",
+                    "id": 2941214692,
+                    "id_str": "2941214692",
+                    "indices": [
+                        0,
+                        9
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1144321872676495400,
+        "in_reply_to_status_id_str": "1144321872676495360",
+        "in_reply_to_user_id": 2941214692,
+        "in_reply_to_user_id_str": "2941214692",
+        "in_reply_to_screen_name": "Classify",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 5,
+        "favorite_count": 577,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Fri Jun 28 12:32:33 +0000 2019",
+        "id": 1144584368566034400,
+        "id_str": "1144584368566034432",
+        "full_text": "@MyFavsTrash We good",
+        "truncated": false,
+        "display_text_range": [
+            13,
+            20
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "MyFavsTrash",
+                    "name": "Daniel",
+                    "id": 432223467,
+                    "id_str": "432223467",
+                    "indices": [
+                        0,
+                        12
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1144575532203499500,
+        "in_reply_to_status_id_str": "1144575532203499527",
+        "in_reply_to_user_id": 432223467,
+        "in_reply_to_user_id_str": "432223467",
+        "in_reply_to_screen_name": "MyFavsTrash",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 62,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Fri Jun 28 12:30:00 +0000 2019",
+        "id": 1144583726460002300,
+        "id_str": "1144583726460002305",
+        "full_text": "Love who you want, you’ll all end up in Hell anyways.",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            53
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 7278,
+        "favorite_count": 33530,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Fri Jun 28 01:01:16 +0000 2019",
+        "id": 1144410402966712300,
+        "id_str": "1144410402966712320",
+        "full_text": "Happiness doesn’t exist",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            23
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 10415,
+        "favorite_count": 43263,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Thu Jun 27 22:11:39 +0000 2019",
+        "id": 1144367714724659200,
+        "id_str": "1144367714724659200",
+        "full_text": "I need a lifetime break from life",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            33
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 6231,
+        "favorite_count": 26079,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Thu Jun 27 16:36:15 +0000 2019",
+        "id": 1144283309968519200,
+        "id_str": "1144283309968519169",
+        "full_text": "Anxiety so high it’s nearly in Heaven",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            37
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 9270,
+        "favorite_count": 46348,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Thu Jun 27 15:19:54 +0000 2019",
+        "id": 1144264097028087800,
+        "id_str": "1144264097028087808",
+        "full_text": "Humanity is Gods biggest regret",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            31
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 2765,
+        "favorite_count": 21229,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Thu Jun 27 11:55:16 +0000 2019",
+        "id": 1144212599975948300,
+        "id_str": "1144212599975948289",
+        "full_text": "People believe in Heaven and Hell but don’t even believe in themselves",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            70
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 15332,
+        "favorite_count": 50310,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Wed Jun 26 23:35:57 +0000 2019",
+        "id": 1144026544035307500,
+        "id_str": "1144026544035307520",
+        "full_text": "Stop being assholes it’s getting crowded down here",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            50
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 8196,
+        "favorite_count": 43896,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Wed Jun 26 20:26:23 +0000 2019",
+        "id": 1143978839061815300,
+        "id_str": "1143978839061815296",
+        "full_text": "Come to Hell, you’ll get a good tan.",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            36
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 2180,
+        "favorite_count": 20710,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Wed Jun 26 18:13:40 +0000 2019",
+        "id": 1143945438011232300,
+        "id_str": "1143945438011232257",
+        "full_text": "@Twitter https://t.co/GBx2ihxlw2",
+        "truncated": false,
+        "display_text_range": [
+            8,
+            8
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "Twitter",
+                    "name": "Twitter",
+                    "id": 783214,
+                    "id_str": "783214",
+                    "indices": [
+                        0,
+                        8
+                    ]
+                }
+            ],
+            "urls": [],
+            "media": [
+                {
+                    "id": 1143945430432178200,
+                    "id_str": "1143945430432178176",
+                    "indices": [
+                        9,
+                        32
+                    ],
+                    "media_url": "http://pbs.twimg.com/tweet_video_thumb/D-AcTt9XYAAonAo.jpg",
+                    "media_url_https": "https://pbs.twimg.com/tweet_video_thumb/D-AcTt9XYAAonAo.jpg",
+                    "url": "https://t.co/GBx2ihxlw2",
+                    "display_url": "pic.twitter.com/GBx2ihxlw2",
+                    "expanded_url": "https://twitter.com/s8n/status/1143945438011232257/photo/1",
+                    "type": "photo",
+                    "sizes": {
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "medium": {
+                            "w": 498,
+                            "h": 332,
+                            "resize": "fit"
+                        },
+                        "large": {
+                            "w": 498,
+                            "h": 332,
+                            "resize": "fit"
+                        },
+                        "small": {
+                            "w": 498,
+                            "h": 332,
+                            "resize": "fit"
+                        }
+                    }
+                }
+            ]
+        },
+        "extended_entities": {
+            "media": [
+                {
+                    "id": 1143945430432178200,
+                    "id_str": "1143945430432178176",
+                    "indices": [
+                        9,
+                        32
+                    ],
+                    "media_url": "http://pbs.twimg.com/tweet_video_thumb/D-AcTt9XYAAonAo.jpg",
+                    "media_url_https": "https://pbs.twimg.com/tweet_video_thumb/D-AcTt9XYAAonAo.jpg",
+                    "url": "https://t.co/GBx2ihxlw2",
+                    "display_url": "pic.twitter.com/GBx2ihxlw2",
+                    "expanded_url": "https://twitter.com/s8n/status/1143945438011232257/photo/1",
+                    "type": "animated_gif",
+                    "sizes": {
+                        "thumb": {
+                            "w": 150,
+                            "h": 150,
+                            "resize": "crop"
+                        },
+                        "medium": {
+                            "w": 498,
+                            "h": 332,
+                            "resize": "fit"
+                        },
+                        "large": {
+                            "w": 498,
+                            "h": 332,
+                            "resize": "fit"
+                        },
+                        "small": {
+                            "w": 498,
+                            "h": 332,
+                            "resize": "fit"
+                        }
+                    },
+                    "video_info": {
+                        "aspect_ratio": [
+                            3,
+                            2
+                        ],
+                        "variants": [
+                            {
+                                "bitrate": 0,
+                                "content_type": "video/mp4",
+                                "url": "https://video.twimg.com/tweet_video/D-AcTt9XYAAonAo.mp4"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1143943494127542300,
+        "in_reply_to_status_id_str": "1143943494127542273",
+        "in_reply_to_user_id": 783214,
+        "in_reply_to_user_id_str": "783214",
+        "in_reply_to_screen_name": "Twitter",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 65,
+        "favorite_count": 2669,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "und"
+    },
+    {
+        "created_at": "Wed Jun 26 17:42:17 +0000 2019",
+        "id": 1143937541063790600,
+        "id_str": "1143937541063790592",
+        "full_text": "@SiIlymel @gomugomunohoes Mam",
+        "truncated": false,
+        "display_text_range": [
+            26,
+            29
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "SiIlymel",
+                    "name": "۵",
+                    "id": 1835832974,
+                    "id_str": "1835832974",
+                    "indices": [
+                        0,
+                        9
+                    ]
+                },
+                {
+                    "screen_name": "gomugomunohoes",
+                    "name": "gomer",
+                    "id": 1005966609201102800,
+                    "id_str": "1005966609201102849",
+                    "indices": [
+                        10,
+                        25
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1143937400181329900,
+        "in_reply_to_status_id_str": "1143937400181329920",
+        "in_reply_to_user_id": 1835832974,
+        "in_reply_to_user_id_str": "1835832974",
+        "in_reply_to_screen_name": "SiIlymel",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 23,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "und"
+    },
+    {
+        "created_at": "Wed Jun 26 17:41:15 +0000 2019",
+        "id": 1143937281243385900,
+        "id_str": "1143937281243385856",
+        "full_text": "@SiIlymel @gomugomunohoes Excuse me",
+        "truncated": false,
+        "display_text_range": [
+            26,
+            35
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "SiIlymel",
+                    "name": "۵",
+                    "id": 1835832974,
+                    "id_str": "1835832974",
+                    "indices": [
+                        0,
+                        9
+                    ]
+                },
+                {
+                    "screen_name": "gomugomunohoes",
+                    "name": "gomer",
+                    "id": 1005966609201102800,
+                    "id_str": "1005966609201102849",
+                    "indices": [
+                        10,
+                        25
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1143937031317413900,
+        "in_reply_to_status_id_str": "1143937031317413893",
+        "in_reply_to_user_id": 1835832974,
+        "in_reply_to_user_id_str": "1835832974",
+        "in_reply_to_screen_name": "SiIlymel",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 11,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Wed Jun 26 17:26:12 +0000 2019",
+        "id": 1143933491165454300,
+        "id_str": "1143933491165454336",
+        "full_text": "@SiIlymel Hope he buys u something cute",
+        "truncated": false,
+        "display_text_range": [
+            10,
+            39
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "SiIlymel",
+                    "name": "۵",
+                    "id": 1835832974,
+                    "id_str": "1835832974",
+                    "indices": [
+                        0,
+                        9
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1143933255621759000,
+        "in_reply_to_status_id_str": "1143933255621758976",
+        "in_reply_to_user_id": 1835832974,
+        "in_reply_to_user_id_str": "1835832974",
+        "in_reply_to_screen_name": "SiIlymel",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 29,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Wed Jun 26 17:13:17 +0000 2019",
+        "id": 1143930241099927600,
+        "id_str": "1143930241099927552",
+        "full_text": "Know your worth, you’re worthless to me but someone out there will love you for you.",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            84
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 7245,
+        "favorite_count": 35041,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Wed Jun 26 16:30:50 +0000 2019",
+        "id": 1143919559465951200,
+        "id_str": "1143919559465951234",
+        "full_text": "@SiIlymel Alright Harry Potter smh",
+        "truncated": false,
+        "display_text_range": [
+            10,
+            34
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "SiIlymel",
+                    "name": "۵",
+                    "id": 1835832974,
+                    "id_str": "1835832974",
+                    "indices": [
+                        0,
+                        9
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1143919475026272300,
+        "in_reply_to_status_id_str": "1143919475026272256",
+        "in_reply_to_user_id": 1835832974,
+        "in_reply_to_user_id_str": "1835832974",
+        "in_reply_to_screen_name": "SiIlymel",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 30,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Wed Jun 26 16:29:47 +0000 2019",
+        "id": 1143919296080425000,
+        "id_str": "1143919296080424962",
+        "full_text": "@SiIlymel Sister headass",
+        "truncated": false,
+        "display_text_range": [
+            10,
+            24
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "SiIlymel",
+                    "name": "۵",
+                    "id": 1835832974,
+                    "id_str": "1835832974",
+                    "indices": [
+                        0,
+                        9
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1143919114295160800,
+        "in_reply_to_status_id_str": "1143919114295160833",
+        "in_reply_to_user_id": 1835832974,
+        "in_reply_to_user_id_str": "1835832974",
+        "in_reply_to_screen_name": "SiIlymel",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 19,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "et"
+    },
+    {
+        "created_at": "Wed Jun 26 16:28:44 +0000 2019",
+        "id": 1143919032409743400,
+        "id_str": "1143919032409743360",
+        "full_text": "@SiIlymel We ain’t from Alabama",
+        "truncated": false,
+        "display_text_range": [
+            10,
+            31
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "SiIlymel",
+                    "name": "۵",
+                    "id": 1835832974,
+                    "id_str": "1835832974",
+                    "indices": [
+                        0,
+                        9
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1143918341184217100,
+        "in_reply_to_status_id_str": "1143918341184217089",
+        "in_reply_to_user_id": 1835832974,
+        "in_reply_to_user_id_str": "1835832974",
+        "in_reply_to_screen_name": "SiIlymel",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 23,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Wed Jun 26 16:25:24 +0000 2019",
+        "id": 1143918193209221100,
+        "id_str": "1143918193209221120",
+        "full_text": "@SiIlymel Sister",
+        "truncated": false,
+        "display_text_range": [
+            10,
+            16
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "SiIlymel",
+                    "name": "۵",
+                    "id": 1835832974,
+                    "id_str": "1835832974",
+                    "indices": [
+                        0,
+                        9
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1143917790748979200,
+        "in_reply_to_status_id_str": "1143917790748979202",
+        "in_reply_to_user_id": 1835832974,
+        "in_reply_to_user_id_str": "1835832974",
+        "in_reply_to_screen_name": "SiIlymel",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 2,
+        "favorite_count": 15,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "no"
+    },
+    {
+        "created_at": "Wed Jun 26 16:22:58 +0000 2019",
+        "id": 1143917579771306000,
+        "id_str": "1143917579771305987",
+        "full_text": "@SiIlymel Yes",
+        "truncated": false,
+        "display_text_range": [
+            10,
+            13
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "SiIlymel",
+                    "name": "۵",
+                    "id": 1835832974,
+                    "id_str": "1835832974",
+                    "indices": [
+                        0,
+                        9
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1143917462280388600,
+        "in_reply_to_status_id_str": "1143917462280388612",
+        "in_reply_to_user_id": 1835832974,
+        "in_reply_to_user_id_str": "1835832974",
+        "in_reply_to_screen_name": "SiIlymel",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 16,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "und"
+    },
+    {
+        "created_at": "Wed Jun 26 16:21:55 +0000 2019",
+        "id": 1143917313873383400,
+        "id_str": "1143917313873383424",
+        "full_text": "@SiIlymel ??????",
+        "truncated": false,
+        "display_text_range": [
+            10,
+            16
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "SiIlymel",
+                    "name": "۵",
+                    "id": 1835832974,
+                    "id_str": "1835832974",
+                    "indices": [
+                        0,
+                        9
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": 1143917239051149300,
+        "in_reply_to_status_id_str": "1143917239051149317",
+        "in_reply_to_user_id": 1835832974,
+        "in_reply_to_user_id_str": "1835832974",
+        "in_reply_to_screen_name": "SiIlymel",
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 22,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "und"
+    },
+    {
+        "created_at": "Wed Jun 26 14:51:29 +0000 2019",
+        "id": 1143894558574600200,
+        "id_str": "1143894558574600193",
+        "full_text": "We don’t care what race or gender or what sexual preference you are in Hell, we Torture you all the same.",
+        "truncated": false,
+        "display_text_range": [
+            0,
+            105
+        ],
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 13615722,
+            "id_str": "13615722"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 5566,
+        "favorite_count": 41570,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    }
+]
