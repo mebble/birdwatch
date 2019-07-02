@@ -9,7 +9,7 @@ import './Timeline.css';
 const transDuration = 500;
 const barHeight = 20;
 
-export default class Timeline extends Component {
+export default class extends Component {
     constructor(props) {
         super(props);
         this.chart = React.createRef();
@@ -23,7 +23,7 @@ export default class Timeline extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:9000/getTweetEngagement')
+        fetch('http://192.168.43.202:9000/getTweetEngagement')
             .then(res => res.json())
             .then(({ favourites, retweets }) => {
                 this.setState({

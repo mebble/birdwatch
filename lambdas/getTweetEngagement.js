@@ -10,15 +10,14 @@ exports.handler = async function(event, context) {
         'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
     };
     try {
-        // const options = {
+        // const response = await client.get('statuses/user_timeline', {
         //     screen_name: 's8n',
         //     tweet_mode: 'extended',
         //     count: 50,
         //     trim_user: true,
         //     exclude_replies: false,
         //     include_rts: false,
-        // };
-        // const response = await client.get('statuses/user_timeline', options);
+        // });
         response.sort((t1, t2) => {
             const d1 = new Date(t1.created_at);
             const d2 = new Date(t2.created_at);

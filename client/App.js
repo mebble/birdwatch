@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 
 import Timeline from './containers/Timeline';
+import Search from './containers/Search';
+
 import Button from './components/Button';
 import Row from './components/Row';
 import Toggle from './components/Toggle';
-import SearchBar from './components/SearchBar';
 import Header from './components/Header';
 import TweetModal from './components/TweetModal';
 
@@ -70,9 +71,7 @@ class App extends Component {
             <>
                 <TweetModal id={tweet.id} showModal={tweet.show} closeTweet={this.onCloseTweet} />
                 <Header>
-                    <Row>
-                        <SearchBar placeholder="Find a twitter user..." value="" />
-                    </Row>
+                    <Search />
                     <Row>
                         <Button onClick={this.onFavourites} disabled={current === 'favourites'}>favourites</Button>
                         <Button onClick={this.onRetweets} disabled={current === 'retweets'}>retweets</Button>
