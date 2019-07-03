@@ -84,6 +84,7 @@ export default class extends Component {
         barEnter.append('rect')
             .on('click', function(d) {
                 const tweetID = d.id_str.slice(1);  // remove 'r' or 'f' format
+                // const tweetID = '1142465239474196480';
                 openTweet(tweetID);
             })
             .transition()
