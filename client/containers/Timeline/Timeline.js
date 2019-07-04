@@ -19,13 +19,14 @@ export default class extends Component {
             favourites: [],
             retweets: [],
         };
-        this.updateChart = this.updateChart.bind(this);
+        this.fetchUserData = this.fetchUserData.bind(this);
+        this.updateChartState = this.updateChartState.bind(this);
     }
 
     componentDidMount() {
-        fetch('http://localhost:9000/getTweetEngagement')
-            .then(res => res.json())
+        this.fetchUserData(this.props.user)
             .then(({ favourites, retweets }) => {
+                console.log('Got data for', this.props.user, Date.now());
                 this.setState({
                     dataLoaded: true,
                     favourites,
@@ -41,19 +42,55 @@ export default class extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
+        if (prevProps.user !== this.props.user) {
+            this.setState({
+                dataLoaded: false,
+                dataLoadErr: null
+            }, () => {
+                console.log('Loading data for', this.props.user);
+            });
+            this.fetchUserData(this.props.user)
+                .then(({ favourites, retweets }) => {
+                    console.log('Got data for', this.props.user);
+                    this.setState({
+                        dataLoaded: true,
+                        dataLoadErr: null,
+                        favourites,
+                        retweets
+                    });
+                })
+                .catch(err => {
+                    console.log(err)
+                    this.setState({
+                        dataLoadErr: err
+                    })
+                });
+        } else if (this.state.dataLoaded && !this.state.dataLoadErr) {
+            this.updateChartState();
+        }
+    }
+
+    fetchUserData(screenName) {
+        return fetch(`http://192.168.2.29:9000/getTweetEngagement?q=${screenName}`)
+            .then(res => {
+                if (res.ok) {
+                    return res.json();
+                }
+                return Promise.reject('Error occurred');
+            });
+    }
+
+    updateChartState() {
         const { favourites, retweets } = this.state;
-        const { current, withReplies } = this.props;
+        const { metric, withReplies, openTweet } = this.props;
         const data_ = {
             'favourites': favourites,
             'retweets': retweets
-        }[current];
+        }[metric];
         const data = withReplies
             ? data_
             : data_.filter(({ in_reply_to_status_id_str }) => in_reply_to_status_id_str === null);
-        this.updateChart(data, this.props.openTweet);
-    }
 
-    updateChart(data, openTweet) {
         const chartWidth = this.chart.current.parentNode.clientWidth - 20;
         const x = scaleLinear()
             .domain([0, max(data, d => d.count)])

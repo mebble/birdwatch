@@ -13,7 +13,8 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            current: 'favourites',
+            currentMetric: 'favourites',
+            currentUser: 'kathyra_',
             withReplies: true,
             tweet: {
                 id: null,
@@ -26,17 +27,18 @@ class App extends Component {
         this.onReplyToggle = this.onReplyToggle.bind(this);
         this.onOpenTweet = this.onOpenTweet.bind(this);
         this.onCloseTweet = this.onCloseTweet.bind(this);
+        this.onSearchUser = this.onSearchUser.bind(this);
     }
 
     onFavourites() {
         this.setState({
-            current: 'favourites'
+            currentMetric: 'favourites'
         });
     };
 
     onRetweets() {
         this.setState({
-            current: 'retweets'
+            currentMetric: 'retweets'
         });
     }
 
@@ -64,21 +66,27 @@ class App extends Component {
         });
     }
 
+    onSearchUser(screenName) {
+        this.setState({
+            currentUser: screenName
+        });
+    }
+
     render() {
         console.log(Date.now());
-        const { current, withReplies, tweet } = this.state;
+        const { currentMetric, currentUser, withReplies, tweet } = this.state;
         return (
             <>
                 <TweetModal id={tweet.id} showModal={tweet.show} closeTweet={this.onCloseTweet} />
                 <Header>
-                    <Search />
+                    <Search search={this.onSearchUser} />
                     <Row>
-                        <Button onClick={this.onFavourites} disabled={current === 'favourites'}>favourites</Button>
-                        <Button onClick={this.onRetweets} disabled={current === 'retweets'}>retweets</Button>
+                        <Button onClick={this.onFavourites} disabled={currentMetric === 'favourites'}>favourites</Button>
+                        <Button onClick={this.onRetweets} disabled={currentMetric === 'retweets'}>retweets</Button>
                         <Toggle onClick={this.onReplyToggle} isOn={withReplies}>replies</Toggle>
                     </Row>
                 </Header>
-                <Timeline current={current} withReplies={withReplies} openTweet={this.onOpenTweet} />
+                <Timeline metric={currentMetric} user={currentUser} withReplies={withReplies} openTweet={this.onOpenTweet} />
             </>
         );
     }

@@ -5,6 +5,15 @@ import Button from '../../components/Button';
 import Row from '../../components/Row';
 import SearchBar from '../../components/SearchBar';
 
+const usersToDataList = (users) => {
+    return users.map(({ name, screen_name }) => {
+        return {
+            value: screen_name,
+            label: name
+        };
+    });
+};
+
 export default class extends Component {
     constructor(props) {
         super(props);
@@ -14,27 +23,31 @@ export default class extends Component {
         };
 
         this.searchChange = this.searchChange.bind(this);
+        this.searchSubmit = this.searchSubmit.bind(this);
         this.fetchSuggestions = debounce(function() {
-            console.log('fetching', this.state.value, Date.now())
-            fetch(`http://localhost:9000/getUserSearch?q=${this.state.value}`)
+            fetch(`http://192.168.2.29:9000/getUserSearch?q=${this.state.value}`)
                 .then(res => res.json())
                 .then(users => {
                     this.setState({
-                        suggestions: users
+                        suggestions: usersToDataList(users)
                     });
                 })
                 .catch(err => {
                     this.setState({
-                        suggestions: ['Network error']
+                        suggestions: [{
+                            value: 'Error',
+                            label: 'Network error'
+                        }]
                     });
                 });
         }.bind(this), 800);
     }
 
     searchChange(event) {
-        this.setState({
-            value: event.target.value
-        }, () => {
+        const value = event.target.value.startsWith('@')
+            ? event.target.value.slice(1)
+            : event.target.value;
+        this.setState({ value }, () => {
             const { value } = this.state;
             if (value !== '') {
                 this.fetchSuggestions();
@@ -42,13 +55,21 @@ export default class extends Component {
         });
     }
 
+    searchSubmit(event) {
+        event.preventDefault();
+        const { search } = this.props;
+        search(this.state.value);
+    }
+
     render() {
         const { value, suggestions } = this.state;
         return (
-            <Row>
-                <SearchBar id="user-suggestions" value={value} suggestions={suggestions} onChange={this.searchChange} />
-                <Button>Search</Button>
-            </Row>
+            <form onSubmit={this.searchSubmit}>
+                <Row>
+                    <SearchBar id="user-suggestions" value={value} dataList={suggestions} onChange={this.searchChange} />
+                    <Button type="submit">Search</Button>
+                </Row>
+            </form>
         );
     }
 }
