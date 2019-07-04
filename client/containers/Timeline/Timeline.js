@@ -23,7 +23,7 @@ export default class extends Component {
     }
 
     componentDidMount() {
-        fetch('http://192.168.43.202:9000/getTweetEngagement')
+        fetch('http://localhost:9000/getTweetEngagement')
             .then(res => res.json())
             .then(({ favourites, retweets }) => {
                 this.setState({

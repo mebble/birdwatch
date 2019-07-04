@@ -12,7 +12,7 @@ export default ({ onBackdropClick, children }) => {
     `;
     const containerClasses = `
         Modal__container
-        absolute top-0
+        absolute
         xs-max:w-4/5
     `;
     return (

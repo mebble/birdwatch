@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import debounce from 'lodash.debounce';
 
 import Button from '../../components/Button';
 import Row from '../../components/Row';
@@ -13,24 +14,32 @@ export default class extends Component {
         };
 
         this.searchChange = this.searchChange.bind(this);
+        this.fetchSuggestions = debounce(function() {
+            console.log('fetching', this.state.value, Date.now())
+            fetch(`http://localhost:9000/getUserSearch?q=${this.state.value}`)
+                .then(res => res.json())
+                .then(users => {
+                    this.setState({
+                        suggestions: users
+                    });
+                })
+                .catch(err => {
+                    this.setState({
+                        suggestions: ['Network error']
+                    });
+                });
+        }.bind(this), 800);
     }
 
     searchChange(event) {
         this.setState({
             value: event.target.value
+        }, () => {
+            const { value } = this.state;
+            if (value !== '') {
+                this.fetchSuggestions();
+            }
         });
-        // fetch('http://localhost:9000/getUserSearch')
-        //     .then(res => res.json())
-        //     .then(users => {
-        //         this.setState({
-        //             suggestions: users.map(u => u.screen_name)
-        //         });
-        //     })
-        //     .catch(err => {
-        //         this.setState({
-        //             suggestions: ['Network error']
-        //         });
-        //     });
     }
 
     render() {

@@ -6,7 +6,7 @@ export default ({ id, value, suggestions, onChange }) => {
         <>
             <input className={classes} list={id} value={value} onChange={onChange} type="text" placeholder="Find a twitter user..." />
             <datalist id={id}>
-                {suggestions.map((s, i) => <option key={i} value={`@${s}`} />)}
+                {suggestions.map((s, i) => <option key={i} value={`@${s.screen_name}`}>{s.name}</option>)}
             </datalist>
         </>
     );
