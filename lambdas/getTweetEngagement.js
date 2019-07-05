@@ -24,11 +24,10 @@ exports.handler = async function(event, context) {
             if (d1 > d2) return 1;
             return 0;
         });
-        const { trimmedTweets, favs, rets } = splitFavouritesRetweets(response);
+        const { favs, rets } = splitFavouritesRetweets(response);
         return {
             statusCode: 200,
             body: JSON.stringify({
-                tweets: trimmedTweets,
                 favourites: favs,
                 retweets: rets
             }),
@@ -45,22 +44,24 @@ exports.handler = async function(event, context) {
 };
 
 function splitFavouritesRetweets(tweets) {
-    return tweets.reduce(({ trimmedTweets, favs, rets }, tweet) => {
+    return tweets.reduce(({ favs, rets }, tweet) => {
         const { created_at, id_str, full_text, retweet_count, favorite_count, in_reply_to_status_id_str } = tweet;
-        trimmedTweets.push({ created_at, id_str, text: full_text });
         favs.push({
             id_str: 'f' + id_str,
             in_reply_to_status_id_str,
-            count: favorite_count
+            count: favorite_count,
+            text: full_text,
+            created_at,
         });
         rets.push({
             id_str: 'r' + id_str,
             in_reply_to_status_id_str,
-            count: retweet_count
+            count: retweet_count,
+            text: full_text,
+            created_at,
         });
-        return { trimmedTweets, favs, rets };
+        return { favs, rets };
     }, {
-        trimmedTweets: [],
         favs: [],
         rets: []
     });
