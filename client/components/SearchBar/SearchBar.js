@@ -6,7 +6,7 @@ export default ({ id, value, dataList, onChange }) => {
         <>
             <input className={classes} list={id} value={value} onChange={onChange} type="text" placeholder="Find a twitter user..." required />
             <datalist id={id}>
-                {dataList.map((d, i) => <option key={i} value={`@${d.value}`}>{d.label}</option>)}
+                {dataList.map((d, i) => <option key={`${i}_${d.value}`} value={`@${d.value}`}>{d.label}</option>)}
             </datalist>
         </>
     );

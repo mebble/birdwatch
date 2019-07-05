@@ -16,8 +16,10 @@ export default class extends Component {
         this.state = {
             dataLoaded: false,
             dataLoadErr: null,
-            favourites: [],
-            retweets: [],
+            data: {
+                favourites: [],
+                retweets: []
+            },
         };
         this.fetchUserData = this.fetchUserData.bind(this);
         this.updateChartState = this.updateChartState.bind(this);
@@ -29,8 +31,10 @@ export default class extends Component {
                 console.log('Got data for', this.props.user, Date.now());
                 this.setState({
                     dataLoaded: true,
-                    favourites,
-                    retweets
+                    data: {
+                        favourites,
+                        retweets
+                    }
                 });
             })
             .catch(err => {
@@ -55,8 +59,10 @@ export default class extends Component {
                     this.setState({
                         dataLoaded: true,
                         dataLoadErr: null,
-                        favourites,
-                        retweets
+                        data: {
+                            favourites,
+                            retweets
+                        }
                     });
                 })
                 .catch(err => {
@@ -71,36 +77,36 @@ export default class extends Component {
     }
 
     fetchUserData(screenName) {
-        return fetch(`http://192.168.2.29:9000/getTweetEngagement?q=${screenName}`)
+        return fetch(`http://192.168.1.2:9000/getTweetEngagement?q=${screenName}`)
             .then(res => {
                 if (res.ok) {
                     return res.json();
                 }
-                return Promise.reject('Error occurred');
+                return Promise.reject({ message: res.statusText, statusCode: res.status });
             });
     }
 
     updateChartState() {
-        const { favourites, retweets } = this.state;
+        const { favourites, retweets } = this.state.data;
         const { metric, withReplies, openTweet } = this.props;
-        const data_ = {
+        const metricData = {
             'favourites': favourites,
             'retweets': retweets
         }[metric];
-        const data = withReplies
-            ? data_
-            : data_.filter(({ in_reply_to_status_id_str }) => in_reply_to_status_id_str === null);
+        const chartData = withReplies
+            ? metricData
+            : metricData.filter(({ in_reply_to_status_id_str }) => in_reply_to_status_id_str === null);
 
         const chartWidth = this.chart.current.parentNode.clientWidth - 20;
         const x = scaleLinear()
-            .domain([0, max(data, d => d.count)])
+            .domain([0, max(chartData, d => d.count)])
             .range([20, chartWidth]);
 
         const bar = select(this.chart.current)
-            .attr('height', barHeight * data.length)
+            .attr('height', barHeight * chartData.length)
             .attr('width', chartWidth)  // move out if possible, since it stays constant
             .selectAll('g')
-            .data(data, (d, i) => d.id_str);
+            .data(chartData, (d, i) => d.id_str);
 
         const barUpdate = bar
             .transition()
