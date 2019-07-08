@@ -15,7 +15,7 @@ class App extends Component {
         super(props);
         this.state = {
             metric: 'favourites',
-            currentUser: 'kathyra_',
+            user: null,
             withReplies: true,
             tweet: {
                 id: null,
@@ -69,13 +69,13 @@ class App extends Component {
 
     onSearchUser(screenName) {
         this.setState({
-            currentUser: screenName
+            user: screenName
         });
     }
 
     render() {
         console.log(Date.now());
-        const { metric, currentUser, withReplies, tweet } = this.state;
+        const { metric, user, withReplies, tweet } = this.state;
         return (
             <>
                 <TweetModal id={tweet.id} showModal={tweet.show} closeTweet={this.onCloseTweet} />
@@ -88,7 +88,7 @@ class App extends Component {
                     </Row>
                 </Header>
                 <Body>
-                    <Timeline metric={metric} user={currentUser} withReplies={withReplies} openTweet={this.onOpenTweet} />
+                    <Timeline metric={metric} user={user} withReplies={withReplies} openTweet={this.onOpenTweet} />
                 </Body>
             </>
         );

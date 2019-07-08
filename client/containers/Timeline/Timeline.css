@@ -7,3 +7,12 @@
   font: 10px sans-serif;
   text-anchor: end;
 }
+
+.Timeline .xValueBox {
+  fill: slategray;
+}
+
+.Timeline .xValue {
+  font-size: 12px;
+  letter-spacing: 0.001em;
+}

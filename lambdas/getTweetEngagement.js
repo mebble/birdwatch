@@ -10,7 +10,7 @@ exports.handler = async function(event, context) {
         'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
     };
     try {
-        if (query === '' || typeof query === 'undefined') {
+        if (query === '' || typeof query === 'undefined' || query === null) {
             throw new Error('The query must be defined');
         }
         const response = await client.get('statuses/user_timeline', {

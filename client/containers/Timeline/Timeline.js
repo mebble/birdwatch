@@ -4,11 +4,15 @@ import { scaleLinear } from 'd3-scale';
 import { max } from 'd3-array';
 import 'd3-transition';
 
+import Row from '../../components/Row';
+import Button from '../../components/Button';
+
 import './Timeline.css';
 
 const transDuration = 500;
 const barHeight = 25;
-const labelWidth = 50;
+const labelWidth = 0;
+const yValueRightPad = 10;
 const minValue = 30;
 const rightPadding = 10;
 
@@ -17,7 +21,7 @@ export default class extends Component {
         super(props);
         this.chart = React.createRef();
         this.state = {
-            dataLoaded: false,
+            loadingData: false,
             dataLoadErr: null,
             data: {
                 favourites: [],
@@ -29,30 +33,10 @@ export default class extends Component {
         this.updateChartState = this.updateChartState.bind(this);
     }
 
-    componentDidMount() {
-        this.fetchUserData(this.props.user)
-            .then(({ favourites, retweets }) => {
-                console.log('Got data for', this.props.user, Date.now());
-                this.setState({
-                    dataLoaded: true,
-                    data: {
-                        favourites,
-                        retweets
-                    }
-                });
-            })
-            .catch(err => {
-                console.log(err)
-                this.setState({
-                    dataLoadErr: err
-                })
-            });
-    }
-
     componentDidUpdate(prevProps, prevState) {
         if (prevProps.user !== this.props.user) {
             this.setState({
-                dataLoaded: false,
+                loadingData: true,
                 dataLoadErr: null
             }, () => {
                 console.log('Loading data for', this.props.user);
@@ -61,7 +45,7 @@ export default class extends Component {
                 .then(({ favourites, retweets }) => {
                     console.log('Got data for', this.props.user);
                     this.setState({
-                        dataLoaded: true,
+                        loadingData: false,
                         dataLoadErr: null,
                         data: {
                             favourites,
@@ -75,13 +59,16 @@ export default class extends Component {
                         dataLoadErr: err
                     })
                 });
-        } else if (this.state.dataLoaded && !this.state.dataLoadErr) {
+        } else if (!this.state.loadingData && !this.state.dataLoadErr) {
             this.updateChartState();
         }
     }
 
-    fetchUserData(screenName) {
-        return fetch(`http://localhost:9000/getTweetEngagement?q=${screenName}`)
+    fetchUserData(screenName, max_id) {
+        let queryString = `q=${screenName}`;
+        if (max_id) queryString += `&max_id=${max_id}`;
+
+        return fetch(`http://192.168.2.29:9000/getTweetEngagement?${queryString}`)
             .then(res => {
                 if (res.ok) {
                     return res.json();
@@ -128,19 +115,14 @@ export default class extends Component {
         barUpdate.select('.yValue')
             .transition()
             .duration(transDuration)
-            .attr('x', d => x(d.count) - 10);
+            .attr('x', d => labelWidth + x(d.count) - yValueRightPad);
 
         const barEnter = bars.enter()
             .append('g')
             .attr('transform', (d, i) => `translate(0, ${i * barHeight})`);
-        // barEnter.append('rect')
-        //     .attr('class', 'xValueBox')
-        //     .attr('height', barHeight - 1)
-        //     .transition()
-        //     .duration(transDuration)
-        //     .attr('width', labelWidth)
         barEnter.append('rect')
             .attr('class', 'bar')
+            .attr('x', labelWidth + 3)
             .on('click', function(d) {
                 const tweetID = d.id_str.slice(1);  // remove 'r' or 'f' format
                 openTweet(tweetID);
@@ -155,7 +137,7 @@ export default class extends Component {
             .attr('dy', '.35em')
             .transition()
             .duration(transDuration)
-            .attr('x', d => x(d.count) - 10)
+            .attr('x', d => labelWidth + x(d.count) - yValueRightPad)
             .text(d => d.count);
 
         const barExit = bars.exit()
@@ -174,12 +156,19 @@ export default class extends Component {
     }
 
     render() {
-        const { dataLoaded, dataLoadErr } = this.state;
+        const { loadingData, dataLoadErr } = this.state;
+        const { user } = this.props;
 
         if (dataLoadErr) return <div>Error loading the data!!</div>;
-        if (!dataLoaded) return <div>Loading the data...</div>;
+        if (user === null) return <div>Enter a twitter username...</div>;
+        if (loadingData) return <div>Loading the data...</div>;
         return (
-            <svg ref={this.chart} className="Timeline"></svg>
+            <div>
+                <svg ref={this.chart} className="Timeline"></svg>
+                <Row>
+                    <Button >more</Button>
+                </Row>
+            </div>
         );
     }
 }
