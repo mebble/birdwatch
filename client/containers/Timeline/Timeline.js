@@ -71,7 +71,7 @@ export default class extends Component {
         let queryString = `q=${screenName}`;
         if (maxId) queryString += `&max_id=${maxId}`;
 
-        return fetch(`http://192.168.2.29:9000/getTweetEngagement?${queryString}`)
+        return fetch(`/.netlify/functions/getTweetEngagement?${queryString}`)
             .then(res => {
                 if (res.ok) {
                     return res.json();
