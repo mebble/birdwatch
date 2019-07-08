@@ -2,7 +2,11 @@ const client = require('./utils/twitter-client');
 // const response = require('../mock-tweets.json');
 
 exports.handler = async function(event, context) {
-    const { q: query } = event.queryStringParameters;
+    const { q: query, max_id } = event.queryStringParameters;
+    if (query === '' || typeof query === 'undefined') {
+        throw new Error('The query must be defined');
+    }
+
     const headers = {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*',
@@ -16,14 +20,11 @@ exports.handler = async function(event, context) {
             trim_user: true,
             exclude_replies: false,
             include_rts: false,
+            max_id
         });
-        response.sort((t1, t2) => {
-            const d1 = new Date(t1.created_at);
-            const d2 = new Date(t2.created_at);
-            if (d1 < d2) return -1;
-            if (d1 > d2) return 1;
-            return 0;
-        });
+        if (max_id) {
+            response.shift();
+        }
         const { favs, rets } = splitFavouritesRetweets(response);
         return {
             statusCode: 200,
