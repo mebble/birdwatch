@@ -3,3 +3,4 @@ dist/
 .cache/
 built-lambdas/
 .env
+mock-*
