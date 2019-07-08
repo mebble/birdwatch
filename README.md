@@ -2,23 +2,26 @@
 
 ## TODOs
 
-- [ ] User search suggestions
+- User search suggestions
     - [x] Debounce search
     - [ ] Display profile pic
     - [ ] Display verified user
-- [ ] Graph
+- Graph
     - [x] Separate graphs for favourites and retweets
     - [x] Filter bars with replies toggle
     - [x] Sort bars in descending order toggle
     - [x] More data on request
     - [x] Different bar colour for replies and non-replies
     - [ ] Display text and date
-- [ ] Window history
+    - [ ] Rescale graph on screen orientation change
+- Window history
     - [ ] window history pushState on GET user
     - [ ] handle querystring on app init
     - [ ] button to copy the window url bar
     - [ ] put app state (like replies and sort toggles) into querystring
-- [ ] App
+- Tweet modal
+    - [ ] Avoid closing the modal on click (user can't interact with videos etc)
+- App
     - [ ] put twitter icon somewhere
     - [ ] display profile pic and if verified of current user
     - [ ] polish up UI styles
