@@ -25,7 +25,7 @@ export default class extends Component {
         this.searchChange = this.searchChange.bind(this);
         this.searchSubmit = this.searchSubmit.bind(this);
         this.fetchSuggestions = debounce(function() {
-            fetch(`http://localhost:9000/getUserSearch?q=${this.state.value}`)
+            fetch(`http://192.168.2.29:9000/getUserSearch?q=${this.state.value}`)
                 .then(res => res.json())
                 .then(users => {
                     this.setState({

@@ -25,12 +25,14 @@ exports.handler = async function(event, context) {
         if (max_id) {
             response.shift();
         }
+        const new_maxId = response[response.length - 1].id_str;
         const { favs, rets } = splitFavouritesRetweets(response);
         return {
             statusCode: 200,
             body: JSON.stringify({
+                maxId: new_maxId,
                 favourites: favs,
-                retweets: rets
+                retweets: rets,
             }),
             headers
         };

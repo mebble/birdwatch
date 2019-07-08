@@ -25,12 +25,14 @@ export default class extends Component {
             dataLoadErr: null,
             data: {
                 favourites: [],
-                retweets: []
+                retweets: [],
+                maxId: null
             },
         };
         this.fetchUserData = this.fetchUserData.bind(this);
         this.chooseData = this.chooseData.bind(this);
         this.updateChartState = this.updateChartState.bind(this);
+        this.onMoreClick = this.onMoreClick.bind(this);
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -42,14 +44,15 @@ export default class extends Component {
                 console.log('Loading data for', this.props.user);
             });
             this.fetchUserData(this.props.user)
-                .then(({ favourites, retweets }) => {
+                .then(({ favourites, retweets, maxId }) => {
                     console.log('Got data for', this.props.user);
                     this.setState({
                         loadingData: false,
                         dataLoadErr: null,
                         data: {
                             favourites,
-                            retweets
+                            retweets,
+                            maxId
                         }
                     });
                 })
@@ -64,9 +67,9 @@ export default class extends Component {
         }
     }
 
-    fetchUserData(screenName, max_id) {
+    fetchUserData(screenName, maxId) {
         let queryString = `q=${screenName}`;
-        if (max_id) queryString += `&max_id=${max_id}`;
+        if (maxId) queryString += `&max_id=${maxId}`;
 
         return fetch(`http://192.168.2.29:9000/getTweetEngagement?${queryString}`)
             .then(res => {
@@ -155,6 +158,29 @@ export default class extends Component {
             .attr('x', 0 - 3);
     }
 
+    onMoreClick() {
+        const { user } = this.props;
+        const { maxId } = this.state.data;
+        console.log('Loading more data for ', user);
+        this.fetchUserData(user, maxId)
+            .then(({ favourites, retweets, maxId }) => {
+                console.log('Got more data for', user);
+                this.setState(({ data }) => {
+                    const { favourites: favCurrent, retweets: retCurrent } = data;
+                    return {
+                        data: {
+                            favourites: [...favCurrent, ...favourites],
+                            retweets: [...retCurrent, ...retweets],
+                            maxId
+                        }
+                    };
+                });
+            })
+            .catch(err => {
+                console.log(err);
+            });
+    }
+
     render() {
         const { loadingData, dataLoadErr } = this.state;
         const { user } = this.props;
@@ -166,7 +192,7 @@ export default class extends Component {
             <div>
                 <svg ref={this.chart} className="Timeline"></svg>
                 <Row>
-                    <Button >more</Button>
+                    <Button onClick={this.onMoreClick}>more</Button>
                 </Row>
             </div>
         );
