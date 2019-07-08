@@ -51,14 +51,14 @@ function splitFavouritesRetweets(tweets) {
         const { created_at, id_str, full_text, retweet_count, favorite_count, in_reply_to_status_id_str } = tweet;
         favs.push({
             id_str: 'f' + id_str,
-            in_reply_to_status_id_str,
+            isReply: Boolean(in_reply_to_status_id_str),
             count: favorite_count,
             text: full_text,
             created_at,
         });
         rets.push({
             id_str: 'r' + id_str,
-            in_reply_to_status_id_str,
+            isReply: Boolean(in_reply_to_status_id_str),
             count: retweet_count,
             text: full_text,
             created_at,

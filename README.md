@@ -11,8 +11,8 @@
     - [x] Filter bars with replies toggle
     - [x] Sort bars in descending order toggle
     - [x] More data on request
+    - [x] Different bar colour for replies and non-replies
     - [ ] Display text and date
-    - [ ] Different bar colour for replies and non-replies
 - [ ] Window history
     - [ ] window history pushState on GET user
     - [ ] handle querystring on app init

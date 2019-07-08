@@ -89,7 +89,7 @@ export default class extends Component {
         }[metric];
         const chartData = withReplies
             ? metricData.slice()
-            : metricData.filter(({ in_reply_to_status_id_str }) => in_reply_to_status_id_str === null);
+            : metricData.filter(({ isReply }) => !isReply);
         if (sorted) {
             chartData.sort((a, b) => {
                 return b.count - a.count;
@@ -130,6 +130,7 @@ export default class extends Component {
             .attr('transform', (d, i) => `translate(0, ${i * barHeight})`);
         barEnter.append('rect')
             .attr('class', 'bar')
+            .classed('replyBar', d => d.isReply)
             .attr('x', labelWidth + 3)
             .on('click', function(d) {
                 const tweetID = d.id_str.slice(1);  // remove 'r' or 'f' format

@@ -1,5 +1,9 @@
 .Timeline .bar {
-  fill: steelblue;
+  fill: #266090;
+}
+
+.Timeline .replyBar {
+  fill: #0099cc;
 }
 
 .Timeline .yValue {
