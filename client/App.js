@@ -8,12 +8,13 @@ import Row from './components/Row';
 import Toggle from './components/Toggle';
 import Header from './components/Header';
 import TweetModal from './components/TweetModal';
+import Body from './components/Body';
 
 class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentMetric: 'favourites',
+            metric: 'favourites',
             currentUser: 'kathyra_',
             withReplies: true,
             tweet: {
@@ -32,13 +33,13 @@ class App extends Component {
 
     onFavourites() {
         this.setState({
-            currentMetric: 'favourites'
+            metric: 'favourites'
         });
     };
 
     onRetweets() {
         this.setState({
-            currentMetric: 'retweets'
+            metric: 'retweets'
         });
     }
 
@@ -74,19 +75,21 @@ class App extends Component {
 
     render() {
         console.log(Date.now());
-        const { currentMetric, currentUser, withReplies, tweet } = this.state;
+        const { metric, currentUser, withReplies, tweet } = this.state;
         return (
             <>
                 <TweetModal id={tweet.id} showModal={tweet.show} closeTweet={this.onCloseTweet} />
                 <Header>
                     <Search search={this.onSearchUser} />
                     <Row>
-                        <Button onClick={this.onFavourites} disabled={currentMetric === 'favourites'}>favourites</Button>
-                        <Button onClick={this.onRetweets} disabled={currentMetric === 'retweets'}>retweets</Button>
+                        <Button onClick={this.onFavourites} disabled={metric === 'favourites'}>favourites</Button>
+                        <Button onClick={this.onRetweets} disabled={metric === 'retweets'}>retweets</Button>
                         <Toggle onClick={this.onReplyToggle} isOn={withReplies}>replies</Toggle>
                     </Row>
                 </Header>
-                <Timeline metric={currentMetric} user={currentUser} withReplies={withReplies} openTweet={this.onOpenTweet} />
+                <Body>
+                    <Timeline metric={metric} user={currentUser} withReplies={withReplies} openTweet={this.onOpenTweet} />
+                </Body>
             </>
         );
     }

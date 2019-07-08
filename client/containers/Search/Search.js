@@ -25,7 +25,7 @@ export default class extends Component {
         this.searchChange = this.searchChange.bind(this);
         this.searchSubmit = this.searchSubmit.bind(this);
         this.fetchSuggestions = debounce(function() {
-            fetch(`http://192.168.1.2:9000/getUserSearch?q=${this.state.value}`)
+            fetch(`http://localhost:9000/getUserSearch?q=${this.state.value}`)
                 .then(res => res.json())
                 .then(users => {
                     this.setState({
@@ -64,7 +64,7 @@ export default class extends Component {
     render() {
         const { value, suggestions } = this.state;
         return (
-            <form onSubmit={this.searchSubmit}>
+            <form onSubmit={this.searchSubmit} className="p-0 m-0">
                 <Row>
                     <SearchBar id="user-suggestions" value={value} dataList={suggestions} onChange={this.searchChange} />
                     <Button type="submit">Search</Button>
