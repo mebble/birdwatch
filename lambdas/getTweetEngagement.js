@@ -3,9 +3,6 @@ const client = require('./utils/twitter-client');
 
 exports.handler = async function(event, context) {
     const { q: query, max_id } = event.queryStringParameters;
-    if (query === '' || typeof query === 'undefined') {
-        throw new Error('The query must be defined');
-    }
 
     const headers = {
         'Content-Type': 'application/json',
@@ -13,6 +10,9 @@ exports.handler = async function(event, context) {
         'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
     };
     try {
+        if (query === '' || typeof query === 'undefined') {
+            throw new Error('The query must be defined');
+        }
         const response = await client.get('statuses/user_timeline', {
             screen_name: query,
             tweet_mode: 'extended',
