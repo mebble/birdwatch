@@ -17,6 +17,7 @@
     - [ ] window history pushState on GET user
     - [ ] handle querystring on app init
     - [ ] button to copy the window url bar
+    - [ ] put app state (like replies and sort toggles) into querystring
 - [ ] App
     - [ ] put twitter icon somewhere
     - [ ] display profile pic and if verified of current user

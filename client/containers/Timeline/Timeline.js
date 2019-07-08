@@ -62,7 +62,7 @@ export default class extends Component {
                         dataLoadErr: err
                     })
                 });
-        } else if (!this.state.loadingData && !this.state.dataLoadErr) {
+        } else if (this.chart.current && !this.state.loadingData && !this.state.dataLoadErr) {
             this.updateChartState();
         }
     }
