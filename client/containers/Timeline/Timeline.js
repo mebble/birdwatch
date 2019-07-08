@@ -8,6 +8,7 @@ import './Timeline.css';
 
 const transDuration = 500;
 const barHeight = 25;
+const labelWidth = 50;
 const minValue = 30;
 const rightPadding = 10;
 
@@ -110,39 +111,46 @@ export default class extends Component {
             .domain([0, max(chartData, d => d.count)])
             .range([minValue, chartWidth]);
 
-        const bar = select(this.chart.current)
+        const bars = select(this.chart.current)
             .attr('height', barHeight * chartData.length)
             .attr('width', chartWidth)  // move out if possible, since it stays constant
             .selectAll('g')
             .data(chartData, (d, i) => d.id_str);
 
-        const barUpdate = bar
+        const barUpdate = bars
             .transition()
             .duration(transDuration)
             .attr('transform', (d, i) => `translate(0, ${i * barHeight})`);
-        barUpdate.select('rect')
+        barUpdate.select('.bar')
             .transition()
             .duration(transDuration)
             .attr('width', d => x(d.count));
-        barUpdate.select('text')
+        barUpdate.select('.yValue')
             .transition()
             .duration(transDuration)
             .attr('x', d => x(d.count) - 10);
 
-        const barEnter = bar.enter()
+        const barEnter = bars.enter()
             .append('g')
             .attr('transform', (d, i) => `translate(0, ${i * barHeight})`);
+        // barEnter.append('rect')
+        //     .attr('class', 'xValueBox')
+        //     .attr('height', barHeight - 1)
+        //     .transition()
+        //     .duration(transDuration)
+        //     .attr('width', labelWidth)
         barEnter.append('rect')
+            .attr('class', 'bar')
             .on('click', function(d) {
                 const tweetID = d.id_str.slice(1);  // remove 'r' or 'f' format
-                // const tweetID = '1142465239474196480';
                 openTweet(tweetID);
             })
+            .attr('height', barHeight - 1)
             .transition()
             .duration(transDuration)
             .attr('width', d => x(d.count))
-            .attr('height', barHeight - 1)
         barEnter.append('text')
+            .attr('class', 'yValue')
             .attr('y', barHeight / 2)
             .attr('dy', '.35em')
             .transition()
@@ -150,21 +158,19 @@ export default class extends Component {
             .attr('x', d => x(d.count) - 10)
             .text(d => d.count);
 
-        const barExit = bar.exit()
+        const barExit = bars.exit()
         barExit
             .transition()
             .delay(transDuration)  // delay the 'remove' to allow transition-out effect before remove
             .remove();
-        barExit.select('rect')
+        barExit.select('.bar')
             .transition()
             .duration(transDuration)
-            .attr('width', 0)
-            .remove();
-        barExit.select('text')
+            .attr('width', 0);
+        barExit.select('.yValue')
             .transition()
             .duration(transDuration)
-            .attr('x', 0 - 3)
-            .remove();
+            .attr('x', 0 - 3);
     }
 
     render() {
