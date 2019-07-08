@@ -82,14 +82,19 @@ export default class extends Component {
 
     chooseData() {
         const { favourites, retweets } = this.state.data;
-        const { metric, withReplies, openTweet } = this.props;
+        const { metric, withReplies, sorted, openTweet } = this.props;
         const metricData = {
             'favourites': favourites,
             'retweets': retweets
         }[metric];
         const chartData = withReplies
-            ? metricData
+            ? metricData.slice()
             : metricData.filter(({ in_reply_to_status_id_str }) => in_reply_to_status_id_str === null);
+        if (sorted) {
+            chartData.sort((a, b) => {
+                return b.count - a.count;
+            });
+        }
         return chartData;
     }
 

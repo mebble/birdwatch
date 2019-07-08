@@ -17,6 +17,7 @@ class App extends Component {
             metric: 'favourites',
             user: null,
             withReplies: true,
+            sorted: false,
             tweet: {
                 id: null,
                 show: false,
@@ -26,6 +27,7 @@ class App extends Component {
         this.onFavourites = this.onFavourites.bind(this);
         this.onRetweets = this.onRetweets.bind(this);
         this.onReplyToggle = this.onReplyToggle.bind(this);
+        this.onSortToggle = this.onSortToggle.bind(this);
         this.onOpenTweet = this.onOpenTweet.bind(this);
         this.onCloseTweet = this.onCloseTweet.bind(this);
         this.onSearchUser = this.onSearchUser.bind(this);
@@ -46,6 +48,12 @@ class App extends Component {
     onReplyToggle() {
         this.setState(({ withReplies }) => {
             return { withReplies: !withReplies };
+        });
+    }
+
+    onSortToggle() {
+        this.setState(({ sorted }) => {
+            return { sorted: !sorted };
         });
     }
 
@@ -75,7 +83,7 @@ class App extends Component {
 
     render() {
         console.log(Date.now());
-        const { metric, user, withReplies, tweet } = this.state;
+        const { metric, user, withReplies, sorted, tweet } = this.state;
         return (
             <>
                 <TweetModal id={tweet.id} showModal={tweet.show} closeTweet={this.onCloseTweet} />
@@ -84,11 +92,14 @@ class App extends Component {
                     <Row>
                         <Button onClick={this.onFavourites} disabled={metric === 'favourites'}>favourites</Button>
                         <Button onClick={this.onRetweets} disabled={metric === 'retweets'}>retweets</Button>
+                    </Row>
+                    <Row>
                         <Toggle onClick={this.onReplyToggle} isOn={withReplies}>replies</Toggle>
+                        <Toggle onClick={this.onSortToggle} isOn={sorted}>sorted</Toggle>
                     </Row>
                 </Header>
                 <Body>
-                    <Timeline metric={metric} user={user} withReplies={withReplies} openTweet={this.onOpenTweet} />
+                    <Timeline metric={metric} user={user} withReplies={withReplies} sorted={sorted} openTweet={this.onOpenTweet} />
                 </Body>
             </>
         );
