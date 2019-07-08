@@ -1,5 +1,4 @@
 const client = require('./utils/twitter-client');
-// const response = require('../mock-tweets.json');
 
 exports.handler = async function(event, context) {
     const { q: query, max_id } = event.queryStringParameters;
