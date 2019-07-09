@@ -16,6 +16,7 @@
     - [x] Different bar colour for replies and non-replies
     - [ ] Display text and date
     - [ ] Rescale graph on screen orientation change
+    - [ ] log scale toggle
 - Window history
     - [ ] window history pushState on GET user
     - [ ] handle querystring on app init
@@ -27,3 +28,4 @@
     - [ ] put twitter icon somewhere
     - [ ] display profile pic and if verified of current user
     - [ ] polish up UI styles
+    - [ ] fork me
