@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
