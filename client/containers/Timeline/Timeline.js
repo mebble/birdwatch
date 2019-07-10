@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { select } from 'd3-selection';
-import { scaleLinear } from 'd3-scale';
+import { scaleLinear, scaleLog } from 'd3-scale';
 import { max } from 'd3-array';
 import 'd3-transition';
+
+import fetchLambda from '../../services/fetchLambda';
 
 import Row from '../../components/Row';
 import Button from '../../components/Button';
@@ -10,7 +12,7 @@ import Button from '../../components/Button';
 import './Timeline.css';
 
 const transDuration = 500;
-const barHeight = 25;
+const barHeight = 30;
 const labelWidth = 0;
 const yValueRightPad = 10;
 const minValue = 30;
@@ -23,29 +25,29 @@ export default class extends Component {
         this.state = {
             loadingData: false,
             dataLoadErr: null,
-            data: {
-                favourites: [],
-                retweets: [],
-                maxId: null
-            },
+            data: null,
         };
-        this.fetchUserData = this.fetchUserData.bind(this);
+        this.fetchTweets = this.fetchTweets.bind(this);
+        this.fetchUserInfo = this.fetchUserInfo.bind(this);
         this.chooseData = this.chooseData.bind(this);
         this.updateChartState = this.updateChartState.bind(this);
         this.onMoreClick = this.onMoreClick.bind(this);
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if (prevProps.user !== this.props.user) {
+        if (this.props.userQuery && prevProps.userQuery !== this.props.userQuery) {
             this.setState({
                 loadingData: true,
                 dataLoadErr: null
             }, () => {
-                console.log('Loading data for', this.props.user);
+                console.log('Loading data for', this.props.userQuery);
             });
-            this.fetchUserData(this.props.user)
-                .then(({ favourites, retweets, maxId }) => {
-                    console.log('Got data for', this.props.user);
+            const tweetsPromise = this.fetchTweets(this.props.userQuery);
+            const userInfoPromise = this.fetchUserInfo(this.props.userQuery);
+            Promise.all([tweetsPromise, userInfoPromise])
+                .then(([ { favourites, retweets, maxId }, user ]) => {
+                    console.log('Got data for', this.props.userQuery);
+                    this.props.setUser(user);
                     this.setState({
                         loadingData: false,
                         dataLoadErr: null,
@@ -57,27 +59,29 @@ export default class extends Component {
                     });
                 })
                 .catch(err => {
-                    console.log(err)
+                    console.log(err);
                     this.setState({
-                        dataLoadErr: err
-                    })
+                        loadingData: false,
+                        dataLoadErr: err,
+                        data: null,
+                    }, () => {
+                        this.props.clearUserAndQuery();
+                    });
                 });
         } else if (this.chart.current && !this.state.loadingData && !this.state.dataLoadErr) {
             this.updateChartState();
         }
     }
 
-    fetchUserData(screenName, maxId) {
+    fetchTweets(screenName, maxId) {
         let queryString = `q=${screenName}`;
         if (maxId) queryString += `&max_id=${maxId}`;
 
-        return fetch(`/.netlify/functions/getTweetEngagement?${queryString}`)
-            .then(res => {
-                if (res.ok) {
-                    return res.json();
-                }
-                return Promise.reject({ message: res.statusText, statusCode: res.status });
-            });
+        return fetchLambda(`/getTweetEngagement?${queryString}`);
+    }
+
+    fetchUserInfo(screenName) {
+        return fetchLambda(`/getUserInfo?q=${screenName}`);
     }
 
     chooseData() {
@@ -98,12 +102,39 @@ export default class extends Component {
         return chartData;
     }
 
+    onMoreClick() {
+        const { user } = this.props;
+        const { maxId } = this.state.data;
+        console.log('Loading more data for', user.screenName);
+        this.fetchTweets(user.screenName, maxId)
+            .then(({ favourites, retweets, maxId }) => {
+                console.log('Got more data for', user.screenName);
+                this.setState(({ data }) => {
+                    const { favourites: favCurrent, retweets: retCurrent } = data;
+                    return {
+                        data: {
+                            favourites: [...favCurrent, ...favourites],
+                            retweets: [...retCurrent, ...retweets],
+                            maxId
+                        }
+                    };
+                });
+            })
+            .catch(err => {
+                console.log(err);
+            });
+    }
+
     updateChartState() {
         const chartData = this.chooseData();
-        const { openTweet } = this.props;
+        const { openTweet, logScale } = this.props;
         const chartWidth = this.chart.current.parentNode.clientWidth - rightPadding;
-        const x = scaleLinear()
-            .domain([0, max(chartData, d => d.count)])
+        const scale = logScale
+                ? scaleLog()
+                : scaleLinear();
+        const x = scale
+            .clamp(true)  // the data's smallest value (0) will be clamped to 0.1
+            .domain([0.1, max(chartData, d => d.count)])
             .range([minValue, chartWidth]);
 
         const bars = select(this.chart.current)
@@ -132,18 +163,19 @@ export default class extends Component {
             .attr('class', 'bar')
             .classed('replyBar', d => d.isReply)
             .attr('x', labelWidth + 3)
+            .attr('rx', 3)
             .on('click', function(d) {
                 const tweetID = d.id_str.slice(1);  // remove 'r' or 'f' format
                 openTweet(tweetID);
             })
-            .attr('height', barHeight - 1)
+            .attr('height', barHeight - 3)
             .transition()
             .duration(transDuration)
             .attr('width', d => x(d.count))
         barEnter.append('text')
             .attr('class', 'yValue')
             .attr('y', barHeight / 2)
-            .attr('dy', '.35em')
+            .attr('dy', '.25em')
             .transition()
             .duration(transDuration)
             .attr('x', d => labelWidth + x(d.count) - yValueRightPad)
@@ -162,29 +194,6 @@ export default class extends Component {
             .transition()
             .duration(transDuration)
             .attr('x', 0 - 3);
-    }
-
-    onMoreClick() {
-        const { user } = this.props;
-        const { maxId } = this.state.data;
-        console.log('Loading more data for ', user);
-        this.fetchUserData(user, maxId)
-            .then(({ favourites, retweets, maxId }) => {
-                console.log('Got more data for', user);
-                this.setState(({ data }) => {
-                    const { favourites: favCurrent, retweets: retCurrent } = data;
-                    return {
-                        data: {
-                            favourites: [...favCurrent, ...favourites],
-                            retweets: [...retCurrent, ...retweets],
-                            maxId
-                        }
-                    };
-                });
-            })
-            .catch(err => {
-                console.log(err);
-            });
     }
 
     render() {

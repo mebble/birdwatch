@@ -5,14 +5,7 @@ import Button from '../../components/Button';
 import Row from '../../components/Row';
 import SearchBar from '../../components/SearchBar';
 
-const usersToDataList = (users) => {
-    return users.map(({ name, screen_name }) => {
-        return {
-            value: screen_name,
-            label: name
-        };
-    });
-};
+import fetchLambda from '../../services/fetchLambda';
 
 export default class extends Component {
     constructor(props) {
@@ -25,26 +18,23 @@ export default class extends Component {
         this.searchChange = this.searchChange.bind(this);
         this.searchSubmit = this.searchSubmit.bind(this);
         this.fetchSuggestions = debounce(function() {
-            fetch(`/.netlify/functions/getUserSearch?q=${this.state.value}`)
-                .then(res => res.json())
+            fetchLambda(`/getUserSearch?q=${this.state.value}`)
                 .then(users => {
                     this.setState({
-                        suggestions: usersToDataList(users)
+                        suggestions: users
                     });
                 })
                 .catch(err => {
+                    console.error(err);
                     this.setState({
-                        suggestions: [{
-                            value: 'Error',
-                            label: 'Network error'
-                        }]
+                        suggestions: []
                     });
                 });
         }.bind(this), 800);
     }
 
     searchChange(event) {
-        const value = event.target.value.startsWith('@')
+        const value = event.target.value[0] === '@'
             ? event.target.value.slice(1)
             : event.target.value;
         this.setState({ value }, () => {
