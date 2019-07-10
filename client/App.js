@@ -9,6 +9,7 @@ import Switch from './components/Switch';
 import HeaderCard from './components/HeaderCard';
 import TweetModal from './components/TweetModal';
 import Body from './components/Body';
+import UserCard from './components/UserCard';
 
 class App extends Component {
     constructor(props) {
@@ -16,6 +17,7 @@ class App extends Component {
         this.state = {
             metric: 'favourites',
             logScale: false,
+            userQuery: null,
             user: null,
             withReplies: true,
             sorted: false,
@@ -32,8 +34,9 @@ class App extends Component {
         this.onLogToggle = this.onLogToggle.bind(this);
         this.onOpenTweet = this.onOpenTweet.bind(this);
         this.onCloseTweet = this.onCloseTweet.bind(this);
-        this.onSearchUser = this.onSearchUser.bind(this);
-        this.clearUser = this.clearUser.bind(this);
+        this.setUserQuery = this.setUserQuery.bind(this);
+        this.setUser = this.setUser.bind(this);
+        this.clearUserAndQuery = this.clearUserAndQuery.bind(this);
     }
 
     onFavourites() {
@@ -84,26 +87,38 @@ class App extends Component {
         });
     }
 
-    onSearchUser(screenName) {
+    setUserQuery(userQuery) {
         this.setState({
-            user: screenName
+            userQuery
         });
     }
 
-    clearUser() {
+    setUser(userObject) {
         this.setState({
+            user: userObject
+        });
+    }
+
+    clearUserAndQuery() {
+        this.setState({
+            userQuery: null,
             user: null
         });
     }
 
     render() {
         console.log(Date.now());
-        const { metric, user, withReplies, sorted, logScale, tweet } = this.state;
+        const { metric, userQuery, user, withReplies, sorted, logScale, tweet } = this.state;
         return (
             <div className="App">
                 <TweetModal id={tweet.id} showModal={tweet.show} closeTweet={this.onCloseTweet} />
                 <HeaderCard>
-                    <Search search={this.onSearchUser} />
+                    <Search search={this.setUserQuery} />
+                    {user
+                        ? (<Row>
+                                <UserCard {...user} />
+                           </Row>)
+                        : null}
                 </HeaderCard>
                 <HeaderCard isSticky={true}>
                     <Row>
@@ -116,7 +131,10 @@ class App extends Component {
                     </Row>
                 </HeaderCard>
                 <Body>
-                    <Timeline metric={metric} user={user} withReplies={withReplies} sorted={sorted} logScale={logScale} openTweet={this.onOpenTweet} onFetchError={this.clearUser}  />
+                    <Timeline metric={metric} userQuery={userQuery} user={user}
+                        withReplies={withReplies} sorted={sorted} logScale={logScale}
+                        openTweet={this.onOpenTweet} clearUserAndQuery={this.clearUserAndQuery} setUser={this.setUser}
+                    />
                 </Body>
             </div>
         );

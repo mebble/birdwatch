@@ -25,23 +25,27 @@ export default class extends Component {
             dataLoadErr: null,
             data: null,
         };
-        this.fetchUserData = this.fetchUserData.bind(this);
+        this.fetchTweets = this.fetchTweets.bind(this);
+        this.fetchUserInfo = this.fetchUserInfo.bind(this);
         this.chooseData = this.chooseData.bind(this);
         this.updateChartState = this.updateChartState.bind(this);
         this.onMoreClick = this.onMoreClick.bind(this);
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if (this.props.user && prevProps.user !== this.props.user) {
+        if (this.props.userQuery && prevProps.userQuery !== this.props.userQuery) {
             this.setState({
                 loadingData: true,
                 dataLoadErr: null
             }, () => {
-                console.log('Loading data for', this.props.user);
+                console.log('Loading data for', this.props.userQuery);
             });
-            this.fetchUserData(this.props.user)
-                .then(({ favourites, retweets, maxId }) => {
-                    console.log('Got data for', this.props.user);
+            const tweetsPromise = this.fetchTweets(this.props.userQuery);
+            const userInfoPromise = this.fetchUserInfo(this.props.userQuery);
+            Promise.all([tweetsPromise, userInfoPromise])
+                .then(([ { favourites, retweets, maxId }, user ]) => {
+                    console.log('Got data for', this.props.userQuery);
+                    this.props.setUser(user);
                     this.setState({
                         loadingData: false,
                         dataLoadErr: null,
@@ -53,13 +57,13 @@ export default class extends Component {
                     });
                 })
                 .catch(err => {
-                    console.log(err)
+                    console.log(err);
                     this.setState({
                         loadingData: false,
                         dataLoadErr: err,
                         data: null,
                     }, () => {
-                        this.props.onFetchError();
+                        this.props.clearUserAndQuery();
                     });
                 });
         } else if (this.chart.current && !this.state.loadingData && !this.state.dataLoadErr) {
@@ -67,11 +71,21 @@ export default class extends Component {
         }
     }
 
-    fetchUserData(screenName, maxId) {
+    fetchTweets(screenName, maxId) {
         let queryString = `q=${screenName}`;
         if (maxId) queryString += `&max_id=${maxId}`;
 
         return fetch(`http://192.168.1.6:9000/getTweetEngagement?${queryString}`)
+            .then(res => {
+                if (res.ok) {
+                    return res.json();
+                }
+                return Promise.reject({ message: res.statusText, statusCode: res.status });
+            });
+    }
+
+    fetchUserInfo(screenName) {
+        return fetch(`http://192.168.1.6:9000/getUserInfo?q=${screenName}`)
             .then(res => {
                 if (res.ok) {
                     return res.json();
@@ -96,6 +110,29 @@ export default class extends Component {
             });
         }
         return chartData;
+    }
+
+    onMoreClick() {
+        const { user } = this.props;
+        const { maxId } = this.state.data;
+        console.log('Loading more data for', user.screenName);
+        this.fetchTweets(user.screenName, maxId)
+            .then(({ favourites, retweets, maxId }) => {
+                console.log('Got more data for', user.screenName);
+                this.setState(({ data }) => {
+                    const { favourites: favCurrent, retweets: retCurrent } = data;
+                    return {
+                        data: {
+                            favourites: [...favCurrent, ...favourites],
+                            retweets: [...retCurrent, ...retweets],
+                            maxId
+                        }
+                    };
+                });
+            })
+            .catch(err => {
+                console.log(err);
+            });
     }
 
     updateChartState() {
@@ -167,29 +204,6 @@ export default class extends Component {
             .transition()
             .duration(transDuration)
             .attr('x', 0 - 3);
-    }
-
-    onMoreClick() {
-        const { user } = this.props;
-        const { maxId } = this.state.data;
-        console.log('Loading more data for ', user);
-        this.fetchUserData(user, maxId)
-            .then(({ favourites, retweets, maxId }) => {
-                console.log('Got more data for', user);
-                this.setState(({ data }) => {
-                    const { favourites: favCurrent, retweets: retCurrent } = data;
-                    return {
-                        data: {
-                            favourites: [...favCurrent, ...favourites],
-                            retweets: [...retCurrent, ...retweets],
-                            maxId
-                        }
-                    };
-                });
-            })
-            .catch(err => {
-                console.log(err);
-            });
     }
 
     render() {

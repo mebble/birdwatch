@@ -4,10 +4,10 @@
 
 ## TODOs
 
-- User search suggestions
-    - [x] Debounce search
-    - [ ] Display profile pic
-    - [ ] Display verified user
+- User search
+    - [x] Debounce search suggestions
+    - [x] Get user profile img url, verified status etc on search, even when no suggestion is found
+    - [ ] Display profile pic and if user is verified in search suggestions
     - [ ] Avoid fetching suggestions on backspace and if matches current suggestions
 - Graph
     - [x] Separate graphs for favourites and retweets
@@ -32,7 +32,8 @@
 - App
     - [x] make only header parameters sticky positioned
     - [x] refetch a user's data onClicking "search" if an error occurred on the previous attempt (currently, will refetch onclick only when search input is changed)
+    - [x] display profile pic and if verified of current user in user card
     - [ ] put twitter icon somewhere
-    - [ ] display profile pic and if verified of current user
     - [ ] polish up UI styles
     - [ ] fork me
+    - [ ] user card profile image placeholder

@@ -12,7 +12,13 @@ export default ({ id, value, dataList, onChange }) => {
         <>
             <input className={classes} list={id} value={value} onChange={onChange} type="text" placeholder="Find a twitter user" required />
             <datalist id={id}>
-                {dataList.map((d, i) => <option key={`${d.label}_${d.value}`} value={`@${d.value}`}>{d.label}</option>)}
+                {dataList.map(({ name, screenName }) => {
+                    return (
+                        <option key={`${name}_${screenName}`} value={screenName}>
+                            {name}
+                        </option>
+                    );
+                })}
             </datalist>
         </>
     );
