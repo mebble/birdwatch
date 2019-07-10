@@ -7,7 +7,7 @@ export default ({ onClick, isOn, children }) => {
     const classes = classnames('Toggle', `
         bg-gray-100
         border border-solid border-gray-400 rounded-full
-        text-black font-bold
+        text-black
         px-3 py-2
         focus:outline-none
     `, {

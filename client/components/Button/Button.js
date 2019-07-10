@@ -3,7 +3,7 @@ import classnames from 'classnames';
 
 export default ({ onClick, disabled, children, type='button' }) => {
     const classes = classnames('Button', `
-        bg-indigo-700 text-white font-bold
+        bg-indigo-800 text-white font-bold
         py-2 px-4 rounded
         focus:outline-none
     `, {
