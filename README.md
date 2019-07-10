@@ -30,9 +30,9 @@
     - [x] Avoid closing the modal on click (user can't interact with videos etc)
     - [ ] Bug - Modal's tweet top overflows on desktop when the tweet is long
 - App
+    - [x] make only header parameters sticky positioned
+    - [x] refetch a user's data onClicking "search" if an error occurred on the previous attempt (currently, will refetch onclick only when search input is changed)
     - [ ] put twitter icon somewhere
     - [ ] display profile pic and if verified of current user
     - [ ] polish up UI styles
     - [ ] fork me
-    - [x] refetch a user's data onClicking "search" if an error occurred on the previous attempt (currently, will refetch onclick only when search input is changed)
-    - [ ] make only header parameters sticky positioned

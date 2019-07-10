@@ -6,7 +6,7 @@ import Search from './containers/Search';
 import Row from './components/Row';
 import Toggle from './components/Toggle';
 import Switch from './components/Switch';
-import Header from './components/Header';
+import HeaderCard from './components/HeaderCard';
 import TweetModal from './components/TweetModal';
 import Body from './components/Body';
 
@@ -100,10 +100,12 @@ class App extends Component {
         console.log(Date.now());
         const { metric, user, withReplies, sorted, logScale, tweet } = this.state;
         return (
-            <>
+            <div className="App">
                 <TweetModal id={tweet.id} showModal={tweet.show} closeTweet={this.onCloseTweet} />
-                <Header>
+                <HeaderCard>
                     <Search search={this.onSearchUser} />
+                </HeaderCard>
+                <HeaderCard isSticky={true}>
                     <Row>
                         <Switch current={metric} onLeftClick={this.onFavourites} onRightClick={this.onRetweets} />
                     </Row>
@@ -112,11 +114,11 @@ class App extends Component {
                         <Toggle onClick={this.onSortToggle} isOn={sorted}>sorted</Toggle>
                         <Toggle onClick={this.onLogToggle} isOn={logScale}>log scale</Toggle>
                     </Row>
-                </Header>
+                </HeaderCard>
                 <Body>
                     <Timeline metric={metric} user={user} withReplies={withReplies} sorted={sorted} logScale={logScale} openTweet={this.onOpenTweet} onFetchError={this.clearUser}  />
                 </Body>
-            </>
+            </div>
         );
     }
 }
