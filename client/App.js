@@ -33,6 +33,7 @@ class App extends Component {
         this.onOpenTweet = this.onOpenTweet.bind(this);
         this.onCloseTweet = this.onCloseTweet.bind(this);
         this.onSearchUser = this.onSearchUser.bind(this);
+        this.clearUser = this.clearUser.bind(this);
     }
 
     onFavourites() {
@@ -89,6 +90,12 @@ class App extends Component {
         });
     }
 
+    clearUser() {
+        this.setState({
+            user: null
+        });
+    }
+
     render() {
         console.log(Date.now());
         const { metric, user, withReplies, sorted, logScale, tweet } = this.state;
@@ -107,7 +114,7 @@ class App extends Component {
                     </Row>
                 </Header>
                 <Body>
-                    <Timeline metric={metric} user={user} withReplies={withReplies} sorted={sorted} logScale={logScale} openTweet={this.onOpenTweet} />
+                    <Timeline metric={metric} user={user} withReplies={withReplies} sorted={sorted} logScale={logScale} openTweet={this.onOpenTweet} onFetchError={this.clearUser}  />
                 </Body>
             </>
         );

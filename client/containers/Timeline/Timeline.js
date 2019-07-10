@@ -23,11 +23,7 @@ export default class extends Component {
         this.state = {
             loadingData: false,
             dataLoadErr: null,
-            data: {
-                favourites: [],
-                retweets: [],
-                maxId: null
-            },
+            data: null,
         };
         this.fetchUserData = this.fetchUserData.bind(this);
         this.chooseData = this.chooseData.bind(this);
@@ -36,7 +32,7 @@ export default class extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if (prevProps.user !== this.props.user) {
+        if (this.props.user && prevProps.user !== this.props.user) {
             this.setState({
                 loadingData: true,
                 dataLoadErr: null
@@ -59,8 +55,12 @@ export default class extends Component {
                 .catch(err => {
                     console.log(err)
                     this.setState({
-                        dataLoadErr: err
-                    })
+                        loadingData: false,
+                        dataLoadErr: err,
+                        data: null,
+                    }, () => {
+                        this.props.onFetchError();
+                    });
                 });
         } else if (this.chart.current && !this.state.loadingData && !this.state.dataLoadErr) {
             this.updateChartState();
@@ -71,7 +71,7 @@ export default class extends Component {
         let queryString = `q=${screenName}`;
         if (maxId) queryString += `&max_id=${maxId}`;
 
-        return fetch(`http://192.168.2.29:9000/getTweetEngagement?${queryString}`)
+        return fetch(`http://192.168.1.6:9000/getTweetEngagement?${queryString}`)
             .then(res => {
                 if (res.ok) {
                     return res.json();

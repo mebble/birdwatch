@@ -34,5 +34,5 @@
     - [ ] display profile pic and if verified of current user
     - [ ] polish up UI styles
     - [ ] fork me
-    - [ ] refetch a user's data onClicking "search" if an error occurred on the previous attempt (currently, will refetch onclick only when search input is changed)
-    - [ ] button to move header from sticky to static positioning
+    - [x] refetch a user's data onClicking "search" if an error occurred on the previous attempt (currently, will refetch onclick only when search input is changed)
+    - [ ] make only header parameters sticky positioned
