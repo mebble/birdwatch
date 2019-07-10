@@ -29,9 +29,9 @@ exports.handler = async function(event, context) {
         return {
             statusCode: 200,
             body: JSON.stringify({
-                maxId: new_maxId,
                 favourites: favs,
                 retweets: rets,
+                maxId: new_maxId,
             }),
             headers
         };
