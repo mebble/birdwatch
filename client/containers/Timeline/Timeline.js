@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { select } from 'd3-selection';
-import { scaleLinear } from 'd3-scale';
+import { scaleLinear, scaleLog } from 'd3-scale';
 import { max } from 'd3-array';
 import 'd3-transition';
 
@@ -100,10 +100,14 @@ export default class extends Component {
 
     updateChartState() {
         const chartData = this.chooseData();
-        const { openTweet } = this.props;
+        const { openTweet, logScale } = this.props;
         const chartWidth = this.chart.current.parentNode.clientWidth - rightPadding;
-        const x = scaleLinear()
-            .domain([0, max(chartData, d => d.count)])
+        const scale = logScale
+                ? scaleLog()
+                : scaleLinear();
+        const x = scale
+            .clamp(true)  // the data's smallest value (0) will be clamped to 0.1
+            .domain([0.1, max(chartData, d => d.count)])
             .range([minValue, chartWidth]);
 
         const bars = select(this.chart.current)

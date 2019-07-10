@@ -15,6 +15,7 @@ class App extends Component {
         super(props);
         this.state = {
             metric: 'favourites',
+            logScale: false,
             user: null,
             withReplies: true,
             sorted: false,
@@ -28,6 +29,7 @@ class App extends Component {
         this.onRetweets = this.onRetweets.bind(this);
         this.onReplyToggle = this.onReplyToggle.bind(this);
         this.onSortToggle = this.onSortToggle.bind(this);
+        this.onLogToggle = this.onLogToggle.bind(this);
         this.onOpenTweet = this.onOpenTweet.bind(this);
         this.onCloseTweet = this.onCloseTweet.bind(this);
         this.onSearchUser = this.onSearchUser.bind(this);
@@ -57,6 +59,12 @@ class App extends Component {
         });
     }
 
+    onLogToggle() {
+        this.setState(({ logScale }) => {
+            return { logScale: !logScale }
+        });
+    }
+
     onOpenTweet(tweetID) {
         this.setState({
             tweet: {
@@ -83,7 +91,7 @@ class App extends Component {
 
     render() {
         console.log(Date.now());
-        const { metric, user, withReplies, sorted, tweet } = this.state;
+        const { metric, user, withReplies, sorted, logScale, tweet } = this.state;
         return (
             <>
                 <TweetModal id={tweet.id} showModal={tweet.show} closeTweet={this.onCloseTweet} />
@@ -95,10 +103,11 @@ class App extends Component {
                     <Row>
                         <Toggle onClick={this.onReplyToggle} isOn={withReplies}>replies</Toggle>
                         <Toggle onClick={this.onSortToggle} isOn={sorted}>sorted</Toggle>
+                        <Toggle onClick={this.onLogToggle} isOn={logScale}>log scale</Toggle>
                     </Row>
                 </Header>
                 <Body>
-                    <Timeline metric={metric} user={user} withReplies={withReplies} sorted={sorted} openTweet={this.onOpenTweet} />
+                    <Timeline metric={metric} user={user} withReplies={withReplies} sorted={sorted} logScale={logScale} openTweet={this.onOpenTweet} />
                 </Body>
             </>
         );
