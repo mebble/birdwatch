@@ -18,7 +18,7 @@ export default class extends Component {
         this.searchChange = this.searchChange.bind(this);
         this.searchSubmit = this.searchSubmit.bind(this);
         this.fetchSuggestions = debounce(function() {
-            fetchLambda(`/getUserSearch?q=${this.state.value}`)
+            fetchLambda(`getUserSearch?q=${this.state.value}`)
                 .then(users => {
                     this.setState({
                         suggestions: users
