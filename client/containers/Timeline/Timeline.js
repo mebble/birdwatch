@@ -77,11 +77,11 @@ export default class extends Component {
         let queryString = `q=${screenName}`;
         if (maxId) queryString += `&max_id=${maxId}`;
 
-        return fetchLambda(`/getTweetEngagement?${queryString}`);
+        return fetchLambda(`getTweetEngagement?${queryString}`);
     }
 
     fetchUserInfo(screenName) {
-        return fetchLambda(`/getUserInfo?q=${screenName}`);
+        return fetchLambda(`getUserInfo?q=${screenName}`);
     }
 
     chooseData() {
