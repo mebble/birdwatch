@@ -4,6 +4,8 @@ import { scaleLinear, scaleLog } from 'd3-scale';
 import { max } from 'd3-array';
 import 'd3-transition';
 
+import fetchLambda from '../../services/fetchLambda';
+
 import Row from '../../components/Row';
 import Button from '../../components/Button';
 
@@ -75,23 +77,11 @@ export default class extends Component {
         let queryString = `q=${screenName}`;
         if (maxId) queryString += `&max_id=${maxId}`;
 
-        return fetch(`http://192.168.1.6:9000/getTweetEngagement?${queryString}`)
-            .then(res => {
-                if (res.ok) {
-                    return res.json();
-                }
-                return Promise.reject({ message: res.statusText, statusCode: res.status });
-            });
+        return fetchLambda(`/getTweetEngagement?${queryString}`);
     }
 
     fetchUserInfo(screenName) {
-        return fetch(`http://192.168.1.6:9000/getUserInfo?q=${screenName}`)
-            .then(res => {
-                if (res.ok) {
-                    return res.json();
-                }
-                return Promise.reject({ message: res.statusText, statusCode: res.status });
-            });
+        return fetchLambda(`/getUserInfo?q=${screenName}`);
     }
 
     chooseData() {

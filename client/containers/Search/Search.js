@@ -5,6 +5,8 @@ import Button from '../../components/Button';
 import Row from '../../components/Row';
 import SearchBar from '../../components/SearchBar';
 
+import fetchLambda from '../../services/fetchLambda';
+
 export default class extends Component {
     constructor(props) {
         super(props);
@@ -16,8 +18,7 @@ export default class extends Component {
         this.searchChange = this.searchChange.bind(this);
         this.searchSubmit = this.searchSubmit.bind(this);
         this.fetchSuggestions = debounce(function() {
-            fetch(`http://192.168.1.6:9000/getUserSearch?q=${this.state.value}`)
-                .then(res => res.json())
+            fetchLambda(`/getUserSearch?q=${this.state.value}`)
                 .then(users => {
                     this.setState({
                         suggestions: users
