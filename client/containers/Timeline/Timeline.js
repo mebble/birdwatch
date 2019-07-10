@@ -10,7 +10,7 @@ import Button from '../../components/Button';
 import './Timeline.css';
 
 const transDuration = 500;
-const barHeight = 25;
+const barHeight = 30;
 const labelWidth = 0;
 const yValueRightPad = 10;
 const minValue = 30;
@@ -136,18 +136,19 @@ export default class extends Component {
             .attr('class', 'bar')
             .classed('replyBar', d => d.isReply)
             .attr('x', labelWidth + 3)
+            .attr('rx', 3)
             .on('click', function(d) {
                 const tweetID = d.id_str.slice(1);  // remove 'r' or 'f' format
                 openTweet(tweetID);
             })
-            .attr('height', barHeight - 1)
+            .attr('height', barHeight - 3)
             .transition()
             .duration(transDuration)
             .attr('width', d => x(d.count))
         barEnter.append('text')
             .attr('class', 'yValue')
             .attr('y', barHeight / 2)
-            .attr('dy', '.35em')
+            .attr('dy', '.25em')
             .transition()
             .duration(transDuration)
             .attr('x', d => labelWidth + x(d.count) - yValueRightPad)

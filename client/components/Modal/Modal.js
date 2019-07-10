@@ -17,7 +17,7 @@ export default ({ onBackdropClick, children }) => {
     `;
     return (
         <div className={backdropClasses} onClick={onBackdropClick}>
-            <div className={containerClasses}>
+            <div className={containerClasses} onClick={(e) => e.stopPropagation()}>
                 {children}
             </div>
         </div>

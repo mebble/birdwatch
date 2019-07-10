@@ -7,7 +7,7 @@ export default ({ children }) => {
         bg-gray-100 shadow rounded
     `;
     return (
-        <div className="pt-2 md:pt-5 xs-max:sticky xs-max:top-0">
+        <div className="pt-2 md:pt-5 sticky top-0">
             <section className={classes}>
                 {children}
             </section>
