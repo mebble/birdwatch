@@ -9,6 +9,7 @@
     - [x] Get user profile img url, verified status etc on search, even when no suggestion is found
     - [ ] Display profile pic and if user is verified in search suggestions
     - [ ] Avoid fetching suggestions on backspace and if matches current suggestions
+    - [ ] loader feedback on search suggestions
 - Graph
     - [x] Separate graphs for favourites and retweets
     - [x] Filter bars with replies toggle
@@ -22,6 +23,7 @@
     - [ ] show error on failing to fetch "more" data
     - [ ] stacked bar chart for favourites and retweets
     - [ ] abbreviate the bar chart numbers
+    - [ ] loader feedback on "more" fetching
 - Window history
     - [ ] window history pushState on GET user
     - [ ] handle querystring on app init
@@ -35,8 +37,10 @@
     - [x] refetch a user's data onClicking "search" if an error occurred on the previous attempt (currently, will refetch onclick only when search input is changed)
     - [x] display profile pic and if verified of current user in user card
     - [x] production build third-party font face and some normalize css isn't present
-    - [ ] put twitter icon somewhere
-    - [ ] polish up UI styles
+    - [x] graphic placeholders for noUser, loadingData and dataLoadErr states
+    - [x] put twitter icon somewhere
+    - [x] polish up UI styles
+    - [x] different error feedback for the different kinds of errors
     - [ ] fork me
     - [ ] user card profile image placeholder
     - [ ] graphic placeholders for noUser, loadingData and dataLoadErr states

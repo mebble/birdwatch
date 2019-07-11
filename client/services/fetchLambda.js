@@ -1,9 +1,12 @@
-export default (url) => {
-    return fetch(`/.netlify/functions/${url}`)
-            .then(res => {
-                if (res.ok) {
-                    return res.json();
+export default (path) => {
+    return fetch(`/.netlify/functions/${path}`)
+            .then(res => res.json())
+            .then(json => {
+                if (json.twitterErrorCode) {
+                    return Promise.reject({ code: json.twitterErrorCode });  // twitter error response
+                } else if (json.error) {
+                    return Promise.reject({ code: -1 });  // other error response
                 }
-                return Promise.reject({ message: res.statusText, statusCode: res.status });
+                return json;
             });
 };

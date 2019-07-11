@@ -25,9 +25,15 @@ exports.handler = async function(event, context) {
         };
     } catch (err) {
         console.log(err);
+        const twitterErrorCode = err[0] && err[0].code // twitter error response
+            ? err[0].code
+            : null;
         return {
             statusCode: 500,
-            body: JSON.stringify(err),
+            body: JSON.stringify({
+                twitterErrorCode,
+                error: err
+            }),
             headers
         };
     }
