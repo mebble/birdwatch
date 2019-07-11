@@ -6,10 +6,10 @@ export default ({ current, onLeftClick, onRightClick }) => {
     const rightIsOn = current === 'retweets';
     const baseClasses = 'bg-gray-300 text-gray-800 font-bold py-2 px-4';
     const leftClasses = classnames(baseClasses, 'rounded-l', {
-        'shadow-inner cursor-not-allowed bg-gray-400': leftIsOn
+        'shadow-inner-dark cursor-not-allowed bg-gray-400': leftIsOn
     });
     const rightClasses = classnames(baseClasses, 'rounded-r', {
-        'shadow-inner cursor-not-allowed bg-gray-400': rightIsOn
+        'shadow-inner-dark cursor-not-allowed bg-gray-400': rightIsOn
     });
     return (
         <div className="inline-flex">

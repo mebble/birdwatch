@@ -1,0 +1,22 @@
+.Chart .bar {
+  fill: var(--color-dark-blue);
+}
+
+.Chart .replyBar {
+  fill: var(--color-soft-blue);
+}
+
+.Chart .yValue {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+.Chart .xValueBox {
+  fill: slategray;
+}
+
+.Chart .xValue {
+  font-size: 12px;
+  letter-spacing: 0.001em;
+}

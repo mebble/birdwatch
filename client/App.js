@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Timeline from './containers/Timeline';
+import ChartContainer from './containers/ChartContainer';
 import Search from './containers/Search';
 
 import Row from './components/Row';
@@ -110,7 +110,7 @@ class App extends Component {
         console.log(Date.now());
         const { metric, userQuery, user, withReplies, sorted, logScale, tweet } = this.state;
         return (
-            <div className="App">
+            <div className="App flex flex-col min-h-screen">
                 <TweetModal id={tweet.id} showModal={tweet.show} closeTweet={this.onCloseTweet} />
                 <HeaderCard>
                     <Search search={this.setUserQuery} />
@@ -131,7 +131,7 @@ class App extends Component {
                     </Row>
                 </HeaderCard>
                 <Body>
-                    <Timeline metric={metric} userQuery={userQuery} user={user}
+                    <ChartContainer metric={metric} userQuery={userQuery} user={user}
                         withReplies={withReplies} sorted={sorted} logScale={logScale}
                         openTweet={this.onOpenTweet} clearUserAndQuery={this.clearUserAndQuery} setUser={this.setUser}
                     />

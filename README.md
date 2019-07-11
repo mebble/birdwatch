@@ -39,3 +39,4 @@
     - [ ] polish up UI styles
     - [ ] fork me
     - [ ] user card profile image placeholder
+    - [ ] graphic placeholders for noUser, loadingData and dataLoadErr states
