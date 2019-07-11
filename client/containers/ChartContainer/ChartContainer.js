@@ -59,7 +59,6 @@ export default class extends Component {
                     });
                 })
                 .catch(err => {
-                    console.log(err);
                     this.setState({
                         loadingData: false,
                         dataLoadErr: err,
@@ -201,7 +200,7 @@ export default class extends Component {
         const { user } = this.props;
 
         if (loadingData) return <Loading />;
-        if (dataLoadErr) return <Error />;
+        if (dataLoadErr) return <Error error={dataLoadErr} />;
         if (user === null) return <Init />;
         return (
             <div>

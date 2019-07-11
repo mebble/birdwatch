@@ -10,10 +10,15 @@ const icons = {
         viewBox: '0 0 410.155 410.155',
         attribution: <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     },
-    error: {
+    cross: {
         path: 'M213.333,0C95.514,0,0,95.514,0,213.333s95.514,213.333,213.333,213.333  s213.333-95.514,213.333-213.333S331.153,0,213.333,0z M330.995,276.689l-54.302,54.306l-63.36-63.356l-63.36,63.36l-54.302-54.31  l63.356-63.356l-63.356-63.36l54.302-54.302l63.36,63.356l63.36-63.356l54.302,54.302l-63.356,63.36L330.995,276.689z',
         viewBox: '0 0 426.667 426.667',
         attribution: <div>Icons made by <a href="https://www.flaticon.com/authors/maxim-basinski" title="Maxim Basinski">Maxim Basinski</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    },
+    question: {
+        path: 'm22,0c-12.2,0-22,9.8-22,22s9.8,22 22,22 22-9.8 22-22-9.8-22-22-22zm2,34c0,0.6-0.4,1-1,1h-2c-0.6,0-1-0.4-1-1v-2c0-0.6 0.4-1 1-1h2c0.6,0 1,0.4 1,1v2zm2.7-8.9c-1.4,1.2-2.4,2-2.7,3.1-0.1,0.5-0.5,0.8-1,0.8h-2c-0.6,0-1.1-0.5-1-1.1 0.4-2.9 2.5-4.5 4.2-5.9 1.8-1.4 2.8-2.3 2.8-4 0-2.8-2.2-5-5-5s-5,2.2-5,5c0,0.2 0,0.4 0,0.6 0.1,0.5-0.2,1-0.7,1.1l-1.9,.6c-0.6,0.2-1.2-0.2-1.3-0.8-0.1-0.5-0.1-1-0.1-1.5 0-5 4-9 9-9s9,4 9,9c0,3.7-2.4,5.6-4.3,7.1z',
+        viewBox: '0 0 44 44',
+        attribution: <div>Icons made by <a href="https://www.flaticon.com/authors/eleonor-wang" title="Eleonor Wang">Eleonor Wang</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     }
 };
 
