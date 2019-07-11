@@ -8,8 +8,8 @@ import fetchLambda from '../../services/fetchLambda';
 
 import Row from '../../components/Row';
 import Button from '../../components/Button';
-
-import './Timeline.css';
+import Chart from '../../components/Chart';
+import { Init, Loading, Error } from '../../components/ChartPlaceholder/ChartPlaceholder';
 
 const transDuration = 500;
 const barHeight = 30;
@@ -200,12 +200,12 @@ export default class extends Component {
         const { loadingData, dataLoadErr } = this.state;
         const { user } = this.props;
 
-        if (dataLoadErr) return <div>Error loading the data!!</div>;
-        if (user === null) return <div>Enter a twitter username...</div>;
-        if (loadingData) return <div>Loading the data...</div>;
+        if (loadingData) return <Loading />;
+        if (dataLoadErr) return <Error />;
+        if (user === null) return <Init />;
         return (
             <div>
-                <svg ref={this.chart} className="Timeline"></svg>
+                <Chart ref={this.chart} />
                 <Row>
                     <Button onClick={this.onMoreClick}>more</Button>
                 </Row>

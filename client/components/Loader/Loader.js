@@ -1,6 +1,7 @@
 import React from 'react';
 
+import './Loader.css';
+
 export default ({ label }) => {
-    const classes = 'Loader text-center';
-    return <div className={classes}>{label}</div>
+    return <div className="Loader">{label}</div>;
 };

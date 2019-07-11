@@ -11,7 +11,7 @@ export default ({ onClick, isOn, children }) => {
         px-3 py-2
         focus:outline-none
     `, {
-        'border-gray-700 bg-gray-200': isOn,
+        'border-gray-700 bg-gray-400': isOn,
     });
     return (
         <button className={classes} onClick={onClick}>{children}</button>

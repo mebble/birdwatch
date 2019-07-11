@@ -1,3 +1,8 @@
+:root {
+    --color-soft-blue: #75a9ea;
+    --color-dark-blue: #4883b5;
+}
+
 @tailwind base;
 
 @tailwind components;
