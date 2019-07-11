@@ -27,6 +27,6 @@ const ErrorBody = ({ iconName, label }) => {
 
 export const Error = ({ error }) => {
     return error.code === 50 || error.code === 34
-        ? <ErrorBody iconName="question" label="We can't find that user" />
-        : <ErrorBody iconName="cross" label="Something went wrong!" />;
+        ? <ErrorBody iconName="question" label={`We can't find user @${error.query}`} />
+        : <ErrorBody iconName="cross" label={`Something went wrong while looking for @${error.query}`} />;
 };
