@@ -35,6 +35,7 @@ exports.handler = async function(event, context) {
             statusCode: 500,
             body: JSON.stringify({
                 twitterErrorCode,
+                query,
                 error: err
             }),
             headers

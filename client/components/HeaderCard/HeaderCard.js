@@ -10,7 +10,7 @@ export default ({ isSticky=false, children }) => {
         pointer-events-auto
         py-4
         m-auto w-11/12 md:w-4/5 lg:w-3/5 xl:w-2/5
-        bg-gray-100 shadow rounded
+        bg-gray-100 shadow rounded-lg
     `;
     return (
         <div className={containerClasses}>
