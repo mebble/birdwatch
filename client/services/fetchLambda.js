@@ -1,5 +1,5 @@
 export default (url) => {
-    return fetch(`http://192.168.1.6:9000/${url}`)
+    return fetch(`http://192.168.2.29:9000/${url}`)
             .then(res => {
                 if (res.ok) {
                     return res.json();

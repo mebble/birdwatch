@@ -21,6 +21,7 @@
     - [ ] Rescale graph on screen orientation change
     - [ ] show error on failing to fetch "more" data
     - [ ] stacked bar chart for favourites and retweets
+    - [ ] abbreviate the bar chart numbers
 - Window history
     - [ ] window history pushState on GET user
     - [ ] handle querystring on app init
@@ -33,6 +34,7 @@
     - [x] make only header parameters sticky positioned
     - [x] refetch a user's data onClicking "search" if an error occurred on the previous attempt (currently, will refetch onclick only when search input is changed)
     - [x] display profile pic and if verified of current user in user card
+    - [x] production build third-party font face and some normalize css isn't present
     - [ ] put twitter icon somewhere
     - [ ] polish up UI styles
     - [ ] fork me
