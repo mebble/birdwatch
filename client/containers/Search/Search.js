@@ -57,7 +57,7 @@ export default class extends Component {
             <form onSubmit={this.searchSubmit} className="p-0 m-0">
                 <Row>
                     <SearchBar id="user-suggestions" value={value} dataList={suggestions} onChange={this.searchChange} />
-                    <Button type="submit">Search</Button>
+                    <Button type="submit">search</Button>
                 </Row>
             </form>
         );
