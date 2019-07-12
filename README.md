@@ -43,4 +43,3 @@
     - [x] different error feedback for the different kinds of errors
     - [ ] fork me
     - [ ] user card profile image placeholder
-    - [ ] graphic placeholders for noUser, loadingData and dataLoadErr states
