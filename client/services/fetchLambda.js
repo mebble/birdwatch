@@ -1,5 +1,5 @@
 export default (path) => {
-    return fetch(`http://192.168.1.7:9000/${path}`)
+    return fetch(`http://192.168.2.29:9000/${path}`)
             .then(res => res.json())
             .then(json => {
                 if (json.twitterErrorCode) {

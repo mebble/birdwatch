@@ -24,7 +24,9 @@ export default class extends Component {
         this.chart = React.createRef();
         this.state = {
             loadingData: false,
+            loadingMoreData: false,
             dataLoadErr: null,
+            moreDataLoadErr: null,
             data: null,
         };
         this.fetchTweets = this.fetchTweets.bind(this);
@@ -67,6 +69,33 @@ export default class extends Component {
                         this.props.clearUserAndQuery();
                     });
                 });
+        } else if (this.state.loadingMoreData) {
+            const { user } = this.props;
+            const { maxId } = this.state.data;
+            console.log('Loading more data for', user.screenName);
+            this.fetchTweets(user.screenName, maxId)
+                .then(({ favourites, retweets, maxId }) => {
+                    console.log('Got more data for', user.screenName);
+                    this.setState(({ data }) => {
+                        const { favourites: favCurrent, retweets: retCurrent } = data;
+                        return {
+                            loadingMoreData: false,
+                            moreDataLoadErr: null,
+                            data: {
+                                favourites: [...favCurrent, ...favourites],
+                                retweets: [...retCurrent, ...retweets],
+                                maxId
+                            },
+                        };
+                    });
+                })
+                .catch(err => {
+                    console.log(err);
+                    this.setState({
+                        loadingMoreData: false,
+                        moreDataLoadErr: err
+                    });
+                });
         } else if (this.chart.current && !this.state.loadingData && !this.state.dataLoadErr) {
             this.updateChartState();
         }
@@ -102,26 +131,9 @@ export default class extends Component {
     }
 
     onMoreClick() {
-        const { user } = this.props;
-        const { maxId } = this.state.data;
-        console.log('Loading more data for', user.screenName);
-        this.fetchTweets(user.screenName, maxId)
-            .then(({ favourites, retweets, maxId }) => {
-                console.log('Got more data for', user.screenName);
-                this.setState(({ data }) => {
-                    const { favourites: favCurrent, retweets: retCurrent } = data;
-                    return {
-                        data: {
-                            favourites: [...favCurrent, ...favourites],
-                            retweets: [...retCurrent, ...retweets],
-                            maxId
-                        }
-                    };
-                });
-            })
-            .catch(err => {
-                console.log(err);
-            });
+        this.setState({
+            loadingMoreData: true
+        });
     }
 
     updateChartState() {
@@ -196,17 +208,19 @@ export default class extends Component {
     }
 
     render() {
-        const { loadingData, dataLoadErr } = this.state;
+        const { loadingData, loadingMoreData, dataLoadErr } = this.state;
         const { user } = this.props;
 
         if (loadingData) return <Loading />;
         if (dataLoadErr) return <Error error={dataLoadErr} />;
         if (user === null) return <Init />;
         return (
-            <div>
+            <div className="ChartContainer w-full">
                 <Chart ref={this.chart} />
                 <Row>
-                    <Button onClick={this.onMoreClick}>more</Button>
+                    {loadingMoreData
+                        ? <Loading />
+                        : <Button onClick={this.onMoreClick} disabled={loadingMoreData}>more</Button>}
                 </Row>
             </div>
         );
