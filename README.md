@@ -7,8 +7,8 @@
 - User search
     - [x] Debounce search suggestions
     - [x] Get user profile img url, verified status etc on search, even when no suggestion is found
+    - [x] Avoid fetching suggestions on backspace and if matches current suggestions
     - [ ] Display profile pic and if user is verified in search suggestions
-    - [ ] Avoid fetching suggestions on backspace and if matches current suggestions
     - [ ] loader feedback on search suggestions
 - Graph
     - [x] Separate graphs for favourites and retweets

@@ -18,7 +18,8 @@ export default class extends Component {
         this.searchChange = this.searchChange.bind(this);
         this.searchSubmit = this.searchSubmit.bind(this);
         this.fetchSuggestions = debounce(function() {
-            fetchLambda(`getUserSearch?q=${this.state.value}`)
+            const query = this.state.value.trim();
+            fetchLambda(`getUserSearch?q=${query}`)
                 .then(users => {
                     this.setState({
                         suggestions: users
@@ -33,16 +34,27 @@ export default class extends Component {
         }.bind(this), 800);
     }
 
+    componentDidUpdate(prevProps, prevState) {
+        if (prevState.value !== this.state.value) {
+            const { value, suggestions } = this.state;
+
+            if (!prevState.value.startsWith(value)) {  // on non-backspace input
+                const matchFound = suggestions.some(({ name, screenName }) => {
+                    return name.startsWith(value) || screenName.startsWith(value);
+                });
+
+                if (!matchFound) {
+                    this.fetchSuggestions();
+                }
+            }
+        }
+    }
+
     searchChange(event) {
-        const value = event.target.value[0] === '@'
+        const value = event.target.value.startsWith('@')
             ? event.target.value.slice(1)
             : event.target.value;
-        this.setState({ value }, () => {
-            const { value } = this.state;
-            if (value !== '') {
-                this.fetchSuggestions();
-            }
-        });
+        this.setState({ value });
     }
 
     searchSubmit(event) {
