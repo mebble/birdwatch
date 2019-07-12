@@ -19,7 +19,7 @@ export default ({ id, value, dataList, onChange }) => {
         <div>
             <div className="flex justify-center">
                 <div className={prependClasses}>@</div>
-                <input className={searbarClasses} list={id} value={value} onChange={onChange} type="text" placeholder="Twitter handle goes here" required />
+                <input className={searbarClasses} list={id} value={value} onChange={onChange} type="text" placeholder="Twitter user handle" required />
             </div>
             <datalist id={id}>
                 {dataList.map(({ name, screenName }) => {

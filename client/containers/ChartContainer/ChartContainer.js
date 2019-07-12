@@ -15,7 +15,7 @@ import { Greeting, Error } from '../../components/Info';
 const transDuration = 500;
 const barHeight = 30;
 const labelWidth = 0;
-const yValueRightPad = 10;
+const yValueRightPad = 7;
 const minValue = 30;
 const rightPadding = 10;
 
@@ -191,7 +191,7 @@ export default class extends Component {
             .transition()
             .duration(transDuration)
             .attr('x', d => labelWidth + x(d.count) - yValueRightPad)
-            .text(d => d.count);
+            .text(d => d.count_str);
 
         const barExit = bars.exit()
         barExit

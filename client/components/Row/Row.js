@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './Row.css';
-
 const RowItem = ({ children }) => {
     return <div className="flex items-center mx-2">{children}</div>;
 };

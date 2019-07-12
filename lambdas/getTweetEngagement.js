@@ -1,3 +1,5 @@
+const abbreviate = require('number-abbreviate');
+
 const client = require('./utils/twitter-client');
 
 exports.handler = async function(event, context) {
@@ -59,6 +61,7 @@ function splitFavouritesRetweets(tweets) {
             id_str: 'f' + id_str,
             isReply: Boolean(in_reply_to_status_id_str),
             count: favorite_count,
+            count_str: `${abbreviate(favorite_count, 1)}`,
             text: full_text,
             created_at,
         });
@@ -66,6 +69,7 @@ function splitFavouritesRetweets(tweets) {
             id_str: 'r' + id_str,
             isReply: Boolean(in_reply_to_status_id_str),
             count: retweet_count,
+            count_str: `${abbreviate(retweet_count, 1)}`,
             text: full_text,
             created_at,
         });
