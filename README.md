@@ -17,13 +17,13 @@
     - [x] More data on request
     - [x] Different bar colour for replies and non-replies
     - [x] log scale toggle
+    - [x] loader feedback on "more" fetching
     - [ ] cache the toggle states and invalidate on fetching new data
     - [ ] Display text for desktop and mobile landscape
     - [ ] Rescale graph on screen orientation change
     - [ ] show error on failing to fetch "more" data
     - [ ] stacked bar chart for favourites and retweets
     - [ ] abbreviate the bar chart numbers
-    - [ ] loader feedback on "more" fetching
 - Window history
     - [ ] window history pushState on GET user
     - [ ] handle querystring on app init

@@ -1,8 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
 
-import './Toggle.css';
-
 export default ({ onClick, isOn, children }) => {
     const classes = classnames('Toggle', `
         bg-gray-100
