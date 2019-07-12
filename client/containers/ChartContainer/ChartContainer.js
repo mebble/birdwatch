@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { select } from 'd3-selection';
 import { scaleLinear, scaleLog } from 'd3-scale';
-import { max } from 'd3-array';
+import { max, min } from 'd3-array';
 import 'd3-transition';
 
 import fetchLambda from '../../services/fetchLambda';
@@ -15,8 +15,8 @@ import { Greeting, Error } from '../../components/Info';
 const transDuration = 500;
 const barHeight = 30;
 const labelWidth = 0;
-const yValueRightPad = 7;
-const minValue = 30;
+const yValueRightPad = 5;
+const minValue = 35;
 const rightPadding = 10;
 
 export default class extends Component {
@@ -140,14 +140,14 @@ export default class extends Component {
     updateChartState() {
         const chartData = this.chooseData();
         const { openTweet, logScale } = this.props;
-        const chartWidth = this.chart.current.parentNode.clientWidth - rightPadding;
+        const chartWidth = this.chart.current.parentNode.clientWidth;
         const scale = logScale
                 ? scaleLog()
                 : scaleLinear();
         const x = scale
             .clamp(true)  // the data's smallest value (0) will be clamped to 0.1
-            .domain([0.1, max(chartData, d => d.count)])
-            .range([minValue, chartWidth]);
+            .domain([0.1 + min(chartData, d => d.count), max(chartData, d => d.count)])
+            .range([minValue, chartWidth - rightPadding]);
 
         const bars = select(this.chart.current)
             .attr('height', barHeight * chartData.length)
