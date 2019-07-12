@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Loader.css';
 
-export default ({ label }) => {
+export default () => {
     return (
         <div className="Loader">
             <div></div>

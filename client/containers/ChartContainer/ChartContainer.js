@@ -9,7 +9,8 @@ import fetchLambda from '../../services/fetchLambda';
 import Row from '../../components/Row';
 import Button from '../../components/Button';
 import Chart from '../../components/Chart';
-import { Init, Loading, Error } from '../../components/ChartPlaceholder/ChartPlaceholder';
+import Loader from '../../components/Loader';
+import { Greeting, Error } from '../../components/Info';
 
 const transDuration = 500;
 const barHeight = 30;
@@ -211,15 +212,15 @@ export default class extends Component {
         const { loadingData, loadingMoreData, dataLoadErr } = this.state;
         const { user } = this.props;
 
-        if (loadingData) return <Loading />;
+        if (loadingData) return <Loader />;
         if (dataLoadErr) return <Error error={dataLoadErr} />;
-        if (user === null) return <Init />;
+        if (user === null) return <Greeting />;
         return (
             <div className="ChartContainer w-full">
                 <Chart ref={this.chart} />
                 <Row>
                     {loadingMoreData
-                        ? <Loading />
+                        ? <Loader />
                         : <Button onClick={this.onMoreClick} disabled={loadingMoreData}>more</Button>}
                 </Row>
             </div>
