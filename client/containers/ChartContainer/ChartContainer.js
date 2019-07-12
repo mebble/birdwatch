@@ -15,7 +15,7 @@ import { Greeting, Error } from '../../components/Info';
 const transDuration = 500;
 const barHeight = 30;
 const labelWidth = 0;
-const yValueRightPad = 10;
+const yValueRightPad = 7;
 const minValue = 30;
 const rightPadding = 10;
 

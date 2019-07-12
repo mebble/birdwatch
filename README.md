@@ -20,6 +20,7 @@
     - [x] loader feedback on "more" fetching
     - [x] abbreviate the bar chart numbers
     - [ ] cache the toggle states and invalidate on fetching new data
+    - [ ] display dates for first and last tweets
     - [ ] Display text for desktop and mobile landscape
     - [ ] Rescale graph on screen orientation change
     - [ ] show error on failing to fetch "more" data
