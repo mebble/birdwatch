@@ -191,7 +191,7 @@ export default class extends Component {
             .transition()
             .duration(transDuration)
             .attr('x', d => labelWidth + x(d.count) - yValueRightPad)
-            .text(d => d.count);
+            .text(d => d.count_str);
 
         const barExit = bars.exit()
         barExit
