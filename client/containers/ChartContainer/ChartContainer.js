@@ -4,7 +4,7 @@ import { scaleLinear, scaleLog } from 'd3-scale';
 import { max, min } from 'd3-array';
 import 'd3-transition';
 
-import fetchLambda from '../../services/fetchLambda';
+import { fetchTweets, fetchData } from '../../services/fetchLambda';
 
 import Row from '../../components/Row';
 import Button from '../../components/Button';
@@ -26,12 +26,10 @@ export default class extends Component {
         this.state = {
             loadingData: false,
             loadingMoreData: false,
-            dataLoadErr: null,
+            data: props.initData,
+            dataLoadErr: props.initDataErr,
             moreDataLoadErr: null,
-            data: null,
         };
-        this.fetchTweets = this.fetchTweets.bind(this);
-        this.fetchUserInfo = this.fetchUserInfo.bind(this);
         this.chooseData = this.chooseData.bind(this);
         this.updateChartState = this.updateChartState.bind(this);
         this.onMoreClick = this.onMoreClick.bind(this);
@@ -45,9 +43,7 @@ export default class extends Component {
             }, () => {
                 console.log('Loading data for', this.props.userQuery);
             });
-            const tweetsPromise = this.fetchTweets(this.props.userQuery);
-            const userInfoPromise = this.fetchUserInfo(this.props.userQuery);
-            Promise.all([tweetsPromise, userInfoPromise])
+            fetchData(this.props.userQuery)
                 .then(([ { favourites, retweets, maxId }, user ]) => {
                     console.log('Got data for', this.props.userQuery);
                     this.props.setUser(user);
@@ -74,7 +70,7 @@ export default class extends Component {
             const { user } = this.props;
             const { maxId } = this.state.data;
             console.log('Loading more data for', user.screenName);
-            this.fetchTweets(user.screenName, maxId)
+            fetchTweets(user.screenName, maxId)
                 .then(({ favourites, retweets, maxId }) => {
                     console.log('Got more data for', user.screenName);
                     this.setState(({ data }) => {
@@ -102,20 +98,9 @@ export default class extends Component {
         }
     }
 
-    fetchTweets(screenName, maxId) {
-        let queryString = `q=${screenName}`;
-        if (maxId) queryString += `&max_id=${maxId}`;
-
-        return fetchLambda(`getTweetEngagement?${queryString}`);
-    }
-
-    fetchUserInfo(screenName) {
-        return fetchLambda(`getUserInfo?q=${screenName}`);
-    }
-
     chooseData() {
         const { favourites, retweets } = this.state.data;
-        const { metric, withReplies, sorted, openTweet } = this.props;
+        const { metric, withReplies, sorted } = this.props;
         const metricData = {
             'favourites': favourites,
             'retweets': retweets
