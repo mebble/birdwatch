@@ -1,5 +1,5 @@
 const fetchLambda = (path) => {
-    return fetch(`http://192.168.2.29:9000/${path}`)
+    return fetch(`/.netlify/functions/${path}`)
         .then(res => res.json())
         .then(json => {
             if (json.twitterErrorCode) {

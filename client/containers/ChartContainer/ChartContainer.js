@@ -4,8 +4,6 @@ import { scaleLinear, scaleLog } from 'd3-scale';
 import { max, min } from 'd3-array';
 import 'd3-transition';
 
-import fetchLambda from '../../services/fetchLambda';
-
 import Row from '../../components/Row';
 import Button from '../../components/Button';
 import Chart from '../../components/Chart';
@@ -23,99 +21,19 @@ export default class extends Component {
     constructor(props) {
         super(props);
         this.chart = React.createRef();
-        this.state = {
-            loadingData: false,
-            loadingMoreData: false,
-            dataLoadErr: null,
-            moreDataLoadErr: null,
-            data: null,
-        };
-        this.fetchTweets = this.fetchTweets.bind(this);
-        this.fetchUserInfo = this.fetchUserInfo.bind(this);
         this.chooseData = this.chooseData.bind(this);
         this.updateChartState = this.updateChartState.bind(this);
-        this.onMoreClick = this.onMoreClick.bind(this);
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if (this.props.userQuery && prevProps.userQuery !== this.props.userQuery) {
-            this.setState({
-                loadingData: true,
-                dataLoadErr: null
-            }, () => {
-                console.log('Loading data for', this.props.userQuery);
-            });
-            const tweetsPromise = this.fetchTweets(this.props.userQuery);
-            const userInfoPromise = this.fetchUserInfo(this.props.userQuery);
-            Promise.all([tweetsPromise, userInfoPromise])
-                .then(([ { favourites, retweets, maxId }, user ]) => {
-                    console.log('Got data for', this.props.userQuery);
-                    this.props.setUser(user);
-                    this.setState({
-                        loadingData: false,
-                        dataLoadErr: null,
-                        data: {
-                            favourites,
-                            retweets,
-                            maxId
-                        }
-                    });
-                })
-                .catch(err => {
-                    this.setState({
-                        loadingData: false,
-                        dataLoadErr: err,
-                        data: null,
-                    }, () => {
-                        this.props.clearUserAndQuery();
-                    });
-                });
-        } else if (this.state.loadingMoreData) {
-            const { user } = this.props;
-            const { maxId } = this.state.data;
-            console.log('Loading more data for', user.screenName);
-            this.fetchTweets(user.screenName, maxId)
-                .then(({ favourites, retweets, maxId }) => {
-                    console.log('Got more data for', user.screenName);
-                    this.setState(({ data }) => {
-                        const { favourites: favCurrent, retweets: retCurrent } = data;
-                        return {
-                            loadingMoreData: false,
-                            moreDataLoadErr: null,
-                            data: {
-                                favourites: [...favCurrent, ...favourites],
-                                retweets: [...retCurrent, ...retweets],
-                                maxId
-                            },
-                        };
-                    });
-                })
-                .catch(err => {
-                    console.log(err);
-                    this.setState({
-                        loadingMoreData: false,
-                        moreDataLoadErr: err
-                    });
-                });
-        } else if (this.chart.current && !this.state.loadingData && !this.state.dataLoadErr) {
+        if (this.chart.current && !this.props.loadingData && !this.props.dataLoadErr) {
             this.updateChartState();
         }
     }
 
-    fetchTweets(screenName, maxId) {
-        let queryString = `q=${screenName}`;
-        if (maxId) queryString += `&max_id=${maxId}`;
-
-        return fetchLambda(`getTweetEngagement?${queryString}`);
-    }
-
-    fetchUserInfo(screenName) {
-        return fetchLambda(`getUserInfo?q=${screenName}`);
-    }
-
     chooseData() {
-        const { favourites, retweets } = this.state.data;
-        const { metric, withReplies, sorted, openTweet } = this.props;
+        const { favourites, retweets } = this.props.data;
+        const { metric, withReplies, sorted } = this.props;
         const metricData = {
             'favourites': favourites,
             'retweets': retweets
@@ -129,12 +47,6 @@ export default class extends Component {
             });
         }
         return chartData;
-    }
-
-    onMoreClick() {
-        this.setState({
-            loadingMoreData: true
-        });
     }
 
     updateChartState() {
@@ -209,19 +121,18 @@ export default class extends Component {
     }
 
     render() {
-        const { loadingData, loadingMoreData, dataLoadErr } = this.state;
-        const { user } = this.props;
+        const { data, loadingData, loadingMoreData, errData } = this.props;
 
         if (loadingData) return <Loader />;
-        if (dataLoadErr) return <Error error={dataLoadErr} />;
-        if (user === null) return <Greeting />;
+        if (errData) return <Error error={errData} />;
+        if (data === null) return <Greeting />;
         return (
             <div className="ChartContainer w-full">
                 <Chart ref={this.chart} />
                 <Row>
                     {loadingMoreData
                         ? <Loader />
-                        : <Button onClick={this.onMoreClick} disabled={loadingMoreData}>more</Button>}
+                        : <Button onClick={this.props.moreData} disabled={loadingMoreData}>more</Button>}
                 </Row>
             </div>
         );
