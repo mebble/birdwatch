@@ -28,8 +28,9 @@
 - Window history
     - [ ] window history pushState on GET user
     - [ ] handle querystring on app init
-    - [ ] button to copy the window url bar
+    - [ ] button to copy the window url bar (permalink)
     - [ ] put app state (like replies and sort toggles) into querystring
+    - [ ] make the exact view of the bar data encodable in the url
 - Tweet modal
     - [x] Avoid closing the modal on click (user can't interact with videos etc)
     - [ ] Bug - Modal's tweet top overflows on desktop when the tweet is long
@@ -45,3 +46,4 @@
     - [x] different error feedback for the different kinds of errors
     - [ ] fork me
     - [ ] user card profile image placeholder
+    - [ ] button to explain how to use app (in a modal)

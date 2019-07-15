@@ -53,28 +53,37 @@ class App extends Component {
         this.onMoreData = this.onMoreData.bind(this);
     }
 
-    // componentDidMount() {
-    //     const { userQuery } = parseQueryString(window.location.search);
-    //     if (userQuery) {
-    //         console.log('Loading data for', userQuery);
-    //         fetchData(userQuery)
-    //             .then(([ initData, user ]) => {
-    //                 console.log('Got data for', userQuery);
-    //                 this.setState({
-    //                     initData,
-    //                     user,
-    //                 });
-    //             })
-    //             .catch(err => {
-    //                 this.setState({
-    //                     initDataErr: err
-    //                 });
-    //             });
-    //     }
-    // }
+    componentDidMount() {
+        const { userQuery } = parseQueryString(window.location.search);
+        if (userQuery) {
+            this.setState({
+                loadingData: true,
+                errData: null
+            }, () => {
+                console.log('Loading data for', userQuery);
+                fetchData(userQuery)
+                    .then(([initData, user]) => {
+                        console.log('Got data for', userQuery);
+                        this.setState({
+                            data: initData,
+                            user,
+                            loadingData: false,
+                            errData: null,
+                        });
+                    })
+                    .catch(err => {
+                        this.setState({
+                            loadingData: false,
+                            errData: err
+                        });
+                    });
+            });
+        }
+    }
 
     componentDidUpdate(prevProps, prevState) {
         if (this.state.userQuery && prevState.userQuery !== this.state.userQuery) {
+            console.log('User query changed', Date.now())
             this.setState({
                 loadingData: true,
                 errData: null
