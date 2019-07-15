@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import { fetchData, fetchTweets } from './services/fetchLambda';
+import parseQueryString from './services/parseQueryString';
+
 import ChartContainer from './containers/ChartContainer';
 import Search from './containers/Search';
 
@@ -15,16 +18,28 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            metric: 'favourites',
-            logScale: false,
+            // user
             userQuery: null,
             user: null,
+
+            // params
+            metric: 'favourites',
+            logScale: false,
             withReplies: true,
             sorted: false,
+
+            // tweet
             tweet: {
                 id: null,
                 show: false,
-            }
+            },
+
+            // data
+            data: null,
+            loadingData: false,
+            loadingMoreData: false,
+            errData: null,
+            errMoreData: null
         };
 
         this.onFavourites = this.onFavourites.bind(this);
@@ -35,8 +50,61 @@ class App extends Component {
         this.onOpenTweet = this.onOpenTweet.bind(this);
         this.onCloseTweet = this.onCloseTweet.bind(this);
         this.setUserQuery = this.setUserQuery.bind(this);
-        this.setUser = this.setUser.bind(this);
-        this.clearUserAndQuery = this.clearUserAndQuery.bind(this);
+        this.onMoreData = this.onMoreData.bind(this);
+    }
+
+    // componentDidMount() {
+    //     const { userQuery } = parseQueryString(window.location.search);
+    //     if (userQuery) {
+    //         console.log('Loading data for', userQuery);
+    //         fetchData(userQuery)
+    //             .then(([ initData, user ]) => {
+    //                 console.log('Got data for', userQuery);
+    //                 this.setState({
+    //                     initData,
+    //                     user,
+    //                 });
+    //             })
+    //             .catch(err => {
+    //                 this.setState({
+    //                     initDataErr: err
+    //                 });
+    //             });
+    //     }
+    // }
+
+    componentDidUpdate(prevProps, prevState) {
+        if (this.state.userQuery && prevState.userQuery !== this.state.userQuery) {
+            this.setState({
+                loadingData: true,
+                errData: null
+            }, () => {
+                console.log('Loading data for', this.state.userQuery);
+                fetchData(this.state.userQuery)
+                    .then(([{ favourites, retweets, maxId }, user]) => {
+                        console.log('Got data for', this.state.userQuery);
+                        this.setState({
+                            loadingData: false,
+                            errData: null,
+                            user: user,
+                            data: {
+                                favourites,
+                                retweets,
+                                maxId
+                            }
+                        });
+                    })
+                    .catch(err => {
+                        this.setState({
+                            user: null,
+                            userQuery: null,
+                            data: null,
+                            loadingData: false,
+                            errData: err,
+                        });
+                    });
+            });
+        }
     }
 
     onFavourites() {
@@ -87,28 +155,54 @@ class App extends Component {
         });
     }
 
+    onMoreData() {
+        const { user, data: { maxId } } = this.state;
+        this.setState({
+            loadingMoreData: true,
+            errMoreData: null,
+        }, () => {
+            console.log('Loading more data for', user.screenName);
+            fetchTweets(user.screenName, maxId)
+                .then(({ favourites, retweets, maxId }) => {
+                    console.log('Got more data for', user.screenName);
+                    this.setState(({ data }) => {
+                        const { favourites: favCurrent, retweets: retCurrent } = data;
+                        return {
+                            loadingMoreData: false,
+                            errMoreData: null,
+                            data: {
+                                favourites: [...favCurrent, ...favourites],
+                                retweets: [...retCurrent, ...retweets],
+                                maxId
+                            },
+                        };
+                    });
+                })
+                .catch(err => {
+                    console.log(err);
+                    this.setState({
+                        loadingMoreData: false,
+                        errMoreData: err
+                    });
+                });
+        });
+    }
+
     setUserQuery(userQuery) {
         this.setState({
             userQuery
         });
     }
 
-    setUser(userObject) {
-        this.setState({
-            user: userObject
-        });
-    }
-
-    clearUserAndQuery() {
-        this.setState({
-            userQuery: null,
-            user: null
-        });
-    }
-
     render() {
         console.log(Date.now());
-        const { metric, userQuery, user, withReplies, sorted, logScale, tweet } = this.state;
+        const {
+            user,
+            tweet,
+            data,
+            metric, withReplies, sorted, logScale,
+            loadingData, loadingMoreData, errData, errMoreData
+        } = this.state;
         return (
             <div className="App flex flex-col min-h-screen">
                 <TweetModal id={tweet.id} showModal={tweet.show} closeTweet={this.onCloseTweet} />
@@ -131,9 +225,12 @@ class App extends Component {
                     </Row>
                 </HeaderCard>
                 <Body>
-                    <ChartContainer metric={metric} userQuery={userQuery} user={user}
-                        withReplies={withReplies} sorted={sorted} logScale={logScale}
-                        openTweet={this.onOpenTweet} clearUserAndQuery={this.clearUserAndQuery} setUser={this.setUser}
+                    <ChartContainer
+                        data={data}
+                        metric={metric} withReplies={withReplies} sorted={sorted} logScale={logScale}
+                        loadingData={loadingData} loadingMoreData={loadingMoreData}
+                        errData={errData} errMoreData={errMoreData}
+                        openTweet={this.onOpenTweet} moreData={this.onMoreData}
                     />
                 </Body>
             </div>

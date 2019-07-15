@@ -7,5 +7,7 @@ export default (queryString) => {
             values[key] = value
             return values
         }, {});
-    return q;
+    return {
+        userQuery: q
+    };
 }
