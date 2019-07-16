@@ -26,10 +26,10 @@
     - [ ] show error on failing to fetch "more" data
     - [ ] stacked bar chart for favourites and retweets
 - Window history
-    - [ ] window history pushState on GET user
-    - [ ] handle querystring on app init
+    - [x] handle querystring on app init
+    - [x] put app state (like replies and sort toggles) into window history and querystring on user search
+    - [x] restore app state from window history on browser back button
     - [ ] button to copy the window url bar (permalink)
-    - [ ] put app state (like replies and sort toggles) into querystring
     - [ ] make the exact view of the bar data encodable in the url
 - Tweet modal
     - [x] Avoid closing the modal on click (user can't interact with videos etc)

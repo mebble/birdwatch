@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { fetchData, fetchTweets } from './services/fetchLambda';
-import parseQueryString from './services/parseQueryString';
+import { pushHistory } from './services/windowHistory';
 
 import ChartContainer from './containers/ChartContainer';
 import Search from './containers/Search';
@@ -19,14 +19,14 @@ class App extends Component {
         super(props);
         this.state = {
             // user
-            userQuery: null,
+            userQuery: props.init.userQuery,
             user: null,
 
             // params
-            metric: 'favourites',
-            logScale: false,
-            withReplies: true,
-            sorted: false,
+            metric: props.init.metric,
+            logScale: props.init.logScale,
+            withReplies: props.init.withReplies,
+            sorted: props.init.sorted,
 
             // tweet
             tweet: {
@@ -39,7 +39,10 @@ class App extends Component {
             loadingData: false,
             loadingMoreData: false,
             errData: null,
-            errMoreData: null
+            errMoreData: null,
+
+            // history
+            isRestore: false  // whether the current app state was restored from history
         };
 
         this.onFavourites = this.onFavourites.bind(this);
@@ -49,13 +52,14 @@ class App extends Component {
         this.onLogToggle = this.onLogToggle.bind(this);
         this.onOpenTweet = this.onOpenTweet.bind(this);
         this.onCloseTweet = this.onCloseTweet.bind(this);
-        this.setUserQuery = this.setUserQuery.bind(this);
+        this.onSetQuery = this.onSetQuery.bind(this);
         this.onMoreData = this.onMoreData.bind(this);
     }
 
     componentDidMount() {
-        const { userQuery } = parseQueryString(window.location.search);
+        const { userQuery } = this.state;
         if (userQuery) {
+            pushHistory(this.state);
             this.setState({
                 loadingData: true,
                 errData: null
@@ -79,11 +83,27 @@ class App extends Component {
                     });
             });
         }
+
+        window.addEventListener('popstate', () => {
+            if (window.history.state) {
+                const { userQuery, metric, withReplies, sorted, logScale } = window.history.state;
+                this.setState({
+                    userQuery,
+                    metric,
+                    withReplies,
+                    sorted,
+                    logScale,
+                    isRestore: true,
+                });
+            }
+        });
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if (this.state.userQuery && prevState.userQuery !== this.state.userQuery) {
-            console.log('User query changed', Date.now())
+        const queryChanged = this.state.userQuery && prevState.userQuery !== this.state.userQuery;
+
+        if (queryChanged) {
+            console.log('User query changed', Date.now());
             this.setState({
                 loadingData: true,
                 errData: null
@@ -113,6 +133,10 @@ class App extends Component {
                         });
                     });
             });
+        }
+
+        if (queryChanged && !this.state.isRestore) {
+            pushHistory(this.state);
         }
     }
 
@@ -197,9 +221,10 @@ class App extends Component {
         });
     }
 
-    setUserQuery(userQuery) {
+    onSetQuery(userQuery) {
         this.setState({
-            userQuery
+            userQuery,
+            isRestore: false
         });
     }
 
@@ -216,7 +241,7 @@ class App extends Component {
             <div className="App flex flex-col min-h-screen">
                 <TweetModal id={tweet.id} showModal={tweet.show} closeTweet={this.onCloseTweet} />
                 <HeaderCard>
-                    <Search search={this.setUserQuery} />
+                    <Search search={this.onSetQuery} />
                     {user
                         ? (<Row>
                                 <UserCard {...user} />
