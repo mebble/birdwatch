@@ -11,12 +11,12 @@ export default class extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: '',
+            value: props.userQuery || '',
             suggestions: []
         };
 
         this.searchChange = this.searchChange.bind(this);
-        this.searchSubmit = this.searchSubmit.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
         this.fetchSuggestions = debounce(function() {
             const query = this.state.value.trim();
             fetchLambda(`getUserSearch?q=${query}`)
@@ -51,6 +51,12 @@ export default class extends Component {
                 }
             }
         }
+
+        if (prevProps.userQuery !== this.props.userQuery) {
+            this.setState({
+                value: this.props.userQuery
+            });
+        }
     }
 
     searchChange(event) {
@@ -60,16 +66,18 @@ export default class extends Component {
         this.setState({ value });
     }
 
-    searchSubmit(event) {
+    handleSubmit(event) {
         event.preventDefault();
-        const { search } = this.props;
-        search(this.state.value);
+        const { value } = this.state;
+        if (value !== this.props.userQuery) {
+            this.props.search(value);
+        }
     }
 
     render() {
         const { value, suggestions } = this.state;
         return (
-            <form onSubmit={this.searchSubmit} className="p-0 m-0">
+            <form onSubmit={this.handleSubmit} className="p-0 m-0">
                 <Row>
                     <SearchBar id="user-suggestions" value={value} dataList={suggestions} onChange={this.searchChange} />
                     <Button type="submit">search</Button>

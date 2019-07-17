@@ -52,14 +52,14 @@ class App extends Component {
         this.onLogToggle = this.onLogToggle.bind(this);
         this.onOpenTweet = this.onOpenTweet.bind(this);
         this.onCloseTweet = this.onCloseTweet.bind(this);
-        this.onSetQuery = this.onSetQuery.bind(this);
+        this.onNewQuery = this.onNewQuery.bind(this);
         this.onMoreData = this.onMoreData.bind(this);
     }
 
     componentDidMount() {
         const { userQuery } = this.state;
+        pushHistory(this.state);
         if (userQuery) {
-            pushHistory(this.state);
             this.setState({
                 loadingData: true,
                 errData: null
@@ -85,6 +85,7 @@ class App extends Component {
         }
 
         window.addEventListener('popstate', () => {
+            console.log('popstate!', Date.now())
             if (window.history.state) {
                 const { userQuery, metric, withReplies, sorted, logScale } = window.history.state;
                 this.setState({
@@ -100,7 +101,7 @@ class App extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        const queryChanged = this.state.userQuery && prevState.userQuery !== this.state.userQuery;
+        const queryChanged = prevState.userQuery !== this.state.userQuery;
 
         if (queryChanged) {
             console.log('User query changed', Date.now());
@@ -126,7 +127,6 @@ class App extends Component {
                     .catch(err => {
                         this.setState({
                             user: null,
-                            userQuery: null,
                             data: null,
                             loadingData: false,
                             errData: err,
@@ -221,7 +221,7 @@ class App extends Component {
         });
     }
 
-    onSetQuery(userQuery) {
+    onNewQuery(userQuery) {
         this.setState({
             userQuery,
             isRestore: false
@@ -231,7 +231,7 @@ class App extends Component {
     render() {
         console.log(Date.now());
         const {
-            user,
+            user, userQuery,
             tweet,
             data,
             metric, withReplies, sorted, logScale,
@@ -241,7 +241,7 @@ class App extends Component {
             <div className="App flex flex-col min-h-screen">
                 <TweetModal id={tweet.id} showModal={tweet.show} closeTweet={this.onCloseTweet} />
                 <HeaderCard>
-                    <Search search={this.onSetQuery} />
+                    <Search userQuery={userQuery} search={this.onNewQuery} />
                     {user
                         ? (<Row>
                                 <UserCard {...user} />
