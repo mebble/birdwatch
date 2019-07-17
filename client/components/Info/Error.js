@@ -6,7 +6,7 @@ const ErrorBody = ({ iconName, label, subLabel=null }) => {
     return (
         <div className="flex flex-col justify-between items-center">
             <Icon name={iconName} fill="#b0b0b0" width="86" height="86" />
-            <div className="mt-5 text-center text-gray-400">
+            <div className="mt-5 text-center text-gray-500">
                 <p className="text-xl mb-3">
                     {label}
                 </p>
@@ -35,9 +35,11 @@ const SomethingWrong = ({ error }) => {
                 <span>Something went wrong while<br />looking for @{error.query}</span>
             }
             subLabel={
-                <span>Maybe they've never tweeted, or their<br />
-                    Twitter account may be either private or suspended,<br />
-                    or my developer needs to pay his bills
+                <span>Either my developer needs to pay his bills<br />
+                    or something's up with{" "}
+                    <a className="font-semibold text-blue-300" href={`https://twitter.com/${error.query}`} target="_blank">
+                        @{error.query}'s Twitter account
+                    </a>
                 </span>
             }
         />

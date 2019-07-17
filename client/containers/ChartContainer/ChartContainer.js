@@ -97,7 +97,7 @@ export default class extends Component {
             .duration(transDuration)
             .attr('width', d => x(d.count))
         barEnter.append('text')
-            .attr('class', 'yValue')
+            .attr('class', 'yValue pointer-events-none')
             .attr('y', barHeight / 2)
             .attr('dy', '.25em')
             .transition()
