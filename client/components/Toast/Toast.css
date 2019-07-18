@@ -1,0 +1,17 @@
+.Toast {
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    animation-name: fadeOut;
+    animation-delay: 0.5s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}

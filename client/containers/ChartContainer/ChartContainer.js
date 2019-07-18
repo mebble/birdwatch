@@ -5,7 +5,7 @@ import { max, min } from 'd3-array';
 import 'd3-transition';
 
 import Row from '../../components/Row';
-import Button from '../../components/Button';
+import { Button } from '../../components/Button';
 import Chart from '../../components/Chart';
 import Loader from '../../components/Loader';
 import { Greeting, Error } from '../../components/Info';

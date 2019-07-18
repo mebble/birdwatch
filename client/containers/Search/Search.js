@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import debounce from 'lodash.debounce';
 
-import Button from '../../components/Button';
+import { Button } from '../../components/Button';
 import Row from '../../components/Row';
 import SearchBar from '../../components/SearchBar';
 

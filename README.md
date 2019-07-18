@@ -28,8 +28,8 @@
 - Window history
     - [x] handle querystring on app init
     - [x] put app state (like replies and sort toggles) into window history and querystring on user search
-    - [x] restore app state from window history on browser back button
-    - [ ] button to copy the window url bar (permalink)
+    - [x] restore app state from window history on browser forward/back button
+    - [x] button to copy the window url bar (permalink)
     - [ ] make the exact view of the bar data encodable in the url
 - Tweet modal
     - [x] Avoid closing the modal on click (user can't interact with videos etc)
