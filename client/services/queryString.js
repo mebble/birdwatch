@@ -40,12 +40,14 @@ export const toQueryString = (appState) => {
      * The defaultness of the fields as defined in 'parseQueryString' is taken into consideration
      */
     const { userQuery, metric, withReplies, sorted, logScale } = appState;
-    let queryString = '?';
-    if (userQuery)                  queryString += `q=${userQuery}`;
-    if (metric      === 'retweets') queryString += '&f=0';
-    if (withReplies === false)      queryString += '&r=0';
-    if (sorted      === true)       queryString += '&s=1';
-    if (logScale    === true)       queryString += '&l=1';
+    const components = [];
+    if (userQuery)                  components.push(`q=${userQuery}`);
+    if (metric      === 'retweets') components.push('f=0');
+    if (withReplies === false)      components.push('r=0');
+    if (sorted      === true)       components.push('s=1');
+    if (logScale    === true)       components.push('l=1');
+
+    const queryString = `?${components.join('&')}`;
 
     return queryString;
 };
