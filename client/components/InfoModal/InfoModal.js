@@ -19,7 +19,7 @@ const InfoBody = () => {
     const classes = `
         InfoBody
         bg-white
-        rounded
+        rounded-lg
         shadow
         p-5
     `;
