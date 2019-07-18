@@ -13,6 +13,7 @@ import Switch from './components/Switch';
 import HeaderCard from './components/HeaderCard';
 import Toast from './components/Toast';
 import TweetModal from './components/TweetModal';
+import InfoModal from './components/InfoModal';
 import Body from './components/Body';
 import UserCard from './components/UserCard';
 import { IconButton } from './components/Button';
@@ -48,7 +49,8 @@ class App extends Component {
             isRestore: false,  // whether the current app state was restored from history
 
             // misc
-            toastText: null
+            toastText: null,
+            showInfo: false,
         };
 
         this.onFavourites = this.onFavourites.bind(this);
@@ -58,6 +60,8 @@ class App extends Component {
         this.onLogToggle = this.onLogToggle.bind(this);
         this.onOpenTweet = this.onOpenTweet.bind(this);
         this.onCloseTweet = this.onCloseTweet.bind(this);
+        this.onOpenInfo = this.onOpenInfo.bind(this);
+        this.onCloseInfo = this.onCloseInfo.bind(this);
         this.onNewQuery = this.onNewQuery.bind(this);
         this.onMoreData = this.onMoreData.bind(this);
         this.onPermalink = this.onPermalink.bind(this);
@@ -194,12 +198,24 @@ class App extends Component {
         });
     }
 
-    onCloseTweet(event) {
+    onCloseTweet() {
         this.setState({
             tweet: {
                 id: null,
                 show: false
             }
+        });
+    }
+
+    onOpenInfo() {
+        this.setState({
+            showInfo: true
+        });
+    }
+
+    onCloseInfo() {
+        this.setState({
+            showInfo: false
         });
     }
 
@@ -268,11 +284,12 @@ class App extends Component {
             data,
             metric, withReplies, sorted, logScale,
             loadingData, loadingMoreData, errData, errMoreData,
-            toastText
+            toastText, showInfo
         } = this.state;
         return (
             <div className="App flex flex-col min-h-screen">
                 <TweetModal id={tweet.id} showModal={tweet.show} closeTweet={this.onCloseTweet} />
+                <InfoModal showInfo={showInfo} closeInfo={this.onCloseInfo} />
                 <Toast text={toastText} />
                 <HeaderCard>
                     <Search userQuery={userQuery} search={this.onNewQuery} />
@@ -286,7 +303,7 @@ class App extends Component {
                     <Row>
                         <IconButton iconName="permalink" onClick={this.onPermalink} />
                         <Switch current={metric} onLeftClick={this.onFavourites} onRightClick={this.onRetweets} />
-                        <IconButton iconName="question" />
+                        <IconButton iconName="question" onClick={this.onOpenInfo} />
                     </Row>
                     <Row>
                         <Toggle onClick={this.onReplyToggle} isOn={withReplies}>replies</Toggle>

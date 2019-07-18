@@ -38,6 +38,20 @@ const icons = {
         ),
         viewBox: '0 0 300 300',
         attribution: <div>Icons made by <a href="https://www.flaticon.com/authors/chanut" title="Chanut">Chanut</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    },
+    barchart: {
+        paths: (
+            <path d="M30.328,0H0.001v454.886v30.326h30.327h454.884v-30.326h-90.976v-30.327h-30.327v30.327h-60.653v-30.327h-30.322v30.327   h-60.65v-30.327h-30.327v30.327h-60.651v-30.327H90.979v30.327H30.328V0z M212.283,333.584v60.652H60.652v-60.652H212.283z    M303.256,242.606v60.651H60.652v-60.651H303.256z M394.236,151.628v60.653H60.652v-60.653H394.236z M485.212,60.651v60.653H60.652   V60.651H485.212z" />
+        ),
+        viewBox: '0 0 485.213 485.212',
+        attribution: <div>Icons made by <a href="https://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    },
+    textbox: {
+        paths: (
+            <path d="m472 .5h-344c-13.238281.039062-23.960938 10.761719-24 24v48h-80c-13.238281.039062-23.9609375 10.761719-24 24v176c.0390625 13.238281 10.761719 23.960938 24 24h44.640625l45.359375 45.679688c1.519531 1.480468 3.558594 2.3125 5.679688 2.320312 1.070312-.019531 2.128906-.238281 3.121093-.640625 3.007813-1.230469 4.949219-4.1875 4.878907-7.4375l-.238282-39.921875h240.558594c13.238281-.039062 23.960938-10.761719 24-24v-48h80c13.238281-.039062 23.960938-10.761719 24-24v-176c-.039062-13.238281-10.761719-23.960938-24-24zm-96 272c0 4.417969-3.582031 8-8 8h-248.640625c-2.136719.007812-4.183594.875-5.679687 2.398438-1.519532 1.496093-2.355469 3.550781-2.320313 5.679687l.242187 28.402344-33.921874-34.160157c-1.523438-1.472656-3.558594-2.304687-5.679688-2.320312h-48c-4.417969 0-8-3.582031-8-8v-176c0-4.417969 3.582031-8 8-8h344c4.417969 0 8 3.582031 8 8zm104-72c0 4.417969-3.582031 8-8 8h-80v-112c-.039062-13.238281-10.761719-23.960938-24-24h-248v-48c0-4.417969 3.582031-8 8-8h344c4.417969 0 8 3.582031 8 8zm0 0" />
+        ),
+        viewBox: '0 -75 496 495',
+        attribution: <div>Icons made by <a href="https://www.flaticon.com/authors/xnimrodx" title="xnimrodx">xnimrodx</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     }
 };
 
