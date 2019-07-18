@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 import { fetchData, fetchTweets } from './services/fetchLambda';
-import { pushHistory } from './services/windowHistory';
+import { pushHistory, diffAppHistory } from './services/windowHistory';
+import { copyToClipboard } from './services/clipboard';
 
 import ChartContainer from './containers/ChartContainer';
 import Search from './containers/Search';
@@ -10,9 +11,12 @@ import Row from './components/Row';
 import Toggle from './components/Toggle';
 import Switch from './components/Switch';
 import HeaderCard from './components/HeaderCard';
+import Toast from './components/Toast';
 import TweetModal from './components/TweetModal';
+import InfoModal from './components/InfoModal';
 import Body from './components/Body';
 import UserCard from './components/UserCard';
+import { IconButton } from './components/Button';
 
 class App extends Component {
     constructor(props) {
@@ -42,7 +46,11 @@ class App extends Component {
             errMoreData: null,
 
             // history
-            isRestore: false  // whether the current app state was restored from history
+            isRestore: false,  // whether the current app state was restored from history
+
+            // misc
+            toastText: null,
+            showInfo: false,
         };
 
         this.onFavourites = this.onFavourites.bind(this);
@@ -52,14 +60,17 @@ class App extends Component {
         this.onLogToggle = this.onLogToggle.bind(this);
         this.onOpenTweet = this.onOpenTweet.bind(this);
         this.onCloseTweet = this.onCloseTweet.bind(this);
-        this.onSetQuery = this.onSetQuery.bind(this);
+        this.onOpenInfo = this.onOpenInfo.bind(this);
+        this.onCloseInfo = this.onCloseInfo.bind(this);
+        this.onNewQuery = this.onNewQuery.bind(this);
         this.onMoreData = this.onMoreData.bind(this);
+        this.onPermalink = this.onPermalink.bind(this);
     }
 
     componentDidMount() {
         const { userQuery } = this.state;
+        pushHistory(this.state);
         if (userQuery) {
-            pushHistory(this.state);
             this.setState({
                 loadingData: true,
                 errData: null
@@ -85,6 +96,7 @@ class App extends Component {
         }
 
         window.addEventListener('popstate', () => {
+            console.log('popstate!', Date.now())
             if (window.history.state) {
                 const { userQuery, metric, withReplies, sorted, logScale } = window.history.state;
                 this.setState({
@@ -100,7 +112,7 @@ class App extends Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        const queryChanged = this.state.userQuery && prevState.userQuery !== this.state.userQuery;
+        const queryChanged = prevState.userQuery !== this.state.userQuery;
 
         if (queryChanged) {
             console.log('User query changed', Date.now());
@@ -126,7 +138,6 @@ class App extends Component {
                     .catch(err => {
                         this.setState({
                             user: null,
-                            userQuery: null,
                             data: null,
                             loadingData: false,
                             errData: err,
@@ -137,6 +148,14 @@ class App extends Component {
 
         if (queryChanged && !this.state.isRestore) {
             pushHistory(this.state);
+        }
+
+        if (prevState.toastText === null && this.state.toastText) {
+            setTimeout(() => {
+                this.setState({
+                    toastText: null
+                });
+            }, 2500);
         }
     }
 
@@ -179,12 +198,24 @@ class App extends Component {
         });
     }
 
-    onCloseTweet(event) {
+    onCloseTweet() {
         this.setState({
             tweet: {
                 id: null,
                 show: false
             }
+        });
+    }
+
+    onOpenInfo() {
+        this.setState({
+            showInfo: true
+        });
+    }
+
+    onCloseInfo() {
+        this.setState({
+            showInfo: false
         });
     }
 
@@ -221,27 +252,47 @@ class App extends Component {
         });
     }
 
-    onSetQuery(userQuery) {
+    onNewQuery(userQuery) {
         this.setState({
             userQuery,
             isRestore: false
         });
     }
 
+    onPermalink() {
+        if (diffAppHistory(this.state)) {
+            pushHistory(this.state);
+        }
+        copyToClipboard(window.location.href)
+            .then(() => {
+                this.setState({
+                    toastText: 'app state copied'
+                });
+            })
+            .catch(() => {
+                this.setState({
+                    toastText: 'an error occurred while copying the app state'
+                });
+            });
+    }
+
     render() {
         console.log(Date.now());
         const {
-            user,
+            user, userQuery,
             tweet,
             data,
             metric, withReplies, sorted, logScale,
-            loadingData, loadingMoreData, errData, errMoreData
+            loadingData, loadingMoreData, errData, errMoreData,
+            toastText, showInfo
         } = this.state;
         return (
             <div className="App flex flex-col min-h-screen">
                 <TweetModal id={tweet.id} showModal={tweet.show} closeTweet={this.onCloseTweet} />
+                <InfoModal showInfo={showInfo} closeInfo={this.onCloseInfo} />
+                <Toast text={toastText} />
                 <HeaderCard>
-                    <Search search={this.onSetQuery} />
+                    <Search userQuery={userQuery} search={this.onNewQuery} />
                     {user
                         ? (<Row>
                                 <UserCard {...user} />
@@ -250,7 +301,9 @@ class App extends Component {
                 </HeaderCard>
                 <HeaderCard isSticky={true}>
                     <Row>
+                        <IconButton iconName="permalink" onClick={this.onPermalink} />
                         <Switch current={metric} onLeftClick={this.onFavourites} onRightClick={this.onRetweets} />
+                        <IconButton iconName="question" onClick={this.onOpenInfo} />
                     </Row>
                     <Row>
                         <Toggle onClick={this.onReplyToggle} isOn={withReplies}>replies</Toggle>

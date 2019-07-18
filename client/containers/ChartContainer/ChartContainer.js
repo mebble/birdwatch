@@ -5,7 +5,7 @@ import { max, min } from 'd3-array';
 import 'd3-transition';
 
 import Row from '../../components/Row';
-import Button from '../../components/Button';
+import { Button } from '../../components/Button';
 import Chart from '../../components/Chart';
 import Loader from '../../components/Loader';
 import { Greeting, Error } from '../../components/Info';
@@ -97,7 +97,7 @@ export default class extends Component {
             .duration(transDuration)
             .attr('width', d => x(d.count))
         barEnter.append('text')
-            .attr('class', 'yValue')
+            .attr('class', 'yValue pointer-events-none')
             .attr('y', barHeight / 2)
             .attr('dy', '.25em')
             .transition()
