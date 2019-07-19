@@ -15,6 +15,20 @@ const InfoRow = ({ iconName, text }) => {
     );
 };
 
+const CreditRow = () => {
+    return (
+        <Row>
+            <p className="text-gray-500 text-center">
+                <span>made by</span>
+                <a className="flex justify-between items-center" href="https://github.com/mebble/twitter-count" target="_blank">
+                    <span className="font-semibold text-blue-400 pr-1" style={{ color: '#3BCAAD' }}>mebble</span>
+                    <Icon name="github" fill="#3BCAAD" width="16" height="16" />
+                </a>
+            </p>
+        </Row>
+    );
+}
+
 const InfoBody = () => {
     const classes = `
         InfoBody
@@ -28,6 +42,7 @@ const InfoBody = () => {
             <InfoRow iconName="barchart" text="Find out how many favourites and retweets a Twitter user's tweets have gotten" />
             <InfoRow iconName="textbox" text="Click on the bar chart to open up a tweet and interact with it" />
             <InfoRow iconName="permalink" text="Save the application state into a link and copy it to the clipboard" />
+            <CreditRow />
         </div>
     );
 };
