@@ -8,7 +8,7 @@ const InfoRow = ({ iconName, text }) => {
     return (
         <Row>
             <div className="px-2 md:px-4 py-2">
-                <Icon name={iconName} fill="#4c6e98" width="48" height="48" />
+                <Icon name={iconName} fill="#3ba0ca" width="48" height="48" />
             </div>
             <span className="px-2 md:px-4 py-2 max-w-xs text-gray-700">{text}</span>
         </Row>
