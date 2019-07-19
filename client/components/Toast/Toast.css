@@ -1,4 +1,5 @@
 .Toast {
+    background-color: var(--color-secondary);
     position: fixed;
     top: 75%;
     left: 50%;

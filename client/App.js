@@ -113,8 +113,10 @@ class App extends Component {
 
     componentDidUpdate(prevProps, prevState) {
         const queryChanged = prevState.userQuery !== this.state.userQuery;
+        const queryChangedToValid = queryChanged && this.state.userQuery;
+        const queryChangedToNull = queryChanged && this.state.userQuery === null;
 
-        if (queryChanged) {
+        if (queryChangedToValid) {
             console.log('User query changed', Date.now());
             this.setState({
                 loadingData: true,
@@ -146,8 +148,15 @@ class App extends Component {
             });
         }
 
-        if (queryChanged && !this.state.isRestore) {
+        if (queryChangedToValid && !this.state.isRestore) {
             pushHistory(this.state);
+        }
+
+        if (queryChangedToNull) {
+            this.setState({
+                user: null,
+                data: null,
+            });
         }
 
         if (prevState.toastText === null && this.state.toastText) {

@@ -1,9 +1,9 @@
 .Chart .bar {
-  fill: var(--color-dark-blue);
+  fill: var(--color-primary);
 }
 
 .Chart .replyBar {
-  fill: var(--color-soft-blue);
+  fill: var(--color-secondary);
 }
 
 .Chart .yValue {
