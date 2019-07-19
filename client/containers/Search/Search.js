@@ -54,7 +54,7 @@ export default class extends Component {
 
         if (prevProps.userQuery !== this.props.userQuery) {
             this.setState({
-                value: this.props.userQuery
+                value: this.props.userQuery || ''
             });
         }
     }
