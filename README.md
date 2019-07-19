@@ -44,6 +44,6 @@
     - [x] put twitter icon somewhere
     - [x] polish up UI styles
     - [x] different error feedback for the different kinds of errors
-    - [ ] fork me
+    - [x] button to explain how to use app (in a modal)
+    - [x] credits
     - [ ] user card profile image placeholder
-    - [ ] button to explain how to use app (in a modal)
