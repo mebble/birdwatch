@@ -38,7 +38,7 @@ export default class extends Component {
         if (prevState.value !== this.state.value) {
             const { value, suggestions } = this.state;
 
-            if (!prevState.value.startsWith(value) && value.trim() !== '') {  // on non-backspace input
+            if (!prevState.value.startsWith(value) && value.trim() !== '') {  // on non-backspace and white-space input
                 const normVal = value.toLowerCase().trim();
                 const matchFound = suggestions.some(({ name, screenName }) => {
                     const normName = name.toLowerCase();

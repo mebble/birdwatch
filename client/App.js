@@ -156,6 +156,7 @@ class App extends Component {
             this.setState({
                 user: null,
                 data: null,
+                errData: null,
             });
         }
 
