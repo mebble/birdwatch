@@ -1,6 +1,6 @@
 :root {
-    --color-soft-blue: #3ba0ca;
-    --color-dark-blue: #2e7bbd;
+    --color-primary: #3ba0ca;
+    --color-secondary: #3BCAAD;
 }
 
 @tailwind base;

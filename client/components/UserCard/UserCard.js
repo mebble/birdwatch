@@ -13,7 +13,7 @@ export default ({ name, screenName, imgUrl, verified }) => {
                 </div>
                 <div className="ml-1">
                     {verified
-                        ? <Icon name="verified" fill="#1DA1F2" width="16" height="16" />
+                        ? <Icon name="verified" fill="#3BCAAD" width="16" height="16" />
                         : null
                     }
                 </div>

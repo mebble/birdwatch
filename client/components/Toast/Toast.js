@@ -5,7 +5,7 @@ import './Toast.css';
 export default ({ text }) => {
     const classes = `
         Toast
-        text-white bg-gray-600
+        text-white
         shadow
         py-1 px-3 rounded-full
         z-40
