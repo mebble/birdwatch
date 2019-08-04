@@ -2,6 +2,18 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/427e4685-87ff-40d7-aec5-6627aef5c4f0/deploy-status)](https://app.netlify.com/sites/festive-haibt-f1c272/deploys)
 
+See it live: [festive-haibt-f1c272.netlify.com](https://festive-haibt-f1c272.netlify.com)
+
+## What Is It?
+
+A web application for someone who likes to look at how popular people's tweets got.
+
+- Get a user's tweets and see how many likes and retweets they got
+- Visualise data using D3.js
+- Client-side routing
+- Can copy application state into permalink
+- Data served by a serverless netlify-lambda backend that talks to the Twitter API
+
 ## TODOs
 
 - User search
@@ -47,3 +59,5 @@
     - [x] button to explain how to use app (in a modal)
     - [x] credits
     - [ ] user card profile image placeholder
+    - [ ] window.history replacestate instead of pushstate in some cases
+    - [ ] try out system fonts (create-react-app's font-family)
