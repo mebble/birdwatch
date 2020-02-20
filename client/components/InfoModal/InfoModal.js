@@ -20,7 +20,7 @@ const CreditRow = () => {
         <Row>
             <p className="text-gray-500 text-center">
                 <span>made by</span>
-                <a className="flex justify-between items-center" href="https://github.com/mebble/twitter-count" target="_blank">
+                <a className="flex justify-between items-center" href="https://github.com/mebble/birdwatch" target="_blank">
                     <span className="font-semibold text-blue-400 pr-1" style={{ color: '#3BCAAD' }}>mebble</span>
                     <Icon name="github" fill="#3BCAAD" width="16" height="16" />
                 </a>

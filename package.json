@@ -1,8 +1,8 @@
 {
-  "name": "twitter-count",
+  "name": "birdwatch",
   "version": "1.0.0",
-  "description": "Netlify lambda functions that return a user's tweet engagements",
-  "main": "index.js",
+  "description": "Graph a Twitter user's tweet engagements",
+  "private": true,
   "scripts": {
     "lambda-serve": "netlify-lambda serve lambdas --timeout 120",
     "lambda-build": "netlify-lambda build lambdas",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mebble/twitter-count.git"
+    "url": "git+https://github.com/mebble/birdwatch.git"
   },
   "keywords": [
     "twitter",
@@ -24,9 +24,9 @@
   "author": "Neil Leeson Syiemlieh",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mebble/twitter-count/issues"
+    "url": "https://github.com/mebble/birdwatch/issues"
   },
-  "homepage": "https://github.com/mebble/twitter-count#readme",
+  "homepage": "https://github.com/mebble/birdwatch#readme",
   "dependencies": {
     "classnames": "^2.2.6",
     "d3": "^5.9.4",
