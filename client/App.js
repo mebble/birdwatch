@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { fetchData, fetchTweets } from './services/fetchLambda';
-import { pushHistory, diffAppHistory } from './services/windowHistory';
+import { updateWindowHistory, diffAppHistory } from './services/windowHistory';
 import { copyToClipboard } from './services/clipboard';
 
 import ChartContainer from './containers/ChartContainer';
@@ -69,7 +69,7 @@ class App extends Component {
 
     componentDidMount() {
         const { userQuery } = this.state;
-        pushHistory(this.state);
+        updateWindowHistory(this.state, 'replace');
         if (userQuery) {
             this.setState({
                 loadingData: true,
@@ -149,7 +149,7 @@ class App extends Component {
         }
 
         if (queryChangedToValid && !this.state.isRestore) {
-            pushHistory(this.state);
+            updateWindowHistory(this.state, 'push');
         }
 
         if (queryChangedToNull) {
@@ -271,7 +271,7 @@ class App extends Component {
 
     onPermalink() {
         if (diffAppHistory(this.state)) {
-            pushHistory(this.state);
+            updateWindowHistory(this.state, 'push');
         }
         copyToClipboard(window.location.href)
             .then(() => {

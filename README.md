@@ -42,6 +42,7 @@ A web application for someone who likes to look at how popular people's tweets g
     - [x] put app state (like replies and sort toggles) into window history and querystring on user search
     - [x] restore app state from window history on browser forward/back button
     - [x] button to copy the window url bar (permalink)
+    - [x] window.history replacestate instead of pushstate on app init
     - [ ] make the exact view of the bar data encodable in the url
 - Tweet modal
     - [x] Avoid closing the modal on click (user can't interact with videos etc)
@@ -59,5 +60,4 @@ A web application for someone who likes to look at how popular people's tweets g
     - [x] button to explain how to use app (in a modal)
     - [x] credits
     - [ ] user card profile image placeholder
-    - [ ] window.history replacestate instead of pushstate in some cases
     - [ ] try out system fonts (create-react-app's font-family)
