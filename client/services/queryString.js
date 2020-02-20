@@ -44,6 +44,7 @@ export const toQueryString = (appState) => {
     /**
      * Extract some fields of the app state object into a querystring
      * The defaultness of the fields as defined in 'parseQueryString' is taken into consideration
+     * When all state fields are of their default value, the querystring is empty
      */
     const { userQuery, metric, withReplies, sorted, logScale } = appState;
     const components = [];
@@ -53,7 +54,7 @@ export const toQueryString = (appState) => {
     if (sorted      === true)       components.push('s=1');
     if (logScale    === true)       components.push('l=1');
 
-    const queryString = `?${components.join('&')}`;
+    const queryString = components.join('&');
 
     return queryString;
 };
