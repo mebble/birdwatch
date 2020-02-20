@@ -5,7 +5,7 @@ export const parseQueryString = (queryString) => {
      */
     const {
         q = null,
-        f = true,
+        m = 'favourites',
         r = true,
         s = false,
         l = false
@@ -14,20 +14,26 @@ export const parseQueryString = (queryString) => {
         .split('&')
         .map(component => {
             let [ key, value ] = component.split('=');
-            if (['f', 'r', 's', 'l'].includes(key)) {
+            if (['r', 's', 'l'].includes(key)) {
                 value = value === '1'
                     ? true
                     : false;
             }
+            if (key === 'm') {
+                value = value === 'r'
+                    ? 'retweets'
+                    : 'favourites';
+            }
+
             return [ key, value ];
         })
         .reduce((values, [key, value]) => {
-            values[key] = value
-            return values
+            values[key] = value;
+            return values;
         }, {});
     return {
         userQuery: q,
-        metric: f ? 'favourites' : 'retweets',
+        metric: m,
         withReplies: r,
         sorted: s,
         logScale: l,
@@ -42,7 +48,7 @@ export const toQueryString = (appState) => {
     const { userQuery, metric, withReplies, sorted, logScale } = appState;
     const components = [];
     if (userQuery)                  components.push(`q=${userQuery}`);
-    if (metric      === 'retweets') components.push('f=0');
+    if (metric      === 'retweets') components.push('m=r');
     if (withReplies === false)      components.push('r=0');
     if (sorted      === true)       components.push('s=1');
     if (logScale    === true)       components.push('l=1');
