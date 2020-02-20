@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/427e4685-87ff-40d7-aec5-6627aef5c4f0/deploy-status)](https://app.netlify.com/sites/festive-haibt-f1c272/deploys)
 
-See it live: [birdwatch.netlify.com](birdwatch.netlify.com)
+See it live: [birdwatch.netlify.com](https://birdwatch.netlify.com)
 
 ## What Is It?
 
